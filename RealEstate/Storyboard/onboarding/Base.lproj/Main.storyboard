@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cOs-Ch-V9a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="t7L-4u-CaJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="t7L-4u-CaJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cX-qN-4uI">
@@ -470,13 +470,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xbK-mg-wwn" secondAttribute="trailing" id="xCw-C2-kLE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FTJ-wa-DBt"/>
                     <connections>
                         <outlet property="vwBg" destination="nzE-Jd-f5v" id="FiE-gs-loM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-17"/>
+            <point key="canvasLocation" x="921.73913043478262" y="-17.410714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eOY-tZ-2gg">
@@ -486,7 +487,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="Wrf-yv-J2n">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="Wrf-yv-J2n">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMi-0r-Dkt">
@@ -730,7 +731,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOl-2u-fng" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="-17"/>
+            <point key="canvasLocation" x="1589.8550724637682" y="-17.410714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0cJ-Ji-r7n">
@@ -740,7 +741,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="mdO-Sc-GCh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBg" translatesAutoresizingMaskIntoConstraints="NO" id="mdO-Sc-GCh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMo-ly-pSl">
@@ -782,7 +783,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="637"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-sl-qzl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="315.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="316.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Verification" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifu-co-Sgs">
                                                                 <rect key="frame" x="19" y="19" width="376" height="32"/>
@@ -799,7 +800,7 @@ will apply auto to the fields</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjP-e6-P3u" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                                                <rect key="frame" x="42" y="259.5" width="330" height="50"/>
+                                                                <rect key="frame" x="42" y="260.5" width="330" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j1-uY-Vwu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
@@ -959,7 +960,7 @@ will apply auto to the fields</string>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqJ-Z2-ybU">
-                                                                <rect key="frame" x="10" y="192" width="394" height="27.5"/>
+                                                                <rect key="frame" x="10" y="192" width="394" height="28.5"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal">
                                                                     <attributedString key="attributedTitle">
@@ -973,7 +974,7 @@ will apply auto to the fields</string>
                                                                         <fragment content=" ">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -987,7 +988,7 @@ will apply auto to the fields</string>
                                                                         <fragment content="’">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1001,7 +1002,7 @@ will apply auto to the fields</string>
                                                                         <fragment content=" ">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1015,7 +1016,7 @@ will apply auto to the fields</string>
                                                                         <fragment content=" ">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1029,7 +1030,7 @@ will apply auto to the fields</string>
                                                                         <fragment content=" ">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1043,7 +1044,7 @@ will apply auto to the fields</string>
                                                                         <fragment content=" ">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -1131,12 +1132,32 @@ will apply auto to the fields</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5g-g1-BOc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="-17"/>
+            <point key="canvasLocation" x="2239.130434782609" y="-17.410714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mH3-Fc-9e6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cOs-Ch-V9a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oYm-Ti-8Fi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kKz-aJ-9sl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNY-Sl-BBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="-17.410714285714285"/>
         </scene>
     </scenes>
     <designables>
         <designable name="3NS-ng-4s4">
             <size key="intrinsicContentSize" width="142.5" height="17.5"/>
+        </designable>
+        <designable name="CqE-R0-T9e">
+            <size key="intrinsicContentSize" width="120" height="17.5"/>
         </designable>
         <designable name="VrN-I5-Tuu">
             <size key="intrinsicContentSize" width="87" height="17.5"/>
@@ -1146,6 +1167,9 @@ will apply auto to the fields</string>
         </designable>
         <designable name="bAD-Gq-QCf">
             <size key="intrinsicContentSize" width="79" height="17.5"/>
+        </designable>
+        <designable name="jTI-Lb-48S">
+            <size key="intrinsicContentSize" width="42" height="27"/>
         </designable>
         <designable name="p50-uA-xAt">
             <size key="intrinsicContentSize" width="110" height="16"/>
@@ -1175,7 +1199,7 @@ will apply auto to the fields</string>
             <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="placeHolderColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="txtBgColor">
             <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

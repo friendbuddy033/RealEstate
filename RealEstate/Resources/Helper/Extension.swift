@@ -53,8 +53,9 @@ extension NSObject{
 
 enum Storyboard : String {
     case Main = "Main"
-    case Camp = "Camp"
-    case SideMenu = "SideMenu"
+    case Tabbbar = "Tabbar"
+    case Home = "Home"
+    case Search = "Search"
 }
 
 extension UIViewController{
@@ -397,6 +398,37 @@ extension UITableView {
         
         register(UINib(nibName: viewName, bundle: nil), forHeaderFooterViewReuseIdentifier: viewName)
     }
+}
+
+extension UICollectionView {
+    
+    /**
+     Register nibs faster by passing the type - if for some reason the `identifier` is different then it can be passed
+     - Parameter type: UICollectionView.Type
+     - Parameter identifier: String?
+     */
+    
+    func registerNib<Cell: UICollectionViewCell>(cell: Cell.Type) {
+        let nibName = String(describing: Cell.self)
+        
+        register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
+        
+    }
+    /*
+    func registerCell(type: UICollectionViewCell.Type, identifier: String? = nil) {
+        let cellId = String(describing: type)
+        register(UINib(nibName: cellId, bundle: nil), forCellWithReuseIdentifier: identifier ?? cellId)
+    }
+    
+    /**
+     DequeueCell by passing the type of UICollectionViewCell and IndexPath
+     - Parameter type: UICollectionViewCell.Type
+     - Parameter indexPath: IndexPath
+     */
+    func dequeueCell<T: UICollectionViewCell>(withType type: UICollectionViewCell.Type, for indexPath: IndexPath) -> T? {
+        return dequeueReusableCell(withReuseIdentifier: type.identifier, for: indexPath) as? T
+    }
+    */
 }
 
 extension Bundle {

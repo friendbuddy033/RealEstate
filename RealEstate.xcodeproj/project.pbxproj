@@ -26,6 +26,47 @@
 		261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF12A436AB100B8EB0C /* Extension.swift */; };
 		261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF22A436AB100B8EB0C /* AppConstants.swift */; };
 		261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */; };
+		26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269B902A46E283004BC63A /* AgentTblCell.swift */; };
+		26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26269B912A46E283004BC63A /* AgentTblCell.xib */; };
+		26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269B942A46E7CD004BC63A /* EnquryDetailTblCell.swift */; };
+		26269B972A46E7CD004BC63A /* EnquryDetailTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26269B952A46E7CD004BC63A /* EnquryDetailTblCell.xib */; };
+		26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269B982A46EBDB004BC63A /* RealEstateProtocol.swift */; };
+		26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269B9B2A46F491004BC63A /* AgentClcCell.swift */; };
+		26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26269B9C2A46F491004BC63A /* AgentClcCell.xib */; };
+		26269BA12A46FB25004BC63A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26269BA02A46FB25004BC63A /* Search.storyboard */; };
+		26269BA42A470414004BC63A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269BA32A470414004BC63A /* SearchVC.swift */; };
+		26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269BA72A47057E004BC63A /* PropertyClcCell.swift */; };
+		26269BAA2A47057E004BC63A /* PropertyClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26269BA82A47057E004BC63A /* PropertyClcCell.xib */; };
+		269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269AA8C32A45F92C0006CB17 /* Tabbar.storyboard */; };
+		269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA8C72A45FB9F0006CB17 /* RealEstateTabbarVC.swift */; };
+		269AA92A2A45FFC60006CB17 /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9182A45FFC50006CB17 /* Jost-ExtraBoldItalic.ttf */; };
+		269AA92B2A45FFC60006CB17 /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9192A45FFC50006CB17 /* Jost-ExtraLightItalic.ttf */; };
+		269AA92C2A45FFC60006CB17 /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91A2A45FFC50006CB17 /* Jost-ExtraLight.ttf */; };
+		269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91B2A45FFC60006CB17 /* Jost-Medium.ttf */; };
+		269AA92E2A45FFC60006CB17 /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91C2A45FFC60006CB17 /* Jost-BlackItalic.ttf */; };
+		269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91D2A45FFC60006CB17 /* Jost-MediumItalic.ttf */; };
+		269AA9302A45FFC60006CB17 /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91E2A45FFC60006CB17 /* Jost-LightItalic.ttf */; };
+		269AA9312A45FFC60006CB17 /* Jost-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA91F2A45FFC60006CB17 /* Jost-Black.ttf */; };
+		269AA9322A45FFC60006CB17 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9202A45FFC60006CB17 /* Jost-Regular.ttf */; };
+		269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9212A45FFC60006CB17 /* Jost-Bold.ttf */; };
+		269AA9342A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9222A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf */; };
+		269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9232A45FFC60006CB17 /* Jost-ThinItalic.ttf */; };
+		269AA9362A45FFC60006CB17 /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9242A45FFC60006CB17 /* Jost-BoldItalic.ttf */; };
+		269AA9372A45FFC60006CB17 /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9252A45FFC60006CB17 /* Jost-ExtraBold.ttf */; };
+		269AA9382A45FFC60006CB17 /* Jost-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9262A45FFC60006CB17 /* Jost-Light.ttf */; };
+		269AA9392A45FFC60006CB17 /* Jost-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9272A45FFC60006CB17 /* Jost-Thin.ttf */; };
+		269AA93A2A45FFC60006CB17 /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9282A45FFC60006CB17 /* Jost-SemiBold.ttf */; };
+		269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9292A45FFC60006CB17 /* Jost-Italic.ttf */; };
+		269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA93D2A4609380006CB17 /* HomeVC.swift */; };
+		269AA9412A4609650006CB17 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9402A4609650006CB17 /* Home.storyboard */; };
+		269AA9452A460A390006CB17 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9442A460A390006CB17 /* HeaderView.xib */; };
+		269AA9472A460A490006CB17 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA9462A460A490006CB17 /* HeaderView.swift */; };
+		269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA9492A460B430006CB17 /* PropertiesTblCell.swift */; };
+		269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269AA94A2A460B430006CB17 /* PropertiesTblCell.xib */; };
+		269AA94F2A460E900006CB17 /* Jost-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA94D2A460E900006CB17 /* Jost-Heavy.ttf */; };
+		269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA94E2A460E900006CB17 /* Jost-HeavyItalic.ttf */; };
+		269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA9532A4617EF0006CB17 /* EnquiriesTblCell.swift */; };
+		269AA9562A4617EF0006CB17 /* EnquiriesTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9542A4617EF0006CB17 /* EnquiriesTblCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +91,47 @@
 		261BCAF12A436AB100B8EB0C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		261BCAF22A436AB100B8EB0C /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityMangr.swift; sourceTree = "<group>"; };
+		26269B902A46E283004BC63A /* AgentTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTblCell.swift; sourceTree = "<group>"; };
+		26269B912A46E283004BC63A /* AgentTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentTblCell.xib; sourceTree = "<group>"; };
+		26269B942A46E7CD004BC63A /* EnquryDetailTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquryDetailTblCell.swift; sourceTree = "<group>"; };
+		26269B952A46E7CD004BC63A /* EnquryDetailTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnquryDetailTblCell.xib; sourceTree = "<group>"; };
+		26269B982A46EBDB004BC63A /* RealEstateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateProtocol.swift; sourceTree = "<group>"; };
+		26269B9B2A46F491004BC63A /* AgentClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentClcCell.swift; sourceTree = "<group>"; };
+		26269B9C2A46F491004BC63A /* AgentClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentClcCell.xib; sourceTree = "<group>"; };
+		26269BA02A46FB25004BC63A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		26269BA32A470414004BC63A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		26269BA72A47057E004BC63A /* PropertyClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyClcCell.swift; sourceTree = "<group>"; };
+		26269BA82A47057E004BC63A /* PropertyClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyClcCell.xib; sourceTree = "<group>"; };
+		269AA8C32A45F92C0006CB17 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		269AA8C72A45FB9F0006CB17 /* RealEstateTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTabbarVC.swift; sourceTree = "<group>"; };
+		269AA9182A45FFC50006CB17 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		269AA9192A45FFC50006CB17 /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		269AA91A2A45FFC50006CB17 /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLight.ttf"; sourceTree = "<group>"; };
+		269AA91B2A45FFC60006CB17 /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		269AA91C2A45FFC60006CB17 /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BlackItalic.ttf"; sourceTree = "<group>"; };
+		269AA91D2A45FFC60006CB17 /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-MediumItalic.ttf"; sourceTree = "<group>"; };
+		269AA91E2A45FFC60006CB17 /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-LightItalic.ttf"; sourceTree = "<group>"; };
+		269AA91F2A45FFC60006CB17 /* Jost-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Black.ttf"; sourceTree = "<group>"; };
+		269AA9202A45FFC60006CB17 /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
+		269AA9212A45FFC60006CB17 /* Jost-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Bold.ttf"; sourceTree = "<group>"; };
+		269AA9222A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		269AA9232A45FFC60006CB17 /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ThinItalic.ttf"; sourceTree = "<group>"; };
+		269AA9242A45FFC60006CB17 /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BoldItalic.ttf"; sourceTree = "<group>"; };
+		269AA9252A45FFC60006CB17 /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
+		269AA9262A45FFC60006CB17 /* Jost-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Light.ttf"; sourceTree = "<group>"; };
+		269AA9272A45FFC60006CB17 /* Jost-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Thin.ttf"; sourceTree = "<group>"; };
+		269AA9282A45FFC60006CB17 /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBold.ttf"; sourceTree = "<group>"; };
+		269AA9292A45FFC60006CB17 /* Jost-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Italic.ttf"; sourceTree = "<group>"; };
+		269AA93D2A4609380006CB17 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		269AA9402A4609650006CB17 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		269AA9442A460A390006CB17 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		269AA9462A460A490006CB17 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		269AA9492A460B430006CB17 /* PropertiesTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTblCell.swift; sourceTree = "<group>"; };
+		269AA94A2A460B430006CB17 /* PropertiesTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesTblCell.xib; sourceTree = "<group>"; };
+		269AA94D2A460E900006CB17 /* Jost-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Heavy.ttf"; sourceTree = "<group>"; };
+		269AA94E2A460E900006CB17 /* Jost-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		269AA9532A4617EF0006CB17 /* EnquiriesTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquiriesTblCell.swift; sourceTree = "<group>"; };
+		269AA9542A4617EF0006CB17 /* EnquiriesTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnquiriesTblCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +168,8 @@
 				2610F90B2A42284E00FE1738 /* SceneDelegate.swift */,
 				2610F90D2A42284E00FE1738 /* ViewController.swift */,
 				261BCAE92A4366DC00B8EB0C /* MVVM */,
+				269AA8BF2A45F8CF0006CB17 /* Storyboard */,
 				2610F92C2A4229D000FE1738 /* Resources */,
-				2610F90F2A42284E00FE1738 /* Main.storyboard */,
 				2610F9122A42285100FE1738 /* Assets.xcassets */,
 				2610F9142A42285100FE1738 /* LaunchScreen.storyboard */,
 				2610F9172A42285100FE1738 /* Info.plist */,
@@ -122,6 +204,7 @@
 		2610F92D2A4229D800FE1738 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				269AA9172A45FFB20006CB17 /* Jost */,
 				2610F92E2A4229EF00FE1738 /* Jua */,
 			);
 			path = Font;
@@ -155,7 +238,10 @@
 		261BCAEB2A4366F400B8EB0C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				261BCAED2A43672200B8EB0C /* CreateAccountVC.swift */,
+				26269BA22A4703F8004BC63A /* Search */,
+				269AA93C2A4609170006CB17 /* Home */,
+				269AA8C52A45FB730006CB17 /* Onboarding */,
+				269AA8C62A45FB7F0006CB17 /* Tabbar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,8 +260,173 @@
 				261BCAF12A436AB100B8EB0C /* Extension.swift */,
 				261BCAF22A436AB100B8EB0C /* AppConstants.swift */,
 				261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */,
+				26269B982A46EBDB004BC63A /* RealEstateProtocol.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		26269B9A2A46F474004BC63A /* ClcCell */ = {
+			isa = PBXGroup;
+			children = (
+				26269B9B2A46F491004BC63A /* AgentClcCell.swift */,
+				26269B9C2A46F491004BC63A /* AgentClcCell.xib */,
+			);
+			path = ClcCell;
+			sourceTree = "<group>";
+		};
+		26269B9F2A46FB18004BC63A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				26269BA02A46FB25004BC63A /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		26269BA22A4703F8004BC63A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				26269BA32A470414004BC63A /* SearchVC.swift */,
+				26269BA52A4704F2004BC63A /* XIB */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		26269BA52A4704F2004BC63A /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26269BA62A4704FF004BC63A /* ClcCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		26269BA62A4704FF004BC63A /* ClcCell */ = {
+			isa = PBXGroup;
+			children = (
+				26269BA72A47057E004BC63A /* PropertyClcCell.swift */,
+				26269BA82A47057E004BC63A /* PropertyClcCell.xib */,
+			);
+			path = ClcCell;
+			sourceTree = "<group>";
+		};
+		269AA8BF2A45F8CF0006CB17 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				26269B9F2A46FB18004BC63A /* Search */,
+				269AA93F2A46094F0006CB17 /* HomeStoryboard */,
+				269AA8C22A45F8F20006CB17 /* Tabbar */,
+				269AA8C02A45F8DB0006CB17 /* onboarding */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		269AA8C02A45F8DB0006CB17 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2610F90F2A42284E00FE1738 /* Main.storyboard */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		269AA8C22A45F8F20006CB17 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				269AA8C32A45F92C0006CB17 /* Tabbar.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		269AA8C52A45FB730006CB17 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				261BCAED2A43672200B8EB0C /* CreateAccountVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		269AA8C62A45FB7F0006CB17 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				269AA8C72A45FB9F0006CB17 /* RealEstateTabbarVC.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		269AA9172A45FFB20006CB17 /* Jost */ = {
+			isa = PBXGroup;
+			children = (
+				269AA94D2A460E900006CB17 /* Jost-Heavy.ttf */,
+				269AA94E2A460E900006CB17 /* Jost-HeavyItalic.ttf */,
+				269AA91F2A45FFC60006CB17 /* Jost-Black.ttf */,
+				269AA91C2A45FFC60006CB17 /* Jost-BlackItalic.ttf */,
+				269AA9212A45FFC60006CB17 /* Jost-Bold.ttf */,
+				269AA9242A45FFC60006CB17 /* Jost-BoldItalic.ttf */,
+				269AA9252A45FFC60006CB17 /* Jost-ExtraBold.ttf */,
+				269AA9182A45FFC50006CB17 /* Jost-ExtraBoldItalic.ttf */,
+				269AA91A2A45FFC50006CB17 /* Jost-ExtraLight.ttf */,
+				269AA9192A45FFC50006CB17 /* Jost-ExtraLightItalic.ttf */,
+				269AA9292A45FFC60006CB17 /* Jost-Italic.ttf */,
+				269AA9262A45FFC60006CB17 /* Jost-Light.ttf */,
+				269AA91E2A45FFC60006CB17 /* Jost-LightItalic.ttf */,
+				269AA91B2A45FFC60006CB17 /* Jost-Medium.ttf */,
+				269AA91D2A45FFC60006CB17 /* Jost-MediumItalic.ttf */,
+				269AA9202A45FFC60006CB17 /* Jost-Regular.ttf */,
+				269AA9282A45FFC60006CB17 /* Jost-SemiBold.ttf */,
+				269AA9222A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf */,
+				269AA9272A45FFC60006CB17 /* Jost-Thin.ttf */,
+				269AA9232A45FFC60006CB17 /* Jost-ThinItalic.ttf */,
+			);
+			path = Jost;
+			sourceTree = "<group>";
+		};
+		269AA93C2A4609170006CB17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				269AA93D2A4609380006CB17 /* HomeVC.swift */,
+				269AA9422A460A130006CB17 /* XIB */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		269AA93F2A46094F0006CB17 /* HomeStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				269AA9402A4609650006CB17 /* Home.storyboard */,
+			);
+			path = HomeStoryboard;
+			sourceTree = "<group>";
+		};
+		269AA9422A460A130006CB17 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26269B9A2A46F474004BC63A /* ClcCell */,
+				269AA9482A460B070006CB17 /* TblCell */,
+				269AA9432A460A220006CB17 /* View */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		269AA9432A460A220006CB17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				269AA9442A460A390006CB17 /* HeaderView.xib */,
+				269AA9462A460A490006CB17 /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		269AA9482A460B070006CB17 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				269AA9492A460B430006CB17 /* PropertiesTblCell.swift */,
+				269AA94A2A460B430006CB17 /* PropertiesTblCell.xib */,
+				269AA9532A4617EF0006CB17 /* EnquiriesTblCell.swift */,
+				269AA9542A4617EF0006CB17 /* EnquiriesTblCell.xib */,
+				26269B902A46E283004BC63A /* AgentTblCell.swift */,
+				26269B912A46E283004BC63A /* AgentTblCell.xib */,
+				26269B942A46E7CD004BC63A /* EnquryDetailTblCell.swift */,
+				26269B952A46E7CD004BC63A /* EnquryDetailTblCell.xib */,
+			);
+			path = TblCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +487,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
+				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
+				26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */,
+				269AA9452A460A390006CB17 /* HeaderView.xib in Resources */,
+				269AA92C2A45FFC60006CB17 /* Jost-ExtraLight.ttf in Resources */,
+				269AA92A2A45FFC60006CB17 /* Jost-ExtraBoldItalic.ttf in Resources */,
+				269AA9382A45FFC60006CB17 /* Jost-Light.ttf in Resources */,
+				26269BA12A46FB25004BC63A /* Search.storyboard in Resources */,
+				269AA9322A45FFC60006CB17 /* Jost-Regular.ttf in Resources */,
+				269AA9302A45FFC60006CB17 /* Jost-LightItalic.ttf in Resources */,
+				269AA9342A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf in Resources */,
+				269AA9372A45FFC60006CB17 /* Jost-ExtraBold.ttf in Resources */,
+				269AA94F2A460E900006CB17 /* Jost-Heavy.ttf in Resources */,
+				269AA9312A45FFC60006CB17 /* Jost-Black.ttf in Resources */,
+				269AA9562A4617EF0006CB17 /* EnquiriesTblCell.xib in Resources */,
+				269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */,
+				269AA9392A45FFC60006CB17 /* Jost-Thin.ttf in Resources */,
+				269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */,
+				269AA92E2A45FFC60006CB17 /* Jost-BlackItalic.ttf in Resources */,
+				269AA9362A45FFC60006CB17 /* Jost-BoldItalic.ttf in Resources */,
+				269AA92B2A45FFC60006CB17 /* Jost-ExtraLightItalic.ttf in Resources */,
+				26269B972A46E7CD004BC63A /* EnquryDetailTblCell.xib in Resources */,
 				2610F9162A42285100FE1738 /* LaunchScreen.storyboard in Resources */,
+				269AA9412A4609650006CB17 /* Home.storyboard in Resources */,
 				2610F9132A42285100FE1738 /* Assets.xcassets in Resources */,
+				26269BAA2A47057E004BC63A /* PropertyClcCell.xib in Resources */,
 				2610F9312A4229EF00FE1738 /* Jua-Regular.ttf in Resources */,
+				269AA93A2A45FFC60006CB17 /* Jost-SemiBold.ttf in Resources */,
+				269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */,
+				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
+				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
+				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
+				269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */,
 				2610F9112A42284E00FE1738 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,12 +531,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */,
+				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
 				2610F9282A4228B200FE1738 /* DownloadCircularProgessView.swift in Sources */,
+				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
+				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
+				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
 				261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */,
+				269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */,
+				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
+				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
+				269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */,
 				2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */,
 				2610F9252A4228B200FE1738 /* ImageCustom.swift in Sources */,
+				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
 				2610F9262A4228B200FE1738 /* ViewCustom.swift in Sources */,
@@ -264,6 +555,7 @@
 				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
+				26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
