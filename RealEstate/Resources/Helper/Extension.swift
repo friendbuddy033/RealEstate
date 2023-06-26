@@ -606,3 +606,28 @@ extension String {
         return date
     }
 }
+extension UIFont
+{
+ 
+    static func joshMedium(size: CGFloat) -> UIFont{
+        UIFont(name: "Jost-Medium", size: 16)!
+    }
+    
+    static func joshRegular(size: CGFloat) -> UIFont{
+        UIFont(name: "Jost-Regular", size: size)!
+    }
+    
+    
+}
+extension UIColor
+{
+    
+    static var btnThemeColor: UIColor{
+        get { UIColor(named: "btnThemeColor")!}
+    }
+    
+    static var blackColor: UIColor{
+        get { UIColor(named: "blackColor")!}
+    }
+    
+}

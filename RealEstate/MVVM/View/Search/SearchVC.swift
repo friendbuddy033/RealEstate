@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchVC: UIViewController {
-
+    
     @IBOutlet weak var tblVw: UITableView!{
         didSet{
             tblVw.delegate = self
@@ -25,6 +25,24 @@ class SearchVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+
+    @IBAction func btnSeeMoreAction(_ sender: UIButton)
+    {
+        self.push(SearchDetailVC.getVC(.Search))
+    }
+
+    @IBAction func btnFilterAction(_ sender: UIButton)
+    {
+//        self.push(SearchDetailVC.getVC(.Search))
+        let vc = FilterVC.getVC(.Search)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
 }
@@ -44,6 +62,7 @@ extension SearchVC:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "AgentTblCell", for: indexPath) as! AgentTblCell
         cell.cellType = .Property
         cell.constraintHeightClcVw.constant = 270
+        cell.delegate = self
         return cell
     }
     
@@ -57,4 +76,12 @@ extension SearchVC:UITableViewDelegate,UITableViewDataSource{
         return 50
     }
     
+}
+extension SearchVC: AgentInnerTappableDelegate
+{
+    func didSelect(indexPath: IndexPath) {
+        self.hidesBottomBarWhenPushed = true
+        self.push(PropertyDetailVC.getVC(.Search))
+        
+    }
 }

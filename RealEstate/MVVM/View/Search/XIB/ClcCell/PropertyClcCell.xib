@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -88,18 +88,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-q4-QjP">
-                                        <rect key="frame" x="141" y="6.9999999999999982" width="90" height="23.333333333333329"/>
+                                        <rect key="frame" x="144.33333333333334" y="6.9999999999999982" width="86.666666666666657" height="19.333333333333329"/>
                                         <attributedString key="attributedText">
                                             <fragment content="$1,800">
                                                 <attributes>
                                                     <color key="NSColor" name="btnThemeColor"/>
-                                                    <font key="NSFont" size="16" name="Jost-Heavy"/>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="/month">
                                                 <attributes>
                                                     <color key="NSColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="11" name="Jost-Regular"/>
+                                                    <font key="NSFont" metaFont="smallSystem"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -190,6 +190,9 @@
                 <constraint firstAttribute="trailing" secondItem="3IP-6N-1by" secondAttribute="trailing" id="G5k-mS-XGf"/>
                 <constraint firstAttribute="bottom" secondItem="3IP-6N-1by" secondAttribute="bottom" id="shp-k3-Ima"/>
             </constraints>
+            <connections>
+                <outlet property="frameImageHeight" destination="4ms-Dl-9Ni" id="cNq-hN-Ldb"/>
+            </connections>
             <point key="canvasLocation" x="80" y="-1.066350710900474"/>
         </collectionViewCell>
     </objects>
