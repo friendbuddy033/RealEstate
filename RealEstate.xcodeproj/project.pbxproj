@@ -7,21 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18BBC0C32A4A0A220090FC9C /* Agent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BBC0C22A4A0A220090FC9C /* Agent.storyboard */; };
-		18BBC0C62A4A0DC70090FC9C /* AgentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */; };
-		18BBC0CB2A4A19530090FC9C /* AgentsOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */; };
-		18BBC0CC2A4A19530090FC9C /* AgentsOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */; };
-		18D63CFB2A4719960036DB47 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63CFA2A4719960036DB47 /* FilterVC.swift */; };
-		18D63CFF2A471AA30036DB47 /* FilterTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63CFD2A471AA30036DB47 /* FilterTypeCell.swift */; };
-		18D63D002A471AA30036DB47 /* FilterTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63CFE2A471AA30036DB47 /* FilterTypeCell.xib */; };
-		18D63D032A4728AA0036DB47 /* FilterOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63D012A4728AA0036DB47 /* FilterOptionCell.swift */; };
-		18D63D042A4728AA0036DB47 /* FilterOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63D022A4728AA0036DB47 /* FilterOptionCell.xib */; };
-		18D63D072A472C680036DB47 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63D052A472C680036DB47 /* SearchDetailVC.swift */; };
-		18D63D0A2A483C480036DB47 /* PropertyDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63D092A483C480036DB47 /* PropertyDetailVC.swift */; };
-		18D63D0D2A483D540036DB47 /* PropertyImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63D0B2A483D540036DB47 /* PropertyImagesCell.swift */; };
-		18D63D0E2A483D540036DB47 /* PropertyImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63D0C2A483D540036DB47 /* PropertyImagesCell.xib */; };
-		18D63D112A4843110036DB47 /* AdditionalDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63D0F2A4843110036DB47 /* AdditionalDetailCell.swift */; };
-		18D63D122A4843110036DB47 /* AdditionalDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63D102A4843110036DB47 /* AdditionalDetailCell.xib */; };
 		2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9092A42284E00FE1738 /* AppDelegate.swift */; };
 		2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90B2A42284E00FE1738 /* SceneDelegate.swift */; };
 		2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90D2A42284E00FE1738 /* ViewController.swift */; };
@@ -82,24 +67,21 @@
 		269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA94E2A460E900006CB17 /* Jost-HeavyItalic.ttf */; };
 		269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA9532A4617EF0006CB17 /* EnquiriesTblCell.swift */; };
 		269AA9562A4617EF0006CB17 /* EnquiriesTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9542A4617EF0006CB17 /* EnquiriesTblCell.xib */; };
+		26B99C8E2A4812E6004DF28F /* HomeVillaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99C8D2A4812E6004DF28F /* HomeVillaVC.swift */; };
+		26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99C912A4813BE004DF28F /* HomeVillaClcCell.swift */; };
+		26B99C942A4813BE004DF28F /* HomeVillaClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B99C922A4813BE004DF28F /* HomeVillaClcCell.xib */; };
+		26CB64912A48251400A6C02F /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CB64902A48251400A6C02F /* More.storyboard */; };
+		26CB64942A48262600A6C02F /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64932A48262600A6C02F /* MoreVC.swift */; };
+		26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64972A48264F00A6C02F /* MoreTblCell.swift */; };
+		26CB649A2A48264F00A6C02F /* MoreTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CB64982A48264F00A6C02F /* MoreTblCell.xib */; };
+		26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB649C2A48359E00A6C02F /* AddPropertyVC.swift */; };
+		26CB64A22A4835E100A6C02F /* TagTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64A02A4835E100A6C02F /* TagTblCell.swift */; };
+		26CB64A32A4835E100A6C02F /* TagTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CB64A12A4835E100A6C02F /* TagTblCell.xib */; };
+		26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64A42A483F8F00A6C02F /* HelperStruct.swift */; };
+		6352BB0EED08AAA96FF67A01 /* Pods_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC876DBB31962B362EED522 /* Pods_RealEstate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18BBC0C22A4A0A220090FC9C /* Agent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agent.storyboard; sourceTree = "<group>"; };
-		18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsVC.swift; sourceTree = "<group>"; };
-		18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsOptionsCell.swift; sourceTree = "<group>"; };
-		18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentsOptionsCell.xib; sourceTree = "<group>"; };
-		18D63CFA2A4719960036DB47 /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
-		18D63CFD2A471AA30036DB47 /* FilterTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTypeCell.swift; sourceTree = "<group>"; };
-		18D63CFE2A471AA30036DB47 /* FilterTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTypeCell.xib; sourceTree = "<group>"; };
-		18D63D012A4728AA0036DB47 /* FilterOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionCell.swift; sourceTree = "<group>"; };
-		18D63D022A4728AA0036DB47 /* FilterOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterOptionCell.xib; sourceTree = "<group>"; };
-		18D63D052A472C680036DB47 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailVC.swift; sourceTree = "<group>"; };
-		18D63D092A483C480036DB47 /* PropertyDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailVC.swift; sourceTree = "<group>"; };
-		18D63D0B2A483D540036DB47 /* PropertyImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImagesCell.swift; sourceTree = "<group>"; };
-		18D63D0C2A483D540036DB47 /* PropertyImagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyImagesCell.xib; sourceTree = "<group>"; };
-		18D63D0F2A4843110036DB47 /* AdditionalDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalDetailCell.swift; sourceTree = "<group>"; };
-		18D63D102A4843110036DB47 /* AdditionalDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalDetailCell.xib; sourceTree = "<group>"; };
 		2610F9062A42284E00FE1738 /* RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2610F9092A42284E00FE1738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2610F90B2A42284E00FE1738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +144,20 @@
 		269AA94E2A460E900006CB17 /* Jost-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		269AA9532A4617EF0006CB17 /* EnquiriesTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnquiriesTblCell.swift; sourceTree = "<group>"; };
 		269AA9542A4617EF0006CB17 /* EnquiriesTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnquiriesTblCell.xib; sourceTree = "<group>"; };
+		26B99C8D2A4812E6004DF28F /* HomeVillaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVillaVC.swift; sourceTree = "<group>"; };
+		26B99C912A4813BE004DF28F /* HomeVillaClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVillaClcCell.swift; sourceTree = "<group>"; };
+		26B99C922A4813BE004DF28F /* HomeVillaClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVillaClcCell.xib; sourceTree = "<group>"; };
+		26CB64902A48251400A6C02F /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		26CB64932A48262600A6C02F /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		26CB64972A48264F00A6C02F /* MoreTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTblCell.swift; sourceTree = "<group>"; };
+		26CB64982A48264F00A6C02F /* MoreTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTblCell.xib; sourceTree = "<group>"; };
+		26CB649C2A48359E00A6C02F /* AddPropertyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPropertyVC.swift; sourceTree = "<group>"; };
+		26CB64A02A4835E100A6C02F /* TagTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTblCell.swift; sourceTree = "<group>"; };
+		26CB64A12A4835E100A6C02F /* TagTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagTblCell.xib; sourceTree = "<group>"; };
+		26CB64A42A483F8F00A6C02F /* HelperStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperStruct.swift; sourceTree = "<group>"; };
+		34A84E649EC9DBF34ECC821D /* Pods-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-RealEstate/Pods-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
+		6FC876DBB31962B362EED522 /* Pods_RealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A590C2339F6BB41E5C8EA518 /* Pods-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstate.debug.xcconfig"; path = "Target Support Files/Pods-RealEstate/Pods-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,64 +165,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6352BB0EED08AAA96FF67A01 /* Pods_RealEstate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18BBC0C12A4A0A110090FC9C /* Agent */ = {
-			isa = PBXGroup;
-			children = (
-				18BBC0C22A4A0A220090FC9C /* Agent.storyboard */,
-			);
-			path = Agent;
-			sourceTree = "<group>";
-		};
-		18BBC0C42A4A0D760090FC9C /* Agent */ = {
-			isa = PBXGroup;
-			children = (
-				18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */,
-				18BBC0C72A4A190F0090FC9C /* Xibs */,
-			);
-			path = Agent;
-			sourceTree = "<group>";
-		};
-		18BBC0C72A4A190F0090FC9C /* Xibs */ = {
-			isa = PBXGroup;
-			children = (
-				18BBC0C82A4A191E0090FC9C /* TblCell */,
-			);
-			path = Xibs;
-			sourceTree = "<group>";
-		};
-		18BBC0C82A4A191E0090FC9C /* TblCell */ = {
-			isa = PBXGroup;
-			children = (
-				18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */,
-				18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */,
-			);
-			path = TblCell;
-			sourceTree = "<group>";
-		};
-		18D63CFC2A471A840036DB47 /* TblCell */ = {
-			isa = PBXGroup;
-			children = (
-				18D63CFD2A471AA30036DB47 /* FilterTypeCell.swift */,
-				18D63CFE2A471AA30036DB47 /* FilterTypeCell.xib */,
-				18D63D012A4728AA0036DB47 /* FilterOptionCell.swift */,
-				18D63D022A4728AA0036DB47 /* FilterOptionCell.xib */,
-				18D63D0F2A4843110036DB47 /* AdditionalDetailCell.swift */,
-				18D63D102A4843110036DB47 /* AdditionalDetailCell.xib */,
-			);
-			path = TblCell;
-			sourceTree = "<group>";
-		};
 		2610F8FD2A42284E00FE1738 = {
 			isa = PBXGroup;
 			children = (
 				2610F9082A42284E00FE1738 /* RealEstate */,
 				2610F9072A42284E00FE1738 /* Products */,
+				864C1318667C5C10086B19AC /* Pods */,
+				FE03C534C23B8E4177AFF09C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,7 +267,7 @@
 		261BCAEB2A4366F400B8EB0C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18BBC0C42A4A0D760090FC9C /* Agent */,
+				26CB64922A48260D00A6C02F /* More */,
 				26269BA22A4703F8004BC63A /* Search */,
 				269AA93C2A4609170006CB17 /* Home */,
 				269AA8C52A45FB730006CB17 /* Onboarding */,
@@ -339,6 +291,7 @@
 				261BCAF22A436AB100B8EB0C /* AppConstants.swift */,
 				261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */,
 				26269B982A46EBDB004BC63A /* RealEstateProtocol.swift */,
+				26CB64A42A483F8F00A6C02F /* HelperStruct.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -364,9 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				26269BA32A470414004BC63A /* SearchVC.swift */,
-				18D63D092A483C480036DB47 /* PropertyDetailVC.swift */,
-				18D63D052A472C680036DB47 /* SearchDetailVC.swift */,
-				18D63CFA2A4719960036DB47 /* FilterVC.swift */,
+				26B99C8C2A4812AF004DF28F /* SearchDetail */,
 				26269BA52A4704F2004BC63A /* XIB */,
 			);
 			path = Search;
@@ -375,7 +326,6 @@
 		26269BA52A4704F2004BC63A /* XIB */ = {
 			isa = PBXGroup;
 			children = (
-				18D63CFC2A471A840036DB47 /* TblCell */,
 				26269BA62A4704FF004BC63A /* ClcCell */,
 			);
 			path = XIB;
@@ -386,8 +336,6 @@
 			children = (
 				26269BA72A47057E004BC63A /* PropertyClcCell.swift */,
 				26269BA82A47057E004BC63A /* PropertyClcCell.xib */,
-				18D63D0B2A483D540036DB47 /* PropertyImagesCell.swift */,
-				18D63D0C2A483D540036DB47 /* PropertyImagesCell.xib */,
 			);
 			path = ClcCell;
 			sourceTree = "<group>";
@@ -395,7 +343,7 @@
 		269AA8BF2A45F8CF0006CB17 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				18BBC0C12A4A0A110090FC9C /* Agent */,
+				26CB648F2A48250900A6C02F /* More */,
 				26269B9F2A46FB18004BC63A /* Search */,
 				269AA93F2A46094F0006CB17 /* HomeStoryboard */,
 				269AA8C22A45F8F20006CB17 /* Tabbar */,
@@ -514,6 +462,110 @@
 			path = TblCell;
 			sourceTree = "<group>";
 		};
+		26B99C8C2A4812AF004DF28F /* SearchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				26B99C8D2A4812E6004DF28F /* HomeVillaVC.swift */,
+				26B99C8F2A48133D004DF28F /* XIB */,
+			);
+			path = SearchDetail;
+			sourceTree = "<group>";
+		};
+		26B99C8F2A48133D004DF28F /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26B99C902A481345004DF28F /* ClcCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		26B99C902A481345004DF28F /* ClcCell */ = {
+			isa = PBXGroup;
+			children = (
+				26B99C912A4813BE004DF28F /* HomeVillaClcCell.swift */,
+				26B99C922A4813BE004DF28F /* HomeVillaClcCell.xib */,
+			);
+			path = ClcCell;
+			sourceTree = "<group>";
+		};
+		26CB648F2A48250900A6C02F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				26CB64902A48251400A6C02F /* More.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		26CB64922A48260D00A6C02F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				26CB64932A48262600A6C02F /* MoreVC.swift */,
+				26CB649B2A48358300A6C02F /* AddProperty */,
+				26CB64952A48262E00A6C02F /* XIB */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		26CB64952A48262E00A6C02F /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26CB64962A48263600A6C02F /* TblCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		26CB64962A48263600A6C02F /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				26CB64972A48264F00A6C02F /* MoreTblCell.swift */,
+				26CB64982A48264F00A6C02F /* MoreTblCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		26CB649B2A48358300A6C02F /* AddProperty */ = {
+			isa = PBXGroup;
+			children = (
+				26CB649C2A48359E00A6C02F /* AddPropertyVC.swift */,
+				26CB649E2A4835B400A6C02F /* XIB */,
+			);
+			path = AddProperty;
+			sourceTree = "<group>";
+		};
+		26CB649E2A4835B400A6C02F /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26CB649F2A4835C900A6C02F /* TblCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		26CB649F2A4835C900A6C02F /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				26CB64A02A4835E100A6C02F /* TagTblCell.swift */,
+				26CB64A12A4835E100A6C02F /* TagTblCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		864C1318667C5C10086B19AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A590C2339F6BB41E5C8EA518 /* Pods-RealEstate.debug.xcconfig */,
+				34A84E649EC9DBF34ECC821D /* Pods-RealEstate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE03C534C23B8E4177AFF09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FC876DBB31962B362EED522 /* Pods_RealEstate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,9 +573,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2610F91A2A42285100FE1738 /* Build configuration list for PBXNativeTarget "RealEstate" */;
 			buildPhases = (
+				29AC936471DA210C7C0C8457 /* [CP] Check Pods Manifest.lock */,
 				2610F9022A42284E00FE1738 /* Sources */,
 				2610F9032A42284E00FE1738 /* Frameworks */,
 				2610F9042A42284E00FE1738 /* Resources */,
+				7AD250E656603951306A709C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -573,14 +627,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
+				26CB64912A48251400A6C02F /* More.storyboard in Resources */,
 				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
-				18BBC0C32A4A0A220090FC9C /* Agent.storyboard in Resources */,
 				26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */,
+				26B99C942A4813BE004DF28F /* HomeVillaClcCell.xib in Resources */,
 				269AA9452A460A390006CB17 /* HeaderView.xib in Resources */,
 				269AA92C2A45FFC60006CB17 /* Jost-ExtraLight.ttf in Resources */,
-				18D63D0E2A483D540036DB47 /* PropertyImagesCell.xib in Resources */,
+				26CB64A32A4835E100A6C02F /* TagTblCell.xib in Resources */,
 				269AA92A2A45FFC60006CB17 /* Jost-ExtraBoldItalic.ttf in Resources */,
-				18D63D122A4843110036DB47 /* AdditionalDetailCell.xib in Resources */,
 				269AA9382A45FFC60006CB17 /* Jost-Light.ttf in Resources */,
 				26269BA12A46FB25004BC63A /* Search.storyboard in Resources */,
 				269AA9322A45FFC60006CB17 /* Jost-Regular.ttf in Resources */,
@@ -588,6 +642,7 @@
 				269AA9342A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf in Resources */,
 				269AA9372A45FFC60006CB17 /* Jost-ExtraBold.ttf in Resources */,
 				269AA94F2A460E900006CB17 /* Jost-Heavy.ttf in Resources */,
+				26CB649A2A48264F00A6C02F /* MoreTblCell.xib in Resources */,
 				269AA9312A45FFC60006CB17 /* Jost-Black.ttf in Resources */,
 				269AA9562A4617EF0006CB17 /* EnquiriesTblCell.xib in Resources */,
 				269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */,
@@ -603,19 +658,58 @@
 				26269BAA2A47057E004BC63A /* PropertyClcCell.xib in Resources */,
 				2610F9312A4229EF00FE1738 /* Jua-Regular.ttf in Resources */,
 				269AA93A2A45FFC60006CB17 /* Jost-SemiBold.ttf in Resources */,
-				18D63D042A4728AA0036DB47 /* FilterOptionCell.xib in Resources */,
 				269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */,
 				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
 				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
 				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
-				18BBC0CC2A4A19530090FC9C /* AgentsOptionsCell.xib in Resources */,
-				18D63D002A471AA30036DB47 /* FilterTypeCell.xib in Resources */,
 				269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */,
 				2610F9112A42284E00FE1738 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29AC936471DA210C7C0C8457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD250E656603951306A709C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstate/Pods-RealEstate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealEstate/Pods-RealEstate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealEstate/Pods-RealEstate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2610F9022A42284E00FE1738 /* Sources */ = {
@@ -625,38 +719,36 @@
 				269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */,
 				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
 				2610F9282A4228B200FE1738 /* DownloadCircularProgessView.swift in Sources */,
-				18D63CFB2A4719960036DB47 /* FilterVC.swift in Sources */,
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
+				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
 				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
 				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
 				261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */,
+				26CB64A22A4835E100A6C02F /* TagTblCell.swift in Sources */,
 				269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */,
+				26CB64942A48262600A6C02F /* MoreVC.swift in Sources */,
 				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
 				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
+				26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */,
 				269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */,
-				18D63D0D2A483D540036DB47 /* PropertyImagesCell.swift in Sources */,
+				26B99C8E2A4812E6004DF28F /* HomeVillaVC.swift in Sources */,
 				2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */,
-				18D63D072A472C680036DB47 /* SearchDetailVC.swift in Sources */,
 				2610F9252A4228B200FE1738 /* ImageCustom.swift in Sources */,
 				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
-				18D63CFF2A471AA30036DB47 /* FilterTypeCell.swift in Sources */,
-				18BBC0C62A4A0DC70090FC9C /* AgentsVC.swift in Sources */,
 				2610F9262A4228B200FE1738 /* ViewCustom.swift in Sources */,
-				18D63D0A2A483C480036DB47 /* PropertyDetailVC.swift in Sources */,
-				18D63D112A4843110036DB47 /* AdditionalDetailCell.swift in Sources */,
 				2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */,
+				26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */,
 				261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */,
 				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
-				18BBC0CB2A4A19530090FC9C /* AgentsOptionsCell.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
-				18D63D032A4728AA0036DB47 /* FilterOptionCell.swift in Sources */,
 				26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
+				26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,6 +890,7 @@
 		};
 		2610F91B2A42285100FE1738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A590C2339F6BB41E5C8EA518 /* Pods-RealEstate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -826,6 +919,7 @@
 		};
 		2610F91C2A42285100FE1738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A84E649EC9DBF34ECC821D /* Pods-RealEstate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

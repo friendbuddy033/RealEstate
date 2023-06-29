@@ -56,6 +56,7 @@ enum Storyboard : String {
     case Tabbbar = "Tabbar"
     case Home = "Home"
     case Search = "Search"
+    case More = "More"
 }
 
 extension UIViewController{
@@ -605,29 +606,4 @@ extension String {
         let date = dateFormatter.date(from: self)
         return date
     }
-}
-extension UIFont
-{
- 
-    static func joshMedium(size: CGFloat) -> UIFont{
-        UIFont(name: "Jost-Medium", size: 16)!
-    }
-    
-    static func joshRegular(size: CGFloat) -> UIFont{
-        UIFont(name: "Jost-Regular", size: size)!
-    }
-    
-    
-}
-extension UIColor
-{
-    
-    static var btnThemeColor: UIColor{
-        get { UIColor(named: "btnThemeColor")!}
-    }
-    
-    static var blackColor: UIColor{
-        get { UIColor(named: "blackColor")!}
-    }
-    
 }

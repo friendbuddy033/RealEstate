@@ -6,9 +6,7 @@
 //
 
 import UIKit
-protocol AgentInnerTappableDelegate{
-    func didSelect(indexPath: IndexPath)
-}
+
 class AgentTblCell: UITableViewCell {
 
     @IBOutlet weak var clcVw: UICollectionView!{
@@ -27,7 +25,6 @@ class AgentTblCell: UITableViewCell {
     }
     
     var cellType : cellTypes = .Agent
-    var delegate : AgentInnerTappableDelegate? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,17 +53,11 @@ extension AgentTblCell:UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return cell
         case .Property:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PropertyClcCell", for: indexPath) as! PropertyClcCell
-            cell.cellType = .regular
-
             return cell
         default:
             Logger.log("default")
         }
        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.didSelect(indexPath: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

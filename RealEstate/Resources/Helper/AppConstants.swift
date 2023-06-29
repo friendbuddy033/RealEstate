@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct AppConstant{
@@ -45,4 +46,14 @@ struct AppConstant{
     static let kRequired = "Are you sure you want to make this item unrequired?"
     static let kDeleteCamper = "Delete Camper?"
     static let kDeleteCamperMsg = "Are you sure you want to delete this camper?"
+}
+
+
+struct AppColor {
+   static let logoutColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1.0)
+    static let themeColor = UIColor(red: 13/255, green: 78/255, blue: 162/255, alpha: 1.0)
+}
+
+struct FontName {
+    static let semiBold = "Jost-SemiBold"
 }
