@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BBC0C32A4A0A220090FC9C /* Agent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BBC0C22A4A0A220090FC9C /* Agent.storyboard */; };
+		18BBC0C62A4A0DC70090FC9C /* AgentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */; };
+		18BBC0CB2A4A19530090FC9C /* AgentsOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */; };
+		18BBC0CC2A4A19530090FC9C /* AgentsOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */; };
 		18D63CFB2A4719960036DB47 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63CFA2A4719960036DB47 /* FilterVC.swift */; };
 		18D63CFF2A471AA30036DB47 /* FilterTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63CFD2A471AA30036DB47 /* FilterTypeCell.swift */; };
 		18D63D002A471AA30036DB47 /* FilterTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D63CFE2A471AA30036DB47 /* FilterTypeCell.xib */; };
@@ -81,6 +85,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18BBC0C22A4A0A220090FC9C /* Agent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agent.storyboard; sourceTree = "<group>"; };
+		18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsVC.swift; sourceTree = "<group>"; };
+		18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsOptionsCell.swift; sourceTree = "<group>"; };
+		18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentsOptionsCell.xib; sourceTree = "<group>"; };
 		18D63CFA2A4719960036DB47 /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		18D63CFD2A471AA30036DB47 /* FilterTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTypeCell.swift; sourceTree = "<group>"; };
 		18D63CFE2A471AA30036DB47 /* FilterTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTypeCell.xib; sourceTree = "<group>"; };
@@ -167,6 +175,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18BBC0C12A4A0A110090FC9C /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				18BBC0C22A4A0A220090FC9C /* Agent.storyboard */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		18BBC0C42A4A0D760090FC9C /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				18BBC0C52A4A0DC70090FC9C /* AgentsVC.swift */,
+				18BBC0C72A4A190F0090FC9C /* Xibs */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		18BBC0C72A4A190F0090FC9C /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				18BBC0C82A4A191E0090FC9C /* TblCell */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		18BBC0C82A4A191E0090FC9C /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				18BBC0C92A4A19530090FC9C /* AgentsOptionsCell.swift */,
+				18BBC0CA2A4A19530090FC9C /* AgentsOptionsCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
 		18D63CFC2A471A840036DB47 /* TblCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +315,7 @@
 		261BCAEB2A4366F400B8EB0C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18BBC0C42A4A0D760090FC9C /* Agent */,
 				26269BA22A4703F8004BC63A /* Search */,
 				269AA93C2A4609170006CB17 /* Home */,
 				269AA8C52A45FB730006CB17 /* Onboarding */,
@@ -352,6 +395,7 @@
 		269AA8BF2A45F8CF0006CB17 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				18BBC0C12A4A0A110090FC9C /* Agent */,
 				26269B9F2A46FB18004BC63A /* Search */,
 				269AA93F2A46094F0006CB17 /* HomeStoryboard */,
 				269AA8C22A45F8F20006CB17 /* Tabbar */,
@@ -530,6 +574,7 @@
 			files = (
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
 				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
+				18BBC0C32A4A0A220090FC9C /* Agent.storyboard in Resources */,
 				26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */,
 				269AA9452A460A390006CB17 /* HeaderView.xib in Resources */,
 				269AA92C2A45FFC60006CB17 /* Jost-ExtraLight.ttf in Resources */,
@@ -563,6 +608,7 @@
 				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
 				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
 				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
+				18BBC0CC2A4A19530090FC9C /* AgentsOptionsCell.xib in Resources */,
 				18D63D002A471AA30036DB47 /* FilterTypeCell.xib in Resources */,
 				269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */,
 				2610F9112A42284E00FE1738 /* Main.storyboard in Resources */,
@@ -598,12 +644,14 @@
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
 				18D63CFF2A471AA30036DB47 /* FilterTypeCell.swift in Sources */,
+				18BBC0C62A4A0DC70090FC9C /* AgentsVC.swift in Sources */,
 				2610F9262A4228B200FE1738 /* ViewCustom.swift in Sources */,
 				18D63D0A2A483C480036DB47 /* PropertyDetailVC.swift in Sources */,
 				18D63D112A4843110036DB47 /* AdditionalDetailCell.swift in Sources */,
 				2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */,
 				261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */,
 				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
+				18BBC0CB2A4A19530090FC9C /* AgentsOptionsCell.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
 				18D63D032A4728AA0036DB47 /* FilterOptionCell.swift in Sources */,
