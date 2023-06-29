@@ -9,4 +9,5 @@ import UIKit
 
 class UserViewModel: NSObject {
 
+    print("hello")
 }

@@ -85,6 +85,8 @@
 		26B99C8E2A4812E6004DF28F /* HomeVillaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99C8D2A4812E6004DF28F /* HomeVillaVC.swift */; };
 		26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99C912A4813BE004DF28F /* HomeVillaClcCell.swift */; };
 		26B99C942A4813BE004DF28F /* HomeVillaClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B99C922A4813BE004DF28F /* HomeVillaClcCell.xib */; };
+		26C30E602A4DE84600BC0515 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C30E5F2A4DE84600BC0515 /* CommonModel.swift */; };
+		26C30E622A4DE86400BC0515 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C30E612A4DE86400BC0515 /* UserViewModel.swift */; };
 		26CB64912A48251400A6C02F /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CB64902A48251400A6C02F /* More.storyboard */; };
 		26CB64942A48262600A6C02F /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64932A48262600A6C02F /* MoreVC.swift */; };
 		26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64972A48264F00A6C02F /* MoreTblCell.swift */; };
@@ -177,6 +179,8 @@
 		26B99C8D2A4812E6004DF28F /* HomeVillaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVillaVC.swift; sourceTree = "<group>"; };
 		26B99C912A4813BE004DF28F /* HomeVillaClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVillaClcCell.swift; sourceTree = "<group>"; };
 		26B99C922A4813BE004DF28F /* HomeVillaClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVillaClcCell.xib; sourceTree = "<group>"; };
+		26C30E5F2A4DE84600BC0515 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		26C30E612A4DE86400BC0515 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		26CB64902A48251400A6C02F /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		26CB64932A48262600A6C02F /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		26CB64972A48264F00A6C02F /* MoreTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTblCell.swift; sourceTree = "<group>"; };
@@ -337,6 +341,7 @@
 		261BCAEA2A4366E500B8EB0C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				26C30E612A4DE86400BC0515 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 		261BCAEC2A43670800B8EB0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				26C30E5F2A4DE84600BC0515 /* CommonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -808,6 +814,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18779CCF2A4DE50100180E4D /* FilterOptionCell.swift in Sources */,
+				26C30E622A4DE86400BC0515 /* UserViewModel.swift in Sources */,
 				18779CC52A4DE4E400180E4D /* PropertyDetailVC.swift in Sources */,
 				269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */,
 				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
@@ -815,6 +822,7 @@
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
 				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
+				26C30E602A4DE84600BC0515 /* CommonModel.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
 				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
