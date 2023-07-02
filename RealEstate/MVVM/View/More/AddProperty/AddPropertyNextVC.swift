@@ -1,13 +1,13 @@
 //
-//  AddPropertyVC.swift
+//  AddPropertyNextVC.swift
 //  RealEstate
 //
-//  Created by Surinder kumar on 25/06/23.
+//  Created by Surinder kumar on 01/07/23.
 //
 
 import UIKit
 
-class AddPropertyVC: UIViewController {
+class AddPropertyNextVC: UIViewController {
 
     @IBOutlet weak var tblVw: UITableView!{
         didSet{
@@ -18,12 +18,9 @@ class AddPropertyVC: UIViewController {
     }
     
     private enum headerTiles : String,CaseIterable{
-        case DoyouWant = "Do you  want to"
-        case PropertyType = "Property Type"
-        case BHK = "BHK"
-        case Bathroom = "Bathroom"
-        case Balcony = "Balcony"
-        case AdditionalRoom = "Additional Room"
+        case TransactionType = "Transaction Type"
+        case Overlooking = "Overlooking"
+        case AvailabilityStatus = "Availability Status"
     }
     
     var propertyArray : [AddPropertyModel]?
@@ -35,37 +32,31 @@ class AddPropertyVC: UIViewController {
         setUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = true
+    @IBAction func btnBackAction(_ sender: Any) {
+        self.popVc()
     }
     
     @IBAction func btnNextAction(_ sender: Any) {
-        self.pushToAddPropertyNext()
+        pushToSaveProperty()
     }
     
 }
 
 //MARK: SETUI
-extension AddPropertyVC{
+extension AddPropertyNextVC{
     
-    func setUI(){
-        let DoyouWant = AddPropertyModel(headerTitle: headerTiles.DoyouWant.rawValue,features: ["Sell","Rent Out"])
-        let propertType = AddPropertyModel(headerTitle: headerTiles.PropertyType.rawValue,features: ["Flat","Villa","Plot","Apartment"])
-        let bhk = AddPropertyModel(headerTitle: headerTiles.BHK.rawValue,features: ["1BHK","2BHK","3BHK","4BHK","5BHK"])
-        let Bathroom = AddPropertyModel(headerTitle: headerTiles.Bathroom.rawValue,features: ["1","2","3","4","5+"])
-        let Balcony = AddPropertyModel(headerTitle: headerTiles.Balcony.rawValue,features: ["0","1","2","3+"])
-        let propertType1 = AddPropertyModel(headerTitle: headerTiles.PropertyType.rawValue,features: ["Furnished","Semi-Furnished"])
-        let AdditionalRoom = AddPropertyModel(headerTitle: headerTiles.AdditionalRoom.rawValue,features: ["Pooja Room","Study","Store","Servent Room"])
+    private func setUI(){
+        let transactionType = AddPropertyModel(headerTitle: headerTiles.TransactionType.rawValue,features: ["Resale","New"])
+        let overlooking = AddPropertyModel(headerTitle: headerTiles.Overlooking.rawValue,features: ["Main Road","Garden/Park","Pool"])
+        let availabilityStatus = AddPropertyModel(headerTitle: headerTiles.AvailabilityStatus.rawValue,features: ["Under- Construction","Ready to Move"])
         
-        propertyArray = [DoyouWant,propertType,bhk,Bathroom,Balcony,propertType1,AdditionalRoom]
+        propertyArray = [transactionType,overlooking,availabilityStatus]
     }
     
 }
 
-
 //MARK: - TABLEVIEW DELEGATE AND DATASOURCE
-extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
+extension AddPropertyNextVC:UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return propertyArray?.count ?? 0
@@ -90,6 +81,18 @@ extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
         return vw
     }
     
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard ((propertyArray?.count ?? 0) - 1) == section else {return nil}
+        let vw = PropertyFooterView.instance
+        return vw
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        guard ((propertyArray?.count ?? 0) - 1) == section else {return 0}
+        return UITableView.automaticDimension
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
     }
@@ -97,10 +100,10 @@ extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
 }
 
 //MARK: NAVIGATION
-extension AddPropertyVC{
+extension AddPropertyNextVC{
     
-    func pushToAddPropertyNext(){
-        let vc = AddPropertyNextVC.getVC(.More)
+   private func pushToSaveProperty(){
+        let vc = SavePropertyVC.getVC(.More)
         self.push(vc)
     }
     

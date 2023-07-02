@@ -36,6 +36,15 @@
 		2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9232A4228B200FE1738 /* CustomPageControlView.swift */; };
 		2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9242A4228B200FE1738 /* ButtonCustom.swift */; };
 		2610F9312A4229EF00FE1738 /* Jua-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2610F92F2A4229EF00FE1738 /* Jua-Regular.ttf */; };
+		26183CB32A514B2F0038108B /* SavePropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CB22A514B2F0038108B /* SavePropertyVC.swift */; };
+		26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CB42A514BAB0038108B /* TextFieldTblCell.swift */; };
+		26183CB72A514BAB0038108B /* TextFieldTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26183CB52A514BAB0038108B /* TextFieldTblCell.xib */; };
+		26183CBA2A514C6B0038108B /* AddPictureTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CB82A514C6A0038108B /* AddPictureTblCell.swift */; };
+		26183CBB2A514C6B0038108B /* AddPictureTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26183CB92A514C6A0038108B /* AddPictureTblCell.xib */; };
+		26183CBD2A517D080038108B /* PropertyAddedSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CBC2A517D080038108B /* PropertyAddedSuccessVC.swift */; };
+		26183CC02A5181CB0038108B /* ProfessionalPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CBF2A5181CB0038108B /* ProfessionalPhotoVC.swift */; };
+		26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CC32A5182400038108B /* ProfessionalPhotoClcCell.swift */; };
+		26183CC62A5182400038108B /* ProfessionalPhotoClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26183CC42A5182400038108B /* ProfessionalPhotoClcCell.xib */; };
 		261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAED2A43672200B8EB0C /* CreateAccountVC.swift */; };
 		261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF02A436AB100B8EB0C /* ImagePicker.swift */; };
 		261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF12A436AB100B8EB0C /* Extension.swift */; };
@@ -52,6 +61,9 @@
 		26269BA42A470414004BC63A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269BA32A470414004BC63A /* SearchVC.swift */; };
 		26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26269BA72A47057E004BC63A /* PropertyClcCell.swift */; };
 		26269BAA2A47057E004BC63A /* PropertyClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26269BA82A47057E004BC63A /* PropertyClcCell.xib */; };
+		26560D072A501485005E91F4 /* AddPropertyNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26560D062A501485005E91F4 /* AddPropertyNextVC.swift */; };
+		26560D0A2A5014B3005E91F4 /* PropertyFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26560D092A5014B3005E91F4 /* PropertyFooterView.swift */; };
+		26560D0C2A5014BB005E91F4 /* PropertyFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26560D0B2A5014BB005E91F4 /* PropertyFooterView.xib */; };
 		269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269AA8C32A45F92C0006CB17 /* Tabbar.storyboard */; };
 		269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AA8C72A45FB9F0006CB17 /* RealEstateTabbarVC.swift */; };
 		269AA92A2A45FFC60006CB17 /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269AA9182A45FFC50006CB17 /* Jost-ExtraBoldItalic.ttf */; };
@@ -130,6 +142,15 @@
 		2610F9232A4228B200FE1738 /* CustomPageControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageControlView.swift; sourceTree = "<group>"; };
 		2610F9242A4228B200FE1738 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		2610F92F2A4229EF00FE1738 /* Jua-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jua-Regular.ttf"; sourceTree = "<group>"; };
+		26183CB22A514B2F0038108B /* SavePropertyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePropertyVC.swift; sourceTree = "<group>"; };
+		26183CB42A514BAB0038108B /* TextFieldTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTblCell.swift; sourceTree = "<group>"; };
+		26183CB52A514BAB0038108B /* TextFieldTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTblCell.xib; sourceTree = "<group>"; };
+		26183CB82A514C6A0038108B /* AddPictureTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPictureTblCell.swift; sourceTree = "<group>"; };
+		26183CB92A514C6A0038108B /* AddPictureTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPictureTblCell.xib; sourceTree = "<group>"; };
+		26183CBC2A517D080038108B /* PropertyAddedSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAddedSuccessVC.swift; sourceTree = "<group>"; };
+		26183CBF2A5181CB0038108B /* ProfessionalPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalPhotoVC.swift; sourceTree = "<group>"; };
+		26183CC32A5182400038108B /* ProfessionalPhotoClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalPhotoClcCell.swift; sourceTree = "<group>"; };
+		26183CC42A5182400038108B /* ProfessionalPhotoClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfessionalPhotoClcCell.xib; sourceTree = "<group>"; };
 		261BCAED2A43672200B8EB0C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		261BCAF02A436AB100B8EB0C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		261BCAF12A436AB100B8EB0C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -146,6 +167,9 @@
 		26269BA32A470414004BC63A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		26269BA72A47057E004BC63A /* PropertyClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyClcCell.swift; sourceTree = "<group>"; };
 		26269BA82A47057E004BC63A /* PropertyClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyClcCell.xib; sourceTree = "<group>"; };
+		26560D062A501485005E91F4 /* AddPropertyNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPropertyNextVC.swift; sourceTree = "<group>"; };
+		26560D092A5014B3005E91F4 /* PropertyFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFooterView.swift; sourceTree = "<group>"; };
+		26560D0B2A5014BB005E91F4 /* PropertyFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyFooterView.xib; sourceTree = "<group>"; };
 		269AA8C32A45F92C0006CB17 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		269AA8C72A45FB9F0006CB17 /* RealEstateTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTabbarVC.swift; sourceTree = "<group>"; };
 		269AA9182A45FFC50006CB17 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -328,6 +352,32 @@
 			path = Jua;
 			sourceTree = "<group>";
 		};
+		26183CBE2A5181A80038108B /* ProfessionalPhotographer */ = {
+			isa = PBXGroup;
+			children = (
+				26183CBF2A5181CB0038108B /* ProfessionalPhotoVC.swift */,
+				26183CC12A51820C0038108B /* XIB */,
+			);
+			path = ProfessionalPhotographer;
+			sourceTree = "<group>";
+		};
+		26183CC12A51820C0038108B /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				26183CC22A5182130038108B /* ClcCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		26183CC22A5182130038108B /* ClcCell */ = {
+			isa = PBXGroup;
+			children = (
+				26183CC32A5182400038108B /* ProfessionalPhotoClcCell.swift */,
+				26183CC42A5182400038108B /* ProfessionalPhotoClcCell.xib */,
+			);
+			path = ClcCell;
+			sourceTree = "<group>";
+		};
 		261BCAE92A4366DC00B8EB0C /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +478,15 @@
 				26269BA82A47057E004BC63A /* PropertyClcCell.xib */,
 			);
 			path = ClcCell;
+			sourceTree = "<group>";
+		};
+		26560D082A50148D005E91F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26560D092A5014B3005E91F4 /* PropertyFooterView.swift */,
+				26560D0B2A5014BB005E91F4 /* PropertyFooterView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		269AA8BF2A45F8CF0006CB17 /* Storyboard */ = {
@@ -591,6 +650,7 @@
 			isa = PBXGroup;
 			children = (
 				26CB64932A48262600A6C02F /* MoreVC.swift */,
+				26183CBE2A5181A80038108B /* ProfessionalPhotographer */,
 				26CB649B2A48358300A6C02F /* AddProperty */,
 				26CB64952A48262E00A6C02F /* XIB */,
 			);
@@ -618,6 +678,9 @@
 			isa = PBXGroup;
 			children = (
 				26CB649C2A48359E00A6C02F /* AddPropertyVC.swift */,
+				26560D062A501485005E91F4 /* AddPropertyNextVC.swift */,
+				26183CB22A514B2F0038108B /* SavePropertyVC.swift */,
+				26183CBC2A517D080038108B /* PropertyAddedSuccessVC.swift */,
 				26CB649E2A4835B400A6C02F /* XIB */,
 			);
 			path = AddProperty;
@@ -626,6 +689,7 @@
 		26CB649E2A4835B400A6C02F /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				26560D082A50148D005E91F4 /* View */,
 				26CB649F2A4835C900A6C02F /* TblCell */,
 			);
 			path = XIB;
@@ -636,6 +700,10 @@
 			children = (
 				26CB64A02A4835E100A6C02F /* TagTblCell.swift */,
 				26CB64A12A4835E100A6C02F /* TagTblCell.xib */,
+				26183CB42A514BAB0038108B /* TextFieldTblCell.swift */,
+				26183CB52A514BAB0038108B /* TextFieldTblCell.xib */,
+				26183CB82A514C6A0038108B /* AddPictureTblCell.swift */,
+				26183CB92A514C6A0038108B /* AddPictureTblCell.xib */,
 			);
 			path = TblCell;
 			sourceTree = "<group>";
@@ -717,6 +785,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26183CB72A514BAB0038108B /* TextFieldTblCell.xib in Resources */,
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
 				26CB64912A48251400A6C02F /* More.storyboard in Resources */,
 				18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */,
@@ -730,6 +799,7 @@
 				269AA9382A45FFC60006CB17 /* Jost-Light.ttf in Resources */,
 				26269BA12A46FB25004BC63A /* Search.storyboard in Resources */,
 				18779CD22A4DE50100180E4D /* FilterOptionCell.xib in Resources */,
+				26183CC62A5182400038108B /* ProfessionalPhotoClcCell.xib in Resources */,
 				269AA9322A45FFC60006CB17 /* Jost-Regular.ttf in Resources */,
 				18779CCD2A4DE50100180E4D /* AdditionalDetailCell.xib in Resources */,
 				269AA9302A45FFC60006CB17 /* Jost-LightItalic.ttf in Resources */,
@@ -741,6 +811,7 @@
 				269AA9562A4617EF0006CB17 /* EnquiriesTblCell.xib in Resources */,
 				269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */,
 				269AA9392A45FFC60006CB17 /* Jost-Thin.ttf in Resources */,
+				26183CBB2A514C6B0038108B /* AddPictureTblCell.xib in Resources */,
 				269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */,
 				269AA92E2A45FFC60006CB17 /* Jost-BlackItalic.ttf in Resources */,
 				18779CB92A4DE39600180E4D /* AgentsOptionsCell.xib in Resources */,
@@ -757,6 +828,7 @@
 				269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */,
 				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
 				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
+				26560D0C2A5014BB005E91F4 /* PropertyFooterView.xib in Resources */,
 				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
 				269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */,
 				18779CBD2A4DE3BE00180E4D /* Agent.storyboard in Resources */,
@@ -818,6 +890,8 @@
 				18779CC52A4DE4E400180E4D /* PropertyDetailVC.swift in Sources */,
 				269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */,
 				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
+				26183CB32A514B2F0038108B /* SavePropertyVC.swift in Sources */,
+				26560D072A501485005E91F4 /* AddPropertyNextVC.swift in Sources */,
 				2610F9282A4228B200FE1738 /* DownloadCircularProgessView.swift in Sources */,
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
@@ -825,22 +899,27 @@
 				26C30E602A4DE84600BC0515 /* CommonModel.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
 				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
+				26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
 				18779CCE2A4DE50100180E4D /* FilterTypeCell.swift in Sources */,
 				18779CC32A4DE4E400180E4D /* SearchDetailVC.swift in Sources */,
 				261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */,
 				26CB64A22A4835E100A6C02F /* TagTblCell.swift in Sources */,
 				269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */,
+				26183CBA2A514C6B0038108B /* AddPictureTblCell.swift in Sources */,
 				26CB64942A48262600A6C02F /* MoreVC.swift in Sources */,
 				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
 				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
 				26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */,
+				26183CC02A5181CB0038108B /* ProfessionalPhotoVC.swift in Sources */,
 				269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */,
+				26560D0A2A5014B3005E91F4 /* PropertyFooterView.swift in Sources */,
 				26B99C8E2A4812E6004DF28F /* HomeVillaVC.swift in Sources */,
 				18779CBA2A4DE39600180E4D /* AgentsVC.swift in Sources */,
 				2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */,
 				2610F9252A4228B200FE1738 /* ImageCustom.swift in Sources */,
 				18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */,
+				26183CBD2A517D080038108B /* PropertyAddedSuccessVC.swift in Sources */,
 				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
@@ -854,6 +933,7 @@
 				18779CC42A4DE4E400180E4D /* FilterVC.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
 				26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */,
+				26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
 				18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */,
 				26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */,
