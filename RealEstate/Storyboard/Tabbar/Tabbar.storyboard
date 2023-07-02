@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,22 +28,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y2e-7G-Cai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-460" y="53"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="eHp-Ns-Oed">
-            <objects>
-                <viewController id="H0x-qx-PVP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hdW-Ii-RfW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="pUf-jH-Snc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CRU-4d-sIx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GPG-sp-N7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1470.7692307692307" y="460.66350710900474"/>
         </scene>
         <!--Home-->
         <scene sceneID="3R9-8d-Jtd">
@@ -114,12 +96,22 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="H0x-qx-PVP" kind="relationship" relationship="rootViewController" id="lRF-Oq-g19"/>
+                        <segue destination="pW4-eQ-uSJ" kind="relationship" relationship="rootViewController" id="g6u-EM-fJM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4W-lc-fTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="541.53846153846155" y="460.66350710900474"/>
+        </scene>
+        <!--AgentsVC-->
+        <scene sceneID="2LD-Hi-4oi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyAgents" referencedIdentifier="AgentsVC" id="pW4-eQ-uSJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KSF-Yx-Z4S"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyP-ju-zOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="445"/>
         </scene>
         <!--More-->
         <scene sceneID="Qq9-u0-Q07">
@@ -161,8 +153,5 @@
         <namedColor name="btnThemeColor">
             <color red="0.050980392156862744" green="0.30588235294117649" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

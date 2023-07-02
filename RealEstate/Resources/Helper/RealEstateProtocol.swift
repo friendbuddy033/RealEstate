@@ -9,4 +9,5 @@ import Foundation
 
 @objc protocol realEstateDelegate{
     @objc optional func enquiryTblVwReload()
+    @objc optional func didSelect(indexPath: IndexPath)
 }

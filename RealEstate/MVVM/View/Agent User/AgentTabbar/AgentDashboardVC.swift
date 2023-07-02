@@ -1,28 +1,26 @@
 //
-//  HomeVC.swift
+//  AgentDashboardVC.swift
 //  RealEstate
 //
-//  Created by Surinder kumar on 23/06/23.
+//  Created by jass Dhariwal on 29/06/23.
 //
 
 import UIKit
 
-class HomeVC: UIViewController {
+class AgentDashboardVC: UIViewController {
 
-    @IBOutlet weak var tblVw: UITableView!{
+    @IBOutlet weak var tblVwUsers: UITableView!{
         didSet{
-            tblVw.delegate = self
-            tblVw.dataSource = self
-            tblVw.registerNib(cell: PropertiesTblCell.self)
-            tblVw.registerNib(cell: EnquiriesTblCell.self)
-            tblVw.registerNib(cell: AgentTblCell.self)
+            tblVwUsers.registerNib(cell: EnquiriesTblCell.self)
+            tblVwUsers.registerNib(cell: AgentTblCell.self)
+            tblVwUsers.delegate = self
+            tblVwUsers.dataSource = self
         }
     }
     
     private enum headerSection : String,CaseIterable{
-        case Properties = "My  Properties"
         case Enquiries = "Enquiries"
-        case HireAgent = "My Hire Agents"
+        case Popular = "Popular"
     }
     
     override func viewDidLoad() {
@@ -30,11 +28,10 @@ class HomeVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-}
 
-//MARK: - TABLEVIEW DELEGATE AND DATASOURCE
-extension HomeVC:UITableViewDelegate,UITableViewDataSource{
+}
+extension AgentDashboardVC: UITableViewDelegate, UITableViewDataSource
+{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return headerSection.allCases.count
@@ -47,24 +44,24 @@ extension HomeVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch headerSection.allCases[indexPath.section]{
-        case .Properties:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PropertiesTblCell", for: indexPath) as! PropertiesTblCell
-            return cell
         case .Enquiries:
             let cell = tableView.dequeueReusableCell(withIdentifier: "EnquiriesTblCell", for: indexPath) as! EnquiriesTblCell
             cell.delegate = self
             return cell
-        case .HireAgent:
+        case .Popular:
             let cell = tableView.dequeueReusableCell(withIdentifier: "AgentTblCell", for: indexPath) as! AgentTblCell
+            cell.cellType = .Property
+            cell.constraintHeightClcVw.constant = 270
             return cell
         }
-        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let vw = HeaderView.instance
         vw.lblTitle.text = headerSection.allCases[section].rawValue
-        vw.btnSeeMore.isHidden = headerSection.allCases[section].rawValue == headerSection.HireAgent.rawValue ? false : true
+        vw.btnSeeMore.isHidden = headerSection.allCases[section].rawValue == headerSection.Enquiries.rawValue
+//        vw.btnSeeMoreAction(<#T##sender: Any##Any#>)
+        
         return vw
     }
     
@@ -77,14 +74,14 @@ extension HomeVC:UITableViewDelegate,UITableViewDataSource{
 }
 
 //MARK: - PROTOCOL
-extension HomeVC : realEstateDelegate{
+extension AgentDashboardVC : realEstateDelegate{
     
     func enquiryTblVwReload() {
-        self.tblVw.reloadData()
+        self.tblVwUsers.reloadData()
     }
     
     func didSelect(indexPath: IndexPath) {
-//        self.push()
+        self.push(AgentProfileVC.getVC(.Agent))
     }
     
 }

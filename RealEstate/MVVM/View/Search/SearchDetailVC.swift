@@ -43,7 +43,7 @@ extension SearchDetailVC: UICollectionViewDelegate, UICollectionViewDataSource ,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PropertyClcCell.identifier, for: indexPath) as! PropertyClcCell
-        cell.cellType = .small
+//        cell.cellType = .small
         return cell
     }
     
