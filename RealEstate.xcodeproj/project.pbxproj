@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181375212A506D3300FA81DB /* AgentTabbarVC.swift */; };
+		181375242A50705100FA81DB /* AgentTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181375232A50705100FA81DB /* AgentTabbar.storyboard */; };
+		181375282A507A6100FA81DB /* HistoryTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181375262A507A6100FA81DB /* HistoryTblCell.swift */; };
+		181375292A507A6100FA81DB /* HistoryTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181375272A507A6100FA81DB /* HistoryTblCell.xib */; };
+		1813752B2A50842100FA81DB /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813752A2A50842100FA81DB /* HistoryVC.swift */; };
+		1813752D2A508C1800FA81DB /* AgentProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813752C2A508C1800FA81DB /* AgentProfileVC.swift */; };
 		18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */; };
 		18779CB92A4DE39600180E4D /* AgentsOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */; };
 		18779CBA2A4DE39600180E4D /* AgentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CB72A4DE39600180E4D /* AgentsVC.swift */; };
@@ -22,6 +28,10 @@
 		18779CD22A4DE50100180E4D /* FilterOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CCC2A4DE50100180E4D /* FilterOptionCell.xib */; };
 		18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CD32A4DE51600180E4D /* PropertyImagesCell.swift */; };
 		18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CD42A4DE51600180E4D /* PropertyImagesCell.xib */; };
+		18A2C1532A4DFD0D00DF5628 /* MyAgents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */; };
+		18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */; };
+		18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */; };
+		18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */; };
 		2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9092A42284E00FE1738 /* AppDelegate.swift */; };
 		2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90B2A42284E00FE1738 /* SceneDelegate.swift */; };
 		2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90D2A42284E00FE1738 /* ViewController.swift */; };
@@ -111,6 +121,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181375212A506D3300FA81DB /* AgentTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTabbarVC.swift; sourceTree = "<group>"; };
+		181375232A50705100FA81DB /* AgentTabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AgentTabbar.storyboard; sourceTree = "<group>"; };
+		181375262A507A6100FA81DB /* HistoryTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTblCell.swift; sourceTree = "<group>"; };
+		181375272A507A6100FA81DB /* HistoryTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTblCell.xib; sourceTree = "<group>"; };
+		1813752A2A50842100FA81DB /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		1813752C2A508C1800FA81DB /* AgentProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProfileVC.swift; sourceTree = "<group>"; };
 		18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentsOptionsCell.swift; sourceTree = "<group>"; };
 		18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgentsOptionsCell.xib; sourceTree = "<group>"; };
 		18779CB72A4DE39600180E4D /* AgentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentsVC.swift; sourceTree = "<group>"; };
@@ -126,6 +142,10 @@
 		18779CCC2A4DE50100180E4D /* FilterOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterOptionCell.xib; sourceTree = "<group>"; };
 		18779CD32A4DE51600180E4D /* PropertyImagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyImagesCell.swift; sourceTree = "<group>"; };
 		18779CD42A4DE51600180E4D /* PropertyImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyImagesCell.xib; sourceTree = "<group>"; };
+		18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAgents.storyboard; sourceTree = "<group>"; };
+		18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDashboardVC.swift; sourceTree = "<group>"; };
+		18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepOneVC.swift; sourceTree = "<group>"; };
+		18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepTwoVC.swift; sourceTree = "<group>"; };
 		2610F9062A42284E00FE1738 /* RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2610F9092A42284E00FE1738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2610F90B2A42284E00FE1738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,13 +250,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18779CB22A4DE39600180E4D /* Agent */ = {
+		181375202A506CEF00FA81DB /* AgentTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */,
+				1813752A2A50842100FA81DB /* HistoryVC.swift */,
+				1813752C2A508C1800FA81DB /* AgentProfileVC.swift */,
+				181375212A506D3300FA81DB /* AgentTabbarVC.swift */,
+			);
+			path = AgentTabbar;
+			sourceTree = "<group>";
+		};
+		181375252A507A2800FA81DB /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				181375262A507A6100FA81DB /* HistoryTblCell.swift */,
+				181375272A507A6100FA81DB /* HistoryTblCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		18779CB22A4DE39600180E4D /* MyAgents */ = {
 			isa = PBXGroup;
 			children = (
 				18779CB32A4DE39600180E4D /* Xibs */,
 				18779CB72A4DE39600180E4D /* AgentsVC.swift */,
 			);
-			path = Agent;
+			path = MyAgents;
 			sourceTree = "<group>";
 		};
 		18779CB32A4DE39600180E4D /* Xibs */ = {
@@ -260,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				18779CBC2A4DE3BE00180E4D /* Agent.storyboard */,
+				181375232A50705100FA81DB /* AgentTabbar.storyboard */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -275,6 +316,33 @@
 				18779CCC2A4DE50100180E4D /* FilterOptionCell.xib */,
 			);
 			path = TblCell;
+			sourceTree = "<group>";
+		};
+		18A2C1512A4DFCF500DF5628 /* My Agents */ = {
+			isa = PBXGroup;
+			children = (
+				18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */,
+			);
+			path = "My Agents";
+			sourceTree = "<group>";
+		};
+		18A2C1542A4E001200DF5628 /* Agent User */ = {
+			isa = PBXGroup;
+			children = (
+				181375252A507A2800FA81DB /* Xibs */,
+				18A2C1572A4E005E00DF5628 /* Registration */,
+				181375202A506CEF00FA81DB /* AgentTabbar */,
+			);
+			path = "Agent User";
+			sourceTree = "<group>";
+		};
+		18A2C1572A4E005E00DF5628 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */,
+				18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		2610F8FD2A42284E00FE1738 = {
@@ -399,7 +467,8 @@
 		261BCAEB2A4366F400B8EB0C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18779CB22A4DE39600180E4D /* Agent */,
+				18A2C1542A4E001200DF5628 /* Agent User */,
+				18779CB22A4DE39600180E4D /* MyAgents */,
 				26CB64922A48260D00A6C02F /* More */,
 				26269BA22A4703F8004BC63A /* Search */,
 				269AA93C2A4609170006CB17 /* Home */,
@@ -493,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				18779CBB2A4DE3BE00180E4D /* Agent */,
+				18A2C1512A4DFCF500DF5628 /* My Agents */,
 				26CB648F2A48250900A6C02F /* More */,
 				26269B9F2A46FB18004BC63A /* Search */,
 				269AA93F2A46094F0006CB17 /* HomeStoryboard */,
@@ -792,6 +862,7 @@
 				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
 				26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */,
 				26B99C942A4813BE004DF28F /* HomeVillaClcCell.xib in Resources */,
+				181375242A50705100FA81DB /* AgentTabbar.storyboard in Resources */,
 				269AA9452A460A390006CB17 /* HeaderView.xib in Resources */,
 				269AA92C2A45FFC60006CB17 /* Jost-ExtraLight.ttf in Resources */,
 				26CB64A32A4835E100A6C02F /* TagTblCell.xib in Resources */,
@@ -814,6 +885,7 @@
 				26183CBB2A514C6B0038108B /* AddPictureTblCell.xib in Resources */,
 				269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */,
 				269AA92E2A45FFC60006CB17 /* Jost-BlackItalic.ttf in Resources */,
+				18A2C1532A4DFD0D00DF5628 /* MyAgents.storyboard in Resources */,
 				18779CB92A4DE39600180E4D /* AgentsOptionsCell.xib in Resources */,
 				18779CD12A4DE50100180E4D /* FilterTypeCell.xib in Resources */,
 				269AA9362A45FFC60006CB17 /* Jost-BoldItalic.ttf in Resources */,
@@ -827,6 +899,7 @@
 				269AA93A2A45FFC60006CB17 /* Jost-SemiBold.ttf in Resources */,
 				269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */,
 				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
+				181375292A507A6100FA81DB /* HistoryTblCell.xib in Resources */,
 				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
 				26560D0C2A5014BB005E91F4 /* PropertyFooterView.xib in Resources */,
 				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
@@ -896,10 +969,12 @@
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
 				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
+				1813752D2A508C1800FA81DB /* AgentProfileVC.swift in Sources */,
 				26C30E602A4DE84600BC0515 /* CommonModel.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
 				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
 				26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */,
+				18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
 				18779CCE2A4DE50100180E4D /* FilterTypeCell.swift in Sources */,
 				18779CC32A4DE4E400180E4D /* SearchDetailVC.swift in Sources */,
@@ -909,6 +984,7 @@
 				26183CBA2A514C6B0038108B /* AddPictureTblCell.swift in Sources */,
 				26CB64942A48262600A6C02F /* MoreVC.swift in Sources */,
 				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
+				1813752B2A50842100FA81DB /* HistoryVC.swift in Sources */,
 				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
 				26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */,
 				26183CC02A5181CB0038108B /* ProfessionalPhotoVC.swift in Sources */,
@@ -921,7 +997,9 @@
 				18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */,
 				26183CBD2A517D080038108B /* PropertyAddedSuccessVC.swift in Sources */,
 				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
+				18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
+				18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
 				2610F9262A4228B200FE1738 /* ViewCustom.swift in Sources */,
 				18779CD02A4DE50100180E4D /* AdditionalDetailCell.swift in Sources */,
@@ -931,10 +1009,12 @@
 				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				18779CC42A4DE4E400180E4D /* FilterVC.swift in Sources */,
+				181375282A507A6100FA81DB /* HistoryTblCell.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
 				26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */,
 				26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
+				181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */,
 				18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */,
 				26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */,
 			);

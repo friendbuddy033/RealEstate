@@ -22,6 +22,8 @@ class CreateAccountVC: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0){ [weak self] in
             let vc = RealEstateTabbarVC.getVC(.Tabbbar)
             self?.push(vc)
+//            let vc = AgentTabbarVC.getVC(.AgentTabbar)
+//            self?.push(vc)
         }
     }
 

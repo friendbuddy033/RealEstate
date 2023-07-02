@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Agent TabbarVC-->
+        <scene sceneID="ReN-UY-C8f">
+            <objects>
+                <tabBarController storyboardIdentifier="AgentTabbarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sf5-aJ-e1u" customClass="AgentTabbarVC" customModule="RealEstate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OLy-Zh-ZdP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="btnThemeColor"/>
+                        <color key="barTintColor" name="WhiteColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Zm6-cg-Jqq" kind="relationship" relationship="viewControllers" id="iN3-6q-AHC"/>
+                        <segue destination="9ei-fW-hT9" kind="relationship" relationship="viewControllers" id="VxN-77-KaX"/>
+                        <segue destination="a49-E9-u3e" kind="relationship" relationship="viewControllers" id="r4G-dh-Jjq"/>
+                        <segue destination="cIa-J6-LpT" kind="relationship" relationship="viewControllers" id="KR0-P1-fH0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTR-jV-Pdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="53"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="PAi-hF-yXt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Zm6-cg-Jqq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homeIcon" selectedImage="homeIcon" id="4zn-M3-fqI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZEq-sA-17f">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MdI-Jy-nEW" kind="relationship" relationship="rootViewController" id="ltG-a1-0zb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw8-e8-aV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.53846153846155" y="-919.19431279620846"/>
+        </scene>
+        <!--AgentDashboardVC-->
+        <scene sceneID="dC7-Ac-vM0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Agent" referencedIdentifier="AgentDashboardVC" id="MdI-Jy-nEW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H1Q-qW-R22"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYb-VK-GxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="-920"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="opS-IV-2CR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9ei-fW-hT9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="history" selectedImage="history" id="zfO-6V-jW0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zFX-WV-8ja">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0am-C8-AMc" kind="relationship" relationship="rootViewController" id="2gw-4w-OBe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP4-Gr-5Wb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.53846153846155" y="-210.42654028436019"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="AL7-LJ-II3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="a49-E9-u3e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat" selectedImage="chat" id="LHK-45-d03"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b20-7b-HyM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O31-Eh-dRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.53846153846155" y="460.66350710900474"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="HG3-RJ-F7a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cIa-J6-LpT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile" id="1oE-Uv-Ecd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rqX-rm-lxM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIw-D0-ULe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.53846153846155" y="1175.829383886256"/>
+        </scene>
+        <!--HistoryVC-->
+        <scene sceneID="Cgr-nK-gVs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Agent" referencedIdentifier="HistoryVC" id="0am-C8-AMc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="77V-LQ-ULe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYw-B7-rGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="-211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="32" height="32"/>
+        <image name="history" width="32" height="32"/>
+        <image name="homeIcon" width="28" height="28"/>
+        <image name="profile" width="22.666666030883789" height="26"/>
+        <namedColor name="WhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btnThemeColor">
+            <color red="0.050980392156862744" green="0.30588235294117649" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

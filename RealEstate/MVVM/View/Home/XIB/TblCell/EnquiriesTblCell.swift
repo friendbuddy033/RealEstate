@@ -39,7 +39,7 @@ class EnquiriesTblCell: UITableViewCell {
 extension EnquiriesTblCell : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,4 +51,7 @@ extension EnquiriesTblCell : UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.delegate?.didSelect?(indexPath: indexPath)
+    }
 }
