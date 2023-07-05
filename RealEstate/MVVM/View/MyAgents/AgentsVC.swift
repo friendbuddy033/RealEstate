@@ -55,7 +55,7 @@ extension AgentsVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
 //        vw.lblTitle.text = headerSection.allCases[section].rawValue
 //        vw.btnSeeMore.isHidden = headerSection.allCases[section].rawValue == headerSection.HireAgent.rawValue ? false : true
 //        return vw
-
+//
 //    }
     
 }

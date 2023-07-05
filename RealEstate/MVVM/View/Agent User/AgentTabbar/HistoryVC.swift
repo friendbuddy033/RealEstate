@@ -37,12 +37,12 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTblCell.identifier, for: indexPath) as! HistoryTblCell
         
         cell.selectionStyle = .none
-        
+        cell.cellType = .history
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 220
     }
     
 }
