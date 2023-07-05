@@ -13,6 +13,8 @@
 		181375292A507A6100FA81DB /* HistoryTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181375272A507A6100FA81DB /* HistoryTblCell.xib */; };
 		1813752B2A50842100FA81DB /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813752A2A50842100FA81DB /* HistoryVC.swift */; };
 		1813752D2A508C1800FA81DB /* AgentProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813752C2A508C1800FA81DB /* AgentProfileVC.swift */; };
+		183B32FC2A51B2AF0008F7C1 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */; };
+		183B32FE2A51BA600008F7C1 /* SJCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */; };
 		18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */; };
 		18779CB92A4DE39600180E4D /* AgentsOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */; };
 		18779CBA2A4DE39600180E4D /* AgentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CB72A4DE39600180E4D /* AgentsVC.swift */; };
@@ -127,6 +129,8 @@
 		181375272A507A6100FA81DB /* HistoryTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTblCell.xib; sourceTree = "<group>"; };
 		1813752A2A50842100FA81DB /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		1813752C2A508C1800FA81DB /* AgentProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProfileVC.swift; sourceTree = "<group>"; };
+		183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
+		183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJCenterFlowLayout.swift; sourceTree = "<group>"; };
 		18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentsOptionsCell.swift; sourceTree = "<group>"; };
 		18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgentsOptionsCell.xib; sourceTree = "<group>"; };
 		18779CB72A4DE39600180E4D /* AgentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentsVC.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 			children = (
 				18779CBC2A4DE3BE00180E4D /* Agent.storyboard */,
 				181375232A50705100FA81DB /* AgentTabbar.storyboard */,
+				183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				2610F9222A4228B200FE1738 /* TextFieldCustom.swift */,
 				2610F9232A4228B200FE1738 /* CustomPageControlView.swift */,
 				2610F9242A4228B200FE1738 /* ButtonCustom.swift */,
+				183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */,
 			);
 			path = "Custom View Class";
 			sourceTree = "<group>";
@@ -859,6 +865,7 @@
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
 				26CB64912A48251400A6C02F /* More.storyboard in Resources */,
 				18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */,
+				183B32FC2A51B2AF0008F7C1 /* Subscription.storyboard in Resources */,
 				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
 				26269B9E2A46F491004BC63A /* AgentClcCell.xib in Resources */,
 				26B99C942A4813BE004DF28F /* HomeVillaClcCell.xib in Resources */,
@@ -1017,6 +1024,7 @@
 				181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */,
 				18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */,
 				26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */,
+				183B32FE2A51BA600008F7C1 /* SJCenterFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
