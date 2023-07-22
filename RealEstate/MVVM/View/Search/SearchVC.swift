@@ -36,7 +36,9 @@ class SearchVC: UIViewController {
         self.pushToHomeVilla()
     }
     
-    
+    @IBAction func btnFilterAction(_ sender: Any) {
+        self.pushToFilter()
+    }
     
 }
 
@@ -76,6 +78,12 @@ extension SearchVC{
     func pushToHomeVilla(){
         let vc = HomeVillaVC.getVC(.Search)
         self.push(vc)
+    }
+    
+    func pushToFilter(){
+        let vc = FilterVC.getVC(.Search)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
 }

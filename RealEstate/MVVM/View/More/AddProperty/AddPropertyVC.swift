@@ -32,6 +32,24 @@ class AddPropertyVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    @IBAction func btnNextAction(_ sender: Any) {
+        self.pushToAddPropertyNext()
+    }
+    
+}
+
+//MARK: SETUI
+extension AddPropertyVC{
+    
+    func setUI(){
         let DoyouWant = AddPropertyModel(headerTitle: headerTiles.DoyouWant.rawValue,features: ["Sell","Rent Out"])
         let propertType = AddPropertyModel(headerTitle: headerTiles.PropertyType.rawValue,features: ["Flat","Villa","Plot","Apartment"])
         let bhk = AddPropertyModel(headerTitle: headerTiles.BHK.rawValue,features: ["1BHK","2BHK","3BHK","4BHK","5BHK"])
@@ -43,12 +61,6 @@ class AddPropertyVC: UIViewController {
         propertyArray = [DoyouWant,propertType,bhk,Bathroom,Balcony,propertType1,AdditionalRoom]
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = true
-    }
-    
-
 }
 
 
@@ -80,6 +92,16 @@ extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
+    }
+    
+}
+
+//MARK: NAVIGATION
+extension AddPropertyVC{
+    
+    func pushToAddPropertyNext(){
+        let vc = AddPropertyNextVC.getVC(.More)
+        self.push(vc)
     }
     
 }
