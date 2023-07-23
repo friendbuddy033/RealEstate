@@ -5,6 +5,8 @@ import UIKit
 @IBDesignable
 class TextFieldCustom: UITextField {
     
+    private var __maxLengths = [UITextField: Int]()
+    
     override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         var textRect = super.rightViewRect(forBounds: bounds)
         textRect.origin.x -= rightPadding
@@ -29,6 +31,23 @@ class TextFieldCustom: UITextField {
             updateView()
         }
     }
+    
+    @IBInspectable var maxLength: Int {
+            get {
+                guard let l = __maxLengths[self] else {
+                   return 150 // (global default-limit. or just, Int.max)
+                }
+                return l
+            }
+            set {
+                __maxLengths[self] = newValue
+                addTarget(self, action: #selector(fix), for: .editingChanged)
+            }
+        }
+    @objc func fix(textField: UITextField) {
+            let t = textField.text
+        textField.text = "\(t?.prefix(maxLength) ?? "")"
+        }
     
     @IBInspectable var rightPadding: CGFloat = 0
     @IBInspectable var leftPadding: CGFloat = 0

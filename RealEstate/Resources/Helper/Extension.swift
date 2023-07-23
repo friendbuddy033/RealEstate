@@ -6,7 +6,7 @@
 //
 import Foundation
 import UIKit
-//import Alamofire
+import Alamofire
 import AVKit
 //import SideMenu
 
@@ -18,11 +18,11 @@ extension String {
     }
 }
 
-//class Connectivity {
-//    class func isConnectedToInternet() -> Bool {
-//        return NetworkReachabilityManager()?.isReachable ?? false
-//    }
-//}
+class Connectivity {
+    class func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()?.isReachable ?? false
+    }
+}
 
 extension Data {
     var html2AttributedString: NSAttributedString? {
@@ -637,4 +637,11 @@ extension UIColor
         get { UIColor(named: "blackColor")!}
     }
     
+}
+
+extension Encodable {
+  var dictionary: [String: Any]? {
+    guard let data = try? JSONEncoder().encode(self) else { return nil }
+    return (try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)).flatMap { $0 as? [String: Any] }
+  }
 }

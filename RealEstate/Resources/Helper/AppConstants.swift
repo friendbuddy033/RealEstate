@@ -46,7 +46,11 @@ struct AppConstant{
     static let kRequired = "Are you sure you want to make this item unrequired?"
     static let kDeleteCamper = "Delete Camper?"
     static let kDeleteCamperMsg = "Are you sure you want to delete this camper?"
+    static let kEmptyPhoneNo = "Please enter the phone number"
+    static let kEmptyType = "Please select the type"
+    static let kValidOtp = "Please enter the valid otp."
 }
+
 
 
 struct AppColor {
@@ -56,4 +60,8 @@ struct AppColor {
 
 struct FontName {
     static let semiBold = "Jost-SemiBold"
+}
+
+enum ScreenName : String{
+   case loginType = "loginType"
 }

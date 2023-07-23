@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Jost-SemiBold.ttf">
+            <string>Jost-SemiBold</string>
+        </array>
         <array key="Jua-Regular.ttf">
             <string>Jua-Regular</string>
         </array>
@@ -315,7 +318,7 @@
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD7-jL-5mO" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
                                                                                         <rect key="frame" x="0.0" y="32" width="324" height="50"/>
                                                                                         <subviews>
-                                                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aMX-pL-o3B" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aMX-pL-o3B" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
                                                                                                 <rect key="frame" x="21" y="0.0" width="262" height="50"/>
                                                                                                 <color key="textColor" name="blackColor"/>
                                                                                                 <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="16"/>
@@ -333,15 +336,26 @@
                                                                                                     <constraint firstAttribute="width" constant="15" id="y7G-TO-clv"/>
                                                                                                 </constraints>
                                                                                             </imageView>
+                                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-Z7-LiV">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="50"/>
+                                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                                <connections>
+                                                                                                    <action selector="btnSelectTypeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qc-bw-qks"/>
+                                                                                                </connections>
+                                                                                            </button>
                                                                                         </subviews>
                                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                         <constraints>
                                                                                             <constraint firstItem="aMX-pL-o3B" firstAttribute="leading" secondItem="WD7-jL-5mO" secondAttribute="leading" constant="21" id="8z1-0H-v4h"/>
+                                                                                            <constraint firstAttribute="bottom" secondItem="EXh-Z7-LiV" secondAttribute="bottom" id="HIo-f0-EhC"/>
                                                                                             <constraint firstAttribute="bottom" secondItem="aMX-pL-o3B" secondAttribute="bottom" id="MvW-sd-ux5"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="EXh-Z7-LiV" secondAttribute="trailing" id="RbN-oU-fh9"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="aMX-pL-o3B" secondAttribute="trailing" constant="41" id="bND-MV-WZY"/>
                                                                                             <constraint firstItem="aMX-pL-o3B" firstAttribute="top" secondItem="WD7-jL-5mO" secondAttribute="top" id="bse-eJ-59F"/>
                                                                                             <constraint firstAttribute="height" constant="50" id="gNy-xl-3tq"/>
                                                                                             <constraint firstItem="32f-4O-qgu" firstAttribute="centerY" secondItem="WD7-jL-5mO" secondAttribute="centerY" id="ncK-SJ-cAU"/>
+                                                                                            <constraint firstItem="EXh-Z7-LiV" firstAttribute="top" secondItem="WD7-jL-5mO" secondAttribute="top" id="nuM-I4-xrU"/>
+                                                                                            <constraint firstItem="EXh-Z7-LiV" firstAttribute="leading" secondItem="WD7-jL-5mO" secondAttribute="leading" id="tKQ-3E-1hr"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="32f-4O-qgu" secondAttribute="trailing" constant="11" id="vEv-kX-Ia9"/>
                                                                                         </constraints>
                                                                                         <userDefinedRuntimeAttributes>
@@ -389,6 +403,9 @@
                                                                         <state key="normal" title="Create Account">
                                                                             <color key="titleColor" name="WhiteColor"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="btnCreateAccAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0F-IQ-3QF"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="btnThemeColor"/>
@@ -472,12 +489,90 @@
                     </view>
                     <navigationItem key="navigationItem" id="FTJ-wa-DBt"/>
                     <connections>
+                        <outlet property="tfEmail" destination="bAD-Gq-QCf" id="U2x-ow-edd"/>
+                        <outlet property="tfName" destination="CqE-R0-T9e" id="SHQ-Vs-iso"/>
+                        <outlet property="tfPassword" destination="p50-uA-xAt" id="6Bi-4E-ghI"/>
+                        <outlet property="tfPhoneNo" destination="3NS-ng-4s4" id="tv1-pm-NJh"/>
+                        <outlet property="tfType" destination="aMX-pL-o3B" id="qov-Vg-xSf"/>
                         <outlet property="vwBg" destination="nzE-Jd-f5v" id="FiE-gs-loM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="921.73913043478262" y="-17.410714285714285"/>
+        </scene>
+        <!--Drop DownVC-->
+        <scene sceneID="ccb-My-O0K">
+            <objects>
+                <viewController storyboardIdentifier="DropDownVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H2J-rk-Pf6" customClass="DropDownVC" customModule="RealEstate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VV3-dZ-azB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDN-k5-xpI">
+                                <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-z4-YOj" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
+                                        <rect key="frame" x="157" y="10" width="100" height="7"/>
+                                        <color key="backgroundColor" name="#F2F2F2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="Hgh-It-vrA"/>
+                                            <constraint firstAttribute="width" constant="100" id="mwi-QY-9mZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cud-Mj-eKD">
+                                        <rect key="frame" x="182" y="27" width="50" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="18"/>
+                                        <color key="textColor" name="btnThemeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gRV-LG-8wE">
+                                        <rect key="frame" x="20" y="58.5" width="374" height="136.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Cud-Mj-eKD" firstAttribute="top" secondItem="LVQ-z4-YOj" secondAttribute="bottom" constant="10" id="0cK-sA-0Li"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRV-LG-8wE" secondAttribute="trailing" constant="20" id="AxR-g2-lFH"/>
+                                    <constraint firstItem="Cud-Mj-eKD" firstAttribute="centerX" secondItem="hDN-k5-xpI" secondAttribute="centerX" id="Dr0-Ic-tAF"/>
+                                    <constraint firstItem="LVQ-z4-YOj" firstAttribute="top" secondItem="hDN-k5-xpI" secondAttribute="top" constant="10" id="SVc-9H-Hym"/>
+                                    <constraint firstItem="LVQ-z4-YOj" firstAttribute="centerX" secondItem="hDN-k5-xpI" secondAttribute="centerX" id="YdF-8D-jpM"/>
+                                    <constraint firstItem="gRV-LG-8wE" firstAttribute="leading" secondItem="hDN-k5-xpI" secondAttribute="leading" constant="20" id="buH-bZ-lJC"/>
+                                    <constraint firstItem="gRV-LG-8wE" firstAttribute="top" secondItem="Cud-Mj-eKD" secondAttribute="bottom" constant="5" id="cgu-uk-FvM"/>
+                                    <constraint firstAttribute="bottom" secondItem="gRV-LG-8wE" secondAttribute="bottom" constant="5" id="hnK-qr-A0R"/>
+                                    <constraint firstAttribute="height" constant="200" id="m6Q-yN-pwU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-6E-mCh">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E0A-iL-Unr"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GZY-6E-mCh" firstAttribute="top" secondItem="hDN-k5-xpI" secondAttribute="bottom" id="SD8-RC-6El"/>
+                            <constraint firstItem="E0A-iL-Unr" firstAttribute="bottom" secondItem="hDN-k5-xpI" secondAttribute="bottom" id="SGw-aL-twC"/>
+                            <constraint firstItem="hDN-k5-xpI" firstAttribute="leading" secondItem="E0A-iL-Unr" secondAttribute="leading" id="Z3D-Rz-aZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="GZY-6E-mCh" secondAttribute="trailing" id="gS6-Qy-3q7"/>
+                            <constraint firstItem="E0A-iL-Unr" firstAttribute="trailing" secondItem="hDN-k5-xpI" secondAttribute="trailing" id="hLQ-Py-WKP"/>
+                            <constraint firstAttribute="bottom" secondItem="GZY-6E-mCh" secondAttribute="bottom" id="lSI-xL-OVu"/>
+                            <constraint firstItem="GZY-6E-mCh" firstAttribute="leading" secondItem="VV3-dZ-azB" secondAttribute="leading" id="wj1-w6-RCe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblVw" destination="gRV-LG-8wE" id="gXT-3w-BjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGT-lr-tMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="626"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eOY-tZ-2gg">
@@ -733,10 +828,10 @@
             </objects>
             <point key="canvasLocation" x="1589.8550724637682" y="-17.410714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Verify OtpVC-->
         <scene sceneID="0cJ-Ji-r7n">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="ATa-wH-yKa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerifyOtpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ATa-wH-yKa" customClass="VerifyOtpVC" customModule="RealEstate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4m2-WA-3j8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -809,6 +904,9 @@ will apply auto to the fields</string>
                                                                         <state key="normal" title="Verify &amp; Proceed">
                                                                             <color key="titleColor" name="WhiteColor"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="btnVerifyAction:" destination="ATa-wH-yKa" eventType="touchUpInside" id="YPk-Nu-2J7"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="btnThemeColor"/>
@@ -826,19 +924,24 @@ will apply auto to the fields</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="725-9Y-R8l">
-                                                                <rect key="frame" x="44" y="142" width="326" height="50"/>
+                                                                <rect key="frame" x="20" y="142" width="374" height="50"/>
                                                                 <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="GeL-jt-Knw">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GeL-jt-Knw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwl-Vu-mn4" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-ue-gJM">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-ue-gJM" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <color key="textColor" name="blackColor"/>
                                                                                         <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="txtBgColor"/>
@@ -861,13 +964,18 @@ will apply auto to the fields</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8A-ug-ZzH" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                                                                <rect key="frame" x="87" y="0.0" width="65" height="50"/>
+                                                                                <rect key="frame" x="65" y="0.0" width="49.5" height="50"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-Zn-dlG">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3q-Zn-dlG" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="50"/>
                                                                                         <color key="textColor" name="blackColor"/>
                                                                                         <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="txtBgColor"/>
@@ -890,13 +998,18 @@ will apply auto to the fields</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PH1-7K-68l" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                                                                <rect key="frame" x="174" y="0.0" width="65" height="50"/>
+                                                                                <rect key="frame" x="129.5" y="0.0" width="50" height="50"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-2p-9mP">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-2p-9mP" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <color key="textColor" name="blackColor"/>
                                                                                         <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="txtBgColor"/>
@@ -919,13 +1032,18 @@ will apply auto to the fields</string>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySy-Kc-VYg" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                                                                <rect key="frame" x="261" y="0.0" width="65" height="50"/>
+                                                                                <rect key="frame" x="194.5" y="0.0" width="50" height="50"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dIz-8I-dGg">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dIz-8I-dGg" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <color key="textColor" name="blackColor"/>
                                                                                         <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
                                                                                     </textField>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="txtBgColor"/>
@@ -934,6 +1052,74 @@ will apply auto to the fields</string>
                                                                                     <constraint firstAttribute="bottom" secondItem="dIz-8I-dGg" secondAttribute="bottom" id="F4Q-S6-y0G"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="dIz-8I-dGg" secondAttribute="trailing" id="FWt-1S-2a4"/>
                                                                                     <constraint firstItem="dIz-8I-dGg" firstAttribute="top" secondItem="ySy-Kc-VYg" secondAttribute="top" id="yWz-wC-BMM"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                        <real key="value" value="1"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                        <color key="value" name="borderLineColor2"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="8"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-qH-Xol" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                <rect key="frame" x="259.5" y="0.0" width="49.5" height="50"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-pa-emi" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="50"/>
+                                                                                        <color key="textColor" name="blackColor"/>
+                                                                                        <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" name="txtBgColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="bottom" secondItem="2fI-pa-emi" secondAttribute="bottom" id="DBm-9F-ZwP"/>
+                                                                                    <constraint firstItem="2fI-pa-emi" firstAttribute="leading" secondItem="bw9-qH-Xol" secondAttribute="leading" id="LkN-Of-Xgy"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="2fI-pa-emi" secondAttribute="trailing" id="NGu-yw-KAL"/>
+                                                                                    <constraint firstItem="2fI-pa-emi" firstAttribute="top" secondItem="bw9-qH-Xol" secondAttribute="top" id="Pe3-fe-o2F"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                        <real key="value" value="1"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                        <color key="value" name="borderLineColor2"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="8"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kb-kE-meS" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                <rect key="frame" x="324" y="0.0" width="50" height="50"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kri-Fb-6XT" customClass="TextFieldCustom" customModule="RealEstate" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                                        <color key="textColor" name="blackColor"/>
+                                                                                        <fontDescription key="fontDescription" name="Jua-Regular" family="Jua" pointSize="14"/>
+                                                                                        <textInputTraits key="textInputTraits"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                                <integer key="value" value="1"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </textField>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" name="txtBgColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="kri-Fb-6XT" firstAttribute="leading" secondItem="5Kb-kE-meS" secondAttribute="leading" id="DAm-8M-h4o"/>
+                                                                                    <constraint firstItem="kri-Fb-6XT" firstAttribute="top" secondItem="5Kb-kE-meS" secondAttribute="top" id="V7b-nv-9Ps"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="kri-Fb-6XT" secondAttribute="bottom" id="VeY-L7-G4Y"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="kri-Fb-6XT" secondAttribute="trailing" id="emH-3b-5RH"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -980,6 +1166,9 @@ will apply auto to the fields</string>
                                                                         </fragment>
                                                                     </attributedString>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="btnResendAction:" destination="ATa-wH-yKa" eventType="touchUpInside" id="YMN-IP-e8F"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -989,8 +1178,8 @@ will apply auto to the fields</string>
                                                             <constraint firstItem="ifu-co-Sgs" firstAttribute="top" secondItem="rHz-sl-qzl" secondAttribute="top" constant="19" id="8qH-5P-bNp"/>
                                                             <constraint firstAttribute="trailing" secondItem="EqJ-Z2-ybU" secondAttribute="trailing" constant="10" id="9mO-eT-mLf"/>
                                                             <constraint firstItem="FjP-e6-P3u" firstAttribute="leading" secondItem="rHz-sl-qzl" secondAttribute="leading" constant="42" id="CHw-ou-UF7"/>
-                                                            <constraint firstItem="725-9Y-R8l" firstAttribute="leading" secondItem="rHz-sl-qzl" secondAttribute="leading" constant="44" id="CZO-JN-dc6"/>
-                                                            <constraint firstAttribute="trailing" secondItem="725-9Y-R8l" secondAttribute="trailing" constant="44" id="JhZ-x6-Krg"/>
+                                                            <constraint firstItem="725-9Y-R8l" firstAttribute="leading" secondItem="rHz-sl-qzl" secondAttribute="leading" constant="20" id="CZO-JN-dc6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="725-9Y-R8l" secondAttribute="trailing" constant="20" id="JhZ-x6-Krg"/>
                                                             <constraint firstAttribute="trailing" secondItem="HA5-iR-Y20" secondAttribute="trailing" constant="10" id="Kbp-Tr-BXr"/>
                                                             <constraint firstItem="HA5-iR-Y20" firstAttribute="top" secondItem="ifu-co-Sgs" secondAttribute="bottom" constant="10" id="Vix-Wa-Jo0"/>
                                                             <constraint firstItem="HA5-iR-Y20" firstAttribute="leading" secondItem="rHz-sl-qzl" secondAttribute="leading" constant="10" id="YOe-bN-ItF"/>
@@ -1052,6 +1241,15 @@ will apply auto to the fields</string>
                             <constraint firstItem="xMo-ly-pSl" firstAttribute="top" secondItem="bmD-As-iFb" secondAttribute="bottom" id="t0V-b8-kYP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblOtpDesc" destination="HA5-iR-Y20" id="KBo-XO-aIO"/>
+                        <outlet property="tfFiftth" destination="2fI-pa-emi" id="0ih-gp-WbG"/>
+                        <outlet property="tfFirst" destination="Y9M-ue-gJM" id="ewt-7i-ENX"/>
+                        <outlet property="tfForth" destination="dIz-8I-dGg" id="0LI-GP-q3g"/>
+                        <outlet property="tfSecond" destination="g3q-Zn-dlG" id="tnL-JE-bd4"/>
+                        <outlet property="tfSixth" destination="kri-Fb-6XT" id="rsR-El-CFe"/>
+                        <outlet property="tfThird" destination="Cdp-2p-9mP" id="JkB-Oo-3rT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5g-g1-BOc" sceneMemberID="firstResponder"/>
             </objects>
@@ -1086,7 +1284,7 @@ will apply auto to the fields</string>
             <size key="intrinsicContentSize" width="87" height="17.5"/>
         </designable>
         <designable name="aMX-pL-o3B">
-            <size key="intrinsicContentSize" width="5" height="17.5"/>
+            <size key="intrinsicContentSize" width="45" height="17.5"/>
         </designable>
         <designable name="bAD-Gq-QCf">
             <size key="intrinsicContentSize" width="79" height="17.5"/>
@@ -1103,6 +1301,9 @@ will apply auto to the fields</string>
         <image name="flag" width="42" height="27"/>
         <image name="launchAppIcon" width="193" height="118"/>
         <image name="launchBg" width="428" height="926"/>
+        <namedColor name="#F2F2F2">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="WhiteColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

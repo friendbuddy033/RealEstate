@@ -6,9 +6,9 @@
 //
 import Foundation
 import UIKit
-//import NVActivityIndicatorView
-//import Alamofire
-//import Kingfisher
+import NVActivityIndicatorView
+import Alamofire
+import Kingfisher
 
 
 typealias completionHandler = (Bool,String)->()
@@ -141,12 +141,12 @@ class UtilityMangr : NSObject{
         return storeDetail
     }
     */
-//    func getHeaderToken()->HTTPHeaders{
-//        let header : HTTPHeaders = ["Accept":"application/json","Authorization":"Bearer \(appToken)"]
-//            //print(header.description)
-//        Logger.log(header.description)
-//        return header
-//    }
+    func getHeaderToken()->HTTPHeaders{
+        let header : HTTPHeaders = ["Accept":"application/json","Authorization":"Bearer \(appToken)"]
+            //print(header.description)
+        Logger.log(header.description)
+        return header
+    }
 
     
     func removeUserDefault(_ keys:[String]){
@@ -158,7 +158,7 @@ class UtilityMangr : NSObject{
     func removeDetailsLogout(){
         removeUserDefault(["userDetail","appToken"])
     }
-    /*
+    
     func setImage(url:String,imgVw:UIImageView){
         imgVw.kf.indicatorType = .activity
         //DispatchQueue.main.async {
@@ -173,7 +173,7 @@ class UtilityMangr : NSObject{
             // }
         }
     }
-    */
+    
     
     func decorateText(sub:String, des:String,subFont:String,desFont:String,subSize:CGFloat,desSize:CGFloat,subColor:UIColor,desColor:UIColor)->NSAttributedString{
         let textAttributesOne = [NSAttributedString.Key.foregroundColor: subColor, NSAttributedString.Key.font: UIFont(name: subFont, size: subSize)]
@@ -206,7 +206,7 @@ class UtilityMangr : NSObject{
     }
     
 }
-/*
+
 class Indicator : UIViewController,NVActivityIndicatorViewable{
    static var shared = Indicator()
     let size = CGSize(width:40, height: 40)
@@ -222,13 +222,13 @@ class Indicator : UIViewController,NVActivityIndicatorViewable{
    
     
 }
-*/
+
 
 class Logger {
 
     class func log(_ msg:Any){
         #if DEBUG
-           // print("\(msg)")
+            print("\(msg)")
         #endif
     }
 }

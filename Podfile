@@ -7,5 +7,9 @@ target 'RealEstate' do
 
   # Pods for RealEstate
 pod 'TagListView'
+pod 'IQKeyboardManager'
+pod 'Alamofire'
+pod 'NVActivityIndicatorView' , '~> 4.7.0' #added LoadVwbg view behind the loader class NVActivityIndicatorPresenter.swift line 275
+pod 'Kingfisher'
 
 end

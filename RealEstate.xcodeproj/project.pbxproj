@@ -51,6 +51,8 @@
 		18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */; };
 		18A6B2E52A59C9F1006D942A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */; };
 		18A6B2E72A59D238006D942A /* PaymentScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2E62A59D238006D942A /* PaymentScreenVC.swift */; };
+		2608E0D52A6D219F0014E155 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608E0D42A6D219F0014E155 /* RegisterModel.swift */; };
+		2608E0D72A6D24DB0014E155 /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608E0D62A6D24DB0014E155 /* VerifyOtpVC.swift */; };
 		2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9092A42284E00FE1738 /* AppDelegate.swift */; };
 		2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90B2A42284E00FE1738 /* SceneDelegate.swift */; };
 		2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90D2A42284E00FE1738 /* ViewController.swift */; };
@@ -65,6 +67,12 @@
 		2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9232A4228B200FE1738 /* CustomPageControlView.swift */; };
 		2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9242A4228B200FE1738 /* ButtonCustom.swift */; };
 		2610F9312A4229EF00FE1738 /* Jua-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2610F92F2A4229EF00FE1738 /* Jua-Regular.ttf */; };
+		2614561B2A6D127F00883DC7 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261456172A6D127F00883DC7 /* APIConstant.swift */; };
+		2614561D2A6D127F00883DC7 /* APIHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261456192A6D127F00883DC7 /* APIHepler.swift */; };
+		2614561E2A6D127F00883DC7 /* ParameterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614561A2A6D127F00883DC7 /* ParameterModel.swift */; };
+		261456202A6D170500883DC7 /* DropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614561F2A6D170500883DC7 /* DropDownVC.swift */; };
+		261456252A6D18AA00883DC7 /* DropDownTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261456232A6D18AA00883DC7 /* DropDownTblCell.swift */; };
+		261456262A6D18AA00883DC7 /* DropDownTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261456242A6D18AA00883DC7 /* DropDownTblCell.xib */; };
 		26183CB32A514B2F0038108B /* SavePropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CB22A514B2F0038108B /* SavePropertyVC.swift */; };
 		26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CB42A514BAB0038108B /* TextFieldTblCell.swift */; };
 		26183CB72A514BAB0038108B /* TextFieldTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26183CB52A514BAB0038108B /* TextFieldTblCell.xib */; };
@@ -184,6 +192,8 @@
 		18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepTwoVC.swift; sourceTree = "<group>"; };
 		18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		18A6B2E62A59D238006D942A /* PaymentScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreenVC.swift; sourceTree = "<group>"; };
+		2608E0D42A6D219F0014E155 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		2608E0D62A6D24DB0014E155 /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
 		2610F9062A42284E00FE1738 /* RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2610F9092A42284E00FE1738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2610F90B2A42284E00FE1738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +210,12 @@
 		2610F9232A4228B200FE1738 /* CustomPageControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageControlView.swift; sourceTree = "<group>"; };
 		2610F9242A4228B200FE1738 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		2610F92F2A4229EF00FE1738 /* Jua-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jua-Regular.ttf"; sourceTree = "<group>"; };
+		261456172A6D127F00883DC7 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		261456192A6D127F00883DC7 /* APIHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHepler.swift; sourceTree = "<group>"; };
+		2614561A2A6D127F00883DC7 /* ParameterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterModel.swift; sourceTree = "<group>"; };
+		2614561F2A6D170500883DC7 /* DropDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownVC.swift; sourceTree = "<group>"; };
+		261456232A6D18AA00883DC7 /* DropDownTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTblCell.swift; sourceTree = "<group>"; };
+		261456242A6D18AA00883DC7 /* DropDownTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTblCell.xib; sourceTree = "<group>"; };
 		26183CB22A514B2F0038108B /* SavePropertyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePropertyVC.swift; sourceTree = "<group>"; };
 		26183CB42A514BAB0038108B /* TextFieldTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTblCell.swift; sourceTree = "<group>"; };
 		26183CB52A514BAB0038108B /* TextFieldTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTblCell.xib; sourceTree = "<group>"; };
@@ -431,6 +447,14 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		2608E0D32A6D21810014E155 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2608E0D42A6D219F0014E155 /* RegisterModel.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
 		2610F8FD2A42284E00FE1738 = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +479,7 @@
 				2610F9092A42284E00FE1738 /* AppDelegate.swift */,
 				2610F90B2A42284E00FE1738 /* SceneDelegate.swift */,
 				2610F90D2A42284E00FE1738 /* ViewController.swift */,
+				261456162A6D127F00883DC7 /* Network */,
 				261BCAE92A4366DC00B8EB0C /* MVVM */,
 				269AA8BF2A45F8CF0006CB17 /* Storyboard */,
 				2610F92C2A4229D000FE1738 /* Resources */,
@@ -505,6 +530,33 @@
 				2610F92F2A4229EF00FE1738 /* Jua-Regular.ttf */,
 			);
 			path = Jua;
+			sourceTree = "<group>";
+		};
+		261456162A6D127F00883DC7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				261456172A6D127F00883DC7 /* APIConstant.swift */,
+				261456192A6D127F00883DC7 /* APIHepler.swift */,
+				2614561A2A6D127F00883DC7 /* ParameterModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		261456212A6D188D00883DC7 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				261456222A6D189400883DC7 /* TblCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		261456222A6D189400883DC7 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				261456232A6D18AA00883DC7 /* DropDownTblCell.swift */,
+				261456242A6D18AA00883DC7 /* DropDownTblCell.xib */,
+			);
+			path = TblCell;
 			sourceTree = "<group>";
 		};
 		26183CBE2A5181A80038108B /* ProfessionalPhotographer */ = {
@@ -569,6 +621,7 @@
 			isa = PBXGroup;
 			children = (
 				26C30E5F2A4DE84600BC0515 /* CommonModel.swift */,
+				2608E0D32A6D21810014E155 /* onboarding */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -681,6 +734,9 @@
 			isa = PBXGroup;
 			children = (
 				261BCAED2A43672200B8EB0C /* CreateAccountVC.swift */,
+				2608E0D62A6D24DB0014E155 /* VerifyOtpVC.swift */,
+				2614561F2A6D170500883DC7 /* DropDownVC.swift */,
+				261456212A6D188D00883DC7 /* XIB */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -975,6 +1031,7 @@
 				269AA9502A460E900006CB17 /* Jost-HeavyItalic.ttf in Resources */,
 				269AA9392A45FFC60006CB17 /* Jost-Thin.ttf in Resources */,
 				26183CBB2A514C6B0038108B /* AddPictureTblCell.xib in Resources */,
+				261456262A6D18AA00883DC7 /* DropDownTblCell.xib in Resources */,
 				269AA8C42A45F92C0006CB17 /* Tabbar.storyboard in Resources */,
 				269AA92E2A45FFC60006CB17 /* Jost-BlackItalic.ttf in Resources */,
 				18A2C1532A4DFD0D00DF5628 /* MyAgents.storyboard in Resources */,
@@ -1063,6 +1120,7 @@
 				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
 				26183CB32A514B2F0038108B /* SavePropertyVC.swift in Sources */,
 				26560D072A501485005E91F4 /* AddPropertyNextVC.swift in Sources */,
+				2614561D2A6D127F00883DC7 /* APIHepler.swift in Sources */,
 				2610F9282A4228B200FE1738 /* DownloadCircularProgessView.swift in Sources */,
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
@@ -1074,6 +1132,7 @@
 				26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */,
 				18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
+				261456252A6D18AA00883DC7 /* DropDownTblCell.swift in Sources */,
 				18779CCE2A4DE50100180E4D /* FilterTypeCell.swift in Sources */,
 				18779CC32A4DE4E400180E4D /* SearchDetailVC.swift in Sources */,
 				261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */,
@@ -1099,6 +1158,7 @@
 				26183CBD2A517D080038108B /* PropertyAddedSuccessVC.swift in Sources */,
 				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
 				18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */,
+				2614561B2A6D127F00883DC7 /* APIConstant.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
@@ -1108,6 +1168,7 @@
 				18779CD02A4DE50100180E4D /* AdditionalDetailCell.swift in Sources */,
 				2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */,
 				181204102A57ED24000FC360 /* SubscriptionVC.swift in Sources */,
+				2608E0D72A6D24DB0014E155 /* VerifyOtpVC.swift in Sources */,
 				26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */,
 				261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */,
 				181204172A57EE1E000FC360 /* ScalingCarouselCell.swift in Sources */,
@@ -1115,10 +1176,13 @@
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				188A59982A5BEFD300D57EB4 /* ChatListVC.swift in Sources */,
 				18779CC42A4DE4E400180E4D /* FilterVC.swift in Sources */,
+				2614561E2A6D127F00883DC7 /* ParameterModel.swift in Sources */,
 				181375282A507A6100FA81DB /* HistoryTblCell.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
+				2608E0D52A6D219F0014E155 /* RegisterModel.swift in Sources */,
 				26269B9D2A46F491004BC63A /* AgentClcCell.swift in Sources */,
 				26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */,
+				261456202A6D170500883DC7 /* DropDownVC.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
 				181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */,
 				18A6B2E52A59C9F1006D942A /* UPCarouselFlowLayout.swift in Sources */,
