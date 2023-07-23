@@ -60,6 +60,8 @@ enum Storyboard : String {
     case MyAgents = "MyAgents"
     case Agent = "Agent"
     case AgentTabbar = "AgentTabbar"
+    case Subscription = "Subscription"
+    case Chat = "Chat"
 }
 
 extension UIViewController{

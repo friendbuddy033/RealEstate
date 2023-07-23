@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,10 +85,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tUV-F4-WeK" kind="relationship" relationship="rootViewController" id="wBK-Qh-Eox"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O31-Eh-dRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="541.53846153846155" y="460.66350710900474"/>
+        </scene>
+        <!--ChatListVC-->
+        <scene sceneID="CyW-O9-dAD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="ChatListVC" id="tUV-F4-WeK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zZS-Fg-1mF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nX-jF-oNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="447"/>
         </scene>
         <!--Profile-->
         <scene sceneID="HG3-RJ-F7a">
@@ -100,10 +113,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wve-dE-fgm" kind="relationship" relationship="rootViewController" id="W67-xg-Hlb"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIw-D0-ULe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="541.53846153846155" y="1175.829383886256"/>
+        </scene>
+        <!--AgentProfileVC-->
+        <scene sceneID="vNI-KW-ttE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Agent" referencedIdentifier="AgentProfileVC" id="Wve-dE-fgm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="plG-ly-cyu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZp-9z-Tkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="1175"/>
         </scene>
         <!--HistoryVC-->
         <scene sceneID="Cgr-nK-gVs">

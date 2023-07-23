@@ -9,6 +9,7 @@ import UIKit
 
 class AgentProfileVC: UIViewController {
 
+    @IBOutlet weak var viewBack: UIView!
     @IBOutlet weak var tblVw: UITableView!{
         didSet{
             tblVw.registerNib(cell: HistoryTblCell.self)
@@ -17,10 +18,13 @@ class AgentProfileVC: UIViewController {
         }
     }
     
+    var isOtherPerson: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        viewBack.isHidden = !isOtherPerson
     }
     
 

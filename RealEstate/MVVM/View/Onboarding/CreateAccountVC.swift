@@ -23,7 +23,6 @@ class CreateAccountVC: UIViewController {
 //            let vc = RealEstateTabbarVC.getVC(.Tabbbar)
 //            self?.push(vc)
 //            let vc = AgentRegistStepOneVC.getVC(.Agent)
-//            self?.push(vc)
         }
     }
 

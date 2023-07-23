@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181204102A57ED24000FC360 /* SubscriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812040F2A57ED24000FC360 /* SubscriptionVC.swift */; };
+		181204152A57EE1E000FC360 /* ScalingCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181204122A57EE1E000FC360 /* ScalingCarouselView.swift */; };
+		181204162A57EE1E000FC360 /* ScalingCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181204132A57EE1E000FC360 /* ScalingCarouselLayout.swift */; };
+		181204172A57EE1E000FC360 /* ScalingCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181204142A57EE1E000FC360 /* ScalingCarouselCell.swift */; };
+		1812041E2A57F5CE000FC360 /* SubscriptionClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812041C2A57F5CE000FC360 /* SubscriptionClcCell.swift */; };
+		1812041F2A57F5CE000FC360 /* SubscriptionClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1812041D2A57F5CE000FC360 /* SubscriptionClcCell.xib */; };
 		181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181375212A506D3300FA81DB /* AgentTabbarVC.swift */; };
 		181375242A50705100FA81DB /* AgentTabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181375232A50705100FA81DB /* AgentTabbar.storyboard */; };
 		181375282A507A6100FA81DB /* HistoryTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181375262A507A6100FA81DB /* HistoryTblCell.swift */; };
@@ -30,10 +36,21 @@
 		18779CD22A4DE50100180E4D /* FilterOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CCC2A4DE50100180E4D /* FilterOptionCell.xib */; };
 		18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CD32A4DE51600180E4D /* PropertyImagesCell.swift */; };
 		18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CD42A4DE51600180E4D /* PropertyImagesCell.xib */; };
+		188A59952A5BEC1500D57EB4 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188A59942A5BEC1500D57EB4 /* Chat.storyboard */; };
+		188A59982A5BEFD300D57EB4 /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A59972A5BEFD300D57EB4 /* ChatListVC.swift */; };
+		188A599C2A5BF0DF00D57EB4 /* LastMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A599A2A5BF0DF00D57EB4 /* LastMessageCell.swift */; };
+		188A599D2A5BF0DF00D57EB4 /* LastMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A599B2A5BF0DF00D57EB4 /* LastMessageCell.xib */; };
+		188A59A02A5BF49E00D57EB4 /* SenderChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A599E2A5BF49E00D57EB4 /* SenderChatCell.swift */; };
+		188A59A12A5BF49E00D57EB4 /* SenderChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A599F2A5BF49E00D57EB4 /* SenderChatCell.xib */; };
+		188A59A42A5BF63300D57EB4 /* ReceiverChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A59A22A5BF63300D57EB4 /* ReceiverChatCell.swift */; };
+		188A59A52A5BF63300D57EB4 /* ReceiverChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A59A32A5BF63300D57EB4 /* ReceiverChatCell.xib */; };
+		188A59A72A5BF76500D57EB4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A59A62A5BF76500D57EB4 /* ChatVC.swift */; };
 		18A2C1532A4DFD0D00DF5628 /* MyAgents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */; };
 		18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */; };
 		18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */; };
 		18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */; };
+		18A6B2E52A59C9F1006D942A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */; };
+		18A6B2E72A59D238006D942A /* PaymentScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6B2E62A59D238006D942A /* PaymentScreenVC.swift */; };
 		2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F9092A42284E00FE1738 /* AppDelegate.swift */; };
 		2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90B2A42284E00FE1738 /* SceneDelegate.swift */; };
 		2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610F90D2A42284E00FE1738 /* ViewController.swift */; };
@@ -123,6 +140,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1812040F2A57ED24000FC360 /* SubscriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
+		181204122A57EE1E000FC360 /* ScalingCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingCarouselView.swift; sourceTree = "<group>"; };
+		181204132A57EE1E000FC360 /* ScalingCarouselLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingCarouselLayout.swift; sourceTree = "<group>"; };
+		181204142A57EE1E000FC360 /* ScalingCarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingCarouselCell.swift; sourceTree = "<group>"; };
+		1812041C2A57F5CE000FC360 /* SubscriptionClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionClcCell.swift; sourceTree = "<group>"; };
+		1812041D2A57F5CE000FC360 /* SubscriptionClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionClcCell.xib; sourceTree = "<group>"; };
 		181375212A506D3300FA81DB /* AgentTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTabbarVC.swift; sourceTree = "<group>"; };
 		181375232A50705100FA81DB /* AgentTabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AgentTabbar.storyboard; sourceTree = "<group>"; };
 		181375262A507A6100FA81DB /* HistoryTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTblCell.swift; sourceTree = "<group>"; };
@@ -146,10 +169,21 @@
 		18779CCC2A4DE50100180E4D /* FilterOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterOptionCell.xib; sourceTree = "<group>"; };
 		18779CD32A4DE51600180E4D /* PropertyImagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyImagesCell.swift; sourceTree = "<group>"; };
 		18779CD42A4DE51600180E4D /* PropertyImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyImagesCell.xib; sourceTree = "<group>"; };
+		188A59942A5BEC1500D57EB4 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		188A59972A5BEFD300D57EB4 /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
+		188A599A2A5BF0DF00D57EB4 /* LastMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMessageCell.swift; sourceTree = "<group>"; };
+		188A599B2A5BF0DF00D57EB4 /* LastMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastMessageCell.xib; sourceTree = "<group>"; };
+		188A599E2A5BF49E00D57EB4 /* SenderChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderChatCell.swift; sourceTree = "<group>"; };
+		188A599F2A5BF49E00D57EB4 /* SenderChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderChatCell.xib; sourceTree = "<group>"; };
+		188A59A22A5BF63300D57EB4 /* ReceiverChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverChatCell.swift; sourceTree = "<group>"; };
+		188A59A32A5BF63300D57EB4 /* ReceiverChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiverChatCell.xib; sourceTree = "<group>"; };
+		188A59A62A5BF76500D57EB4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAgents.storyboard; sourceTree = "<group>"; };
 		18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDashboardVC.swift; sourceTree = "<group>"; };
 		18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepOneVC.swift; sourceTree = "<group>"; };
 		18A2C15A2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepTwoVC.swift; sourceTree = "<group>"; };
+		18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		18A6B2E62A59D238006D942A /* PaymentScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreenVC.swift; sourceTree = "<group>"; };
 		2610F9062A42284E00FE1738 /* RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2610F9092A42284E00FE1738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2610F90B2A42284E00FE1738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +288,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1812040E2A57ED0D000FC360 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				1812040F2A57ED24000FC360 /* SubscriptionVC.swift */,
+				18A6B2E62A59D238006D942A /* PaymentScreenVC.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		181204112A57EDEA000FC360 /* ScallingCarousal */ = {
+			isa = PBXGroup;
+			children = (
+				181204142A57EE1E000FC360 /* ScalingCarouselCell.swift */,
+				181204132A57EE1E000FC360 /* ScalingCarouselLayout.swift */,
+				181204122A57EE1E000FC360 /* ScalingCarouselView.swift */,
+			);
+			path = ScallingCarousal;
+			sourceTree = "<group>";
+		};
 		181375202A506CEF00FA81DB /* AgentTabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,8 +321,11 @@
 		181375252A507A2800FA81DB /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				188A59992A5BF0AA00D57EB4 /* Chat */,
 				181375262A507A6100FA81DB /* HistoryTblCell.swift */,
 				181375272A507A6100FA81DB /* HistoryTblCell.xib */,
+				1812041C2A57F5CE000FC360 /* SubscriptionClcCell.swift */,
+				1812041D2A57F5CE000FC360 /* SubscriptionClcCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -306,6 +362,7 @@
 				18779CBC2A4DE3BE00180E4D /* Agent.storyboard */,
 				181375232A50705100FA81DB /* AgentTabbar.storyboard */,
 				183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */,
+				188A59942A5BEC1500D57EB4 /* Chat.storyboard */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -323,6 +380,28 @@
 			path = TblCell;
 			sourceTree = "<group>";
 		};
+		188A59962A5BEFB600D57EB4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				188A59972A5BEFD300D57EB4 /* ChatListVC.swift */,
+				188A59A62A5BF76500D57EB4 /* ChatVC.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		188A59992A5BF0AA00D57EB4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				188A599A2A5BF0DF00D57EB4 /* LastMessageCell.swift */,
+				188A599B2A5BF0DF00D57EB4 /* LastMessageCell.xib */,
+				188A599E2A5BF49E00D57EB4 /* SenderChatCell.swift */,
+				188A599F2A5BF49E00D57EB4 /* SenderChatCell.xib */,
+				188A59A22A5BF63300D57EB4 /* ReceiverChatCell.swift */,
+				188A59A32A5BF63300D57EB4 /* ReceiverChatCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		18A2C1512A4DFCF500DF5628 /* My Agents */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +413,8 @@
 		18A2C1542A4E001200DF5628 /* Agent User */ = {
 			isa = PBXGroup;
 			children = (
+				188A59962A5BEFB600D57EB4 /* Chat */,
+				1812040E2A57ED0D000FC360 /* Subscription */,
 				181375252A507A2800FA81DB /* Xibs */,
 				18A2C1572A4E005E00DF5628 /* Registration */,
 				181375202A506CEF00FA81DB /* AgentTabbar */,
@@ -495,8 +576,10 @@
 		261BCAEF2A436AB100B8EB0C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				181204112A57EDEA000FC360 /* ScallingCarousal */,
 				261BCAF02A436AB100B8EB0C /* ImagePicker.swift */,
 				261BCAF12A436AB100B8EB0C /* Extension.swift */,
+				18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */,
 				261BCAF22A436AB100B8EB0C /* AppConstants.swift */,
 				261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */,
 				26269B982A46EBDB004BC63A /* RealEstateProtocol.swift */,
@@ -864,6 +947,7 @@
 				26183CB72A514BAB0038108B /* TextFieldTblCell.xib in Resources */,
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
 				26CB64912A48251400A6C02F /* More.storyboard in Resources */,
+				188A599D2A5BF0DF00D57EB4 /* LastMessageCell.xib in Resources */,
 				18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */,
 				183B32FC2A51B2AF0008F7C1 /* Subscription.storyboard in Resources */,
 				269AA94C2A460B430006CB17 /* PropertiesTblCell.xib in Resources */,
@@ -879,6 +963,7 @@
 				18779CD22A4DE50100180E4D /* FilterOptionCell.xib in Resources */,
 				26183CC62A5182400038108B /* ProfessionalPhotoClcCell.xib in Resources */,
 				269AA9322A45FFC60006CB17 /* Jost-Regular.ttf in Resources */,
+				188A59952A5BEC1500D57EB4 /* Chat.storyboard in Resources */,
 				18779CCD2A4DE50100180E4D /* AdditionalDetailCell.xib in Resources */,
 				269AA9302A45FFC60006CB17 /* Jost-LightItalic.ttf in Resources */,
 				269AA9342A45FFC60006CB17 /* Jost-SemiBoldItalic.ttf in Resources */,
@@ -897,18 +982,21 @@
 				18779CD12A4DE50100180E4D /* FilterTypeCell.xib in Resources */,
 				269AA9362A45FFC60006CB17 /* Jost-BoldItalic.ttf in Resources */,
 				269AA92B2A45FFC60006CB17 /* Jost-ExtraLightItalic.ttf in Resources */,
+				188A59A52A5BF63300D57EB4 /* ReceiverChatCell.xib in Resources */,
 				26269B972A46E7CD004BC63A /* EnquryDetailTblCell.xib in Resources */,
 				2610F9162A42285100FE1738 /* LaunchScreen.storyboard in Resources */,
 				269AA9412A4609650006CB17 /* Home.storyboard in Resources */,
 				2610F9132A42285100FE1738 /* Assets.xcassets in Resources */,
 				26269BAA2A47057E004BC63A /* PropertyClcCell.xib in Resources */,
 				2610F9312A4229EF00FE1738 /* Jua-Regular.ttf in Resources */,
+				188A59A12A5BF49E00D57EB4 /* SenderChatCell.xib in Resources */,
 				269AA93A2A45FFC60006CB17 /* Jost-SemiBold.ttf in Resources */,
 				269AA9352A45FFC60006CB17 /* Jost-ThinItalic.ttf in Resources */,
 				269AA9332A45FFC60006CB17 /* Jost-Bold.ttf in Resources */,
 				181375292A507A6100FA81DB /* HistoryTblCell.xib in Resources */,
 				26269B932A46E283004BC63A /* AgentTblCell.xib in Resources */,
 				26560D0C2A5014BB005E91F4 /* PropertyFooterView.xib in Resources */,
+				1812041F2A57F5CE000FC360 /* SubscriptionClcCell.xib in Resources */,
 				269AA92F2A45FFC60006CB17 /* Jost-MediumItalic.ttf in Resources */,
 				269AA93B2A45FFC60006CB17 /* Jost-Italic.ttf in Resources */,
 				18779CBD2A4DE3BE00180E4D /* Agent.storyboard in Resources */,
@@ -965,10 +1053,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188A59A72A5BF76500D57EB4 /* ChatVC.swift in Sources */,
 				18779CCF2A4DE50100180E4D /* FilterOptionCell.swift in Sources */,
 				26C30E622A4DE86400BC0515 /* UserViewModel.swift in Sources */,
 				18779CC52A4DE4E400180E4D /* PropertyDetailVC.swift in Sources */,
+				1812041E2A57F5CE000FC360 /* SubscriptionClcCell.swift in Sources */,
 				269AA9552A4617EF0006CB17 /* EnquiriesTblCell.swift in Sources */,
+				181204152A57EE1E000FC360 /* ScalingCarouselView.swift in Sources */,
 				26269BA42A470414004BC63A /* SearchVC.swift in Sources */,
 				26183CB32A514B2F0038108B /* SavePropertyVC.swift in Sources */,
 				26560D072A501485005E91F4 /* AddPropertyNextVC.swift in Sources */,
@@ -986,6 +1077,7 @@
 				18779CCE2A4DE50100180E4D /* FilterTypeCell.swift in Sources */,
 				18779CC32A4DE4E400180E4D /* SearchDetailVC.swift in Sources */,
 				261BCAEE2A43672200B8EB0C /* CreateAccountVC.swift in Sources */,
+				188A59A42A5BF63300D57EB4 /* ReceiverChatCell.swift in Sources */,
 				26CB64A22A4835E100A6C02F /* TagTblCell.swift in Sources */,
 				269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */,
 				26183CBA2A514C6B0038108B /* AddPictureTblCell.swift in Sources */,
@@ -993,6 +1085,8 @@
 				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
 				1813752B2A50842100FA81DB /* HistoryVC.swift in Sources */,
 				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
+				18A6B2E72A59D238006D942A /* PaymentScreenVC.swift in Sources */,
+				188A599C2A5BF0DF00D57EB4 /* LastMessageCell.swift in Sources */,
 				26B99C932A4813BE004DF28F /* HomeVillaClcCell.swift in Sources */,
 				26183CC02A5181CB0038108B /* ProfessionalPhotoVC.swift in Sources */,
 				269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */,
@@ -1008,13 +1102,18 @@
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
+				181204162A57EE1E000FC360 /* ScalingCarouselLayout.swift in Sources */,
+				188A59A02A5BF49E00D57EB4 /* SenderChatCell.swift in Sources */,
 				2610F9262A4228B200FE1738 /* ViewCustom.swift in Sources */,
 				18779CD02A4DE50100180E4D /* AdditionalDetailCell.swift in Sources */,
 				2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */,
+				181204102A57ED24000FC360 /* SubscriptionVC.swift in Sources */,
 				26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */,
 				261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */,
+				181204172A57EE1E000FC360 /* ScalingCarouselCell.swift in Sources */,
 				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
+				188A59982A5BEFD300D57EB4 /* ChatListVC.swift in Sources */,
 				18779CC42A4DE4E400180E4D /* FilterVC.swift in Sources */,
 				181375282A507A6100FA81DB /* HistoryTblCell.swift in Sources */,
 				2610F92B2A4228B200FE1738 /* ButtonCustom.swift in Sources */,
@@ -1022,6 +1121,7 @@
 				26183CB62A514BAB0038108B /* TextFieldTblCell.swift in Sources */,
 				2610F90C2A42284E00FE1738 /* SceneDelegate.swift in Sources */,
 				181375222A506D3300FA81DB /* AgentTabbarVC.swift in Sources */,
+				18A6B2E52A59C9F1006D942A /* UPCarouselFlowLayout.swift in Sources */,
 				18779CD52A4DE51600180E4D /* PropertyImagesCell.swift in Sources */,
 				26CB649D2A48359E00A6C02F /* AddPropertyVC.swift in Sources */,
 				183B32FE2A51BA600008F7C1 /* SJCenterFlowLayout.swift in Sources */,
