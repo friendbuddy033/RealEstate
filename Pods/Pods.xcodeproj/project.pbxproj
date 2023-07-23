@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,12 +39,12 @@
 		4E1C7BC265C0A73A1B0A1A1FF9133A08 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
 		60A4BCFF63E99003522EAE8D89F898F6 /* TagListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B655803A4195E1538C6DEB7ECF85AB9 /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
 		94AE0296A3C347DA7DAF9CB4A5161299 /* Pods-RealEstate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RealEstate-dummy.m"; sourceTree = "<group>"; };
 		98AC75FAE9B43C6F280D404079B5C9B1 /* Pods-RealEstate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RealEstate.modulemap"; sourceTree = "<group>"; };
 		9C80B5DB4DC0F712F5127E60C8FEB36F /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4F60C89658F549B018A0192BD0BE030 /* Pods-RealEstate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RealEstate-umbrella.h"; sourceTree = "<group>"; };
 		B936D3582080F16C711B18AC3B8DC0DF /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
 		D71250E055CEDAF335F5AA837DC280A0 /* Pods-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 				140835403A990A860AC89009FE22FBBC /* TagView.swift */,
 				3422A480CA2E4A3BA8EA27A4DE5188A3 /* Support Files */,
 			);
+			name = TagListView;
 			path = TagListView;
 			sourceTree = "<group>";
 		};
@@ -120,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1B6ABCC26C08C5EAD12E6DC7B5BD5E21 /* Pods-RealEstate */,
-				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,7 +207,7 @@
 			);
 			name = TagListView;
 			productName = TagListView;
-			productReference = 85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */;
+			productReference = 85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView */;
 			productType = "com.apple.product-type.framework";
 		};
 		D2B0408BF994074EB0D9687808267CAE /* Pods-RealEstate */ = {
@@ -234,11 +235,11 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -523,7 +524,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,7 +558,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
