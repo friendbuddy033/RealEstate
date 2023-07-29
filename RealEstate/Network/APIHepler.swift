@@ -10,7 +10,7 @@ import Alamofire
 import NVActivityIndicatorView
 import UIKit
 
-func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Bool,loaderColor:UIColor = .white,paramApiModel:ParamApiModel,param:[String:Any]?=nil,completion:@escaping([String:Any],Data?,Bool)->()){
+func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Bool,loaderColor:UIColor = .white,paramApiModel:CommonAPIModel,param:[String:Any]?=nil,completion:@escaping([String:Any],Data?,Bool)->()){
     //    let activity = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 30, height: 30), type: .lineScale, color: .white, padding: nil)
     //    activity.startAnimating()
     
@@ -26,9 +26,11 @@ func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Boo
         //let params = param
         
         print("parameter:-",params as? NSDictionary)
-        Logger.log("header:-\(header)")
-       
-        AF.request(url, method: apiMethod, parameters: params,encoding: JSONEncoding.default ,headers: header).responseJSON { (response) in
+        var allHeaders = UtilityMangr.shared.getHeaderToken()
+        header?.forEach({ allHeaders.add($0) })
+        Logger.log("header:-\(allHeaders)")
+        
+        AF.request(url, method: apiMethod, parameters: params,encoding: JSONEncoding.default ,headers: allHeaders).responseJSON { (response) in
             if isLoaderShow{
                 Indicator.shared.stop()
                 
@@ -40,7 +42,7 @@ func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Boo
                 Logger.log("server error:- \(str)")
             }
             
-           // print("response.response?.statusCode:-",response.response?.statusCode)
+            //print("response.response?.statusCode:-",response.result)
             switch (response.result){
             
             case .success(_):
@@ -85,7 +87,7 @@ func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Boo
 }
 
 
-func uploadDataToServer(url:String,imageKey:String,imagedata:Data?,param:[String:String],loaderColor:UIColor = .white,paramApiModel:ParamApiModel,completion:@escaping([String:Any],Data?)->()){
+func uploadDataToServer(url:String,imageKey:String,imagedata:Data?,param:[String:String],loaderColor:UIColor = .white,paramApiModel:AuthParamApiModel,completion:@escaping([String:Any],Data?)->()){
     if Connectivity.isConnectedToInternet(){
         Indicator.shared.start("", loaderColor: loaderColor)
        // Indicator.shared.showHud()
@@ -135,3 +137,4 @@ func uploadDataToServer(url:String,imageKey:String,imagedata:Data?,param:[String
         completion(dict, jsonData)
     }
 }
+

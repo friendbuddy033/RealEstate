@@ -22,7 +22,10 @@ class AgentRegistStepTwoVC: UIViewController {
         case PropertyType = "Types of Property"
     }
     
-    var propertyArray : [AddPropertyModel]?
+    private var propertyArray : [AddPropertyModel]?
+    
+//    var userId : Int = 0
+    var profileModel: ProfileParamApiModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +36,8 @@ class AgentRegistStepTwoVC: UIViewController {
     
 
     @IBAction func btnSaveAtion(_ sender: UIButton){
-        self.push(AgentTabbarVC.getVC(.AgentTabbar))
+//        self.push(AgentTabbarVC.getVC(.AgentTabbar))
+        self.updateProfile()
     }
 
 }
@@ -49,7 +53,7 @@ extension AgentRegistStepTwoVC{
     
 }
 //MARK: - TABLEVIEW DELEGATE AND DATASOURCE
-extension AgentRegistStepTwoVC:UITableViewDelegate,UITableViewDataSource{
+extension AgentRegistStepTwoVC:UITableViewDelegate,UITableViewDataSource, TagTableDelegates{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return propertyArray?.count ?? 0
@@ -61,7 +65,12 @@ extension AgentRegistStepTwoVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TagTblCell", for: indexPath) as! TagTblCell
-        cell.vwTag.addTags(propertyArray?[indexPath.section].features ?? [])
+        cell.selectionStyle = .none
+        cell.section = indexPath.section
+        cell.delegate = self
+        
+        let tags = propertyArray?[indexPath.section].features ?? []
+        cell.vwTag.addTags(tags)
         return cell
     }
     
@@ -76,6 +85,50 @@ extension AgentRegistStepTwoVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
+    }
+    
+    func didSelectTag(section: Int, tag: String) {
+        if section == 0 {
+            self.profileModel?.transaction_type = tag
+        }else{
+            self.profileModel?.type_of_property = tag
+        }
+    }
+    
+}
+extension AgentRegistStepTwoVC
+{
+    
+    private func updateProfile(){
+        
+        let params = ProfileParamApiModel(endPoint: APIConstant.kUpdateUserProfile,
+                                          user_id: self.profileModel?.user_id,
+                                          locality: self.profileModel?.locality,
+                                          address: self.profileModel?.address,
+                                          lat: "",
+                                          long: "",
+                                          contact_person_name: self.profileModel?.contact_person_name,
+                                          company_name: self.profileModel?.company_name,
+                                          price: self.profileModel?.price,
+                                          business_description: self.profileModel?.business_description,
+                                          operating_since: self.profileModel?.operating_since,
+                                          transaction_type: self.profileModel?.transaction_type,
+                                          type_of_property: self.profileModel?.type_of_property,
+                                          portfolio: self.profileModel?.portfolio)
+        
+        
+        AgentProfileViewModel.shared().updateProfile(paramApi: params) { [weak self](success, msg) in
+            guard let self = self else { return }
+            
+            if success{
+                UtilityMangr.shared.showAlertWithCompletion(title: "", msg: msg, vwController: self) {
+                    self.push(AgentTabbarVC.getVC(.AgentTabbar))
+                }
+            }else{
+                UtilityMangr.shared.showAlert(title: "", msg: msg, vwController: self)
+            }
+        }
+        
     }
     
 }

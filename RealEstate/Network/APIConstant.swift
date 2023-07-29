@@ -16,6 +16,8 @@ struct APIConstant {
     static let kBaseUrl = kUrl
     
     //MARK: ENDPOINT
-    static let kRegister = "register"
-    static let kVerifyCode = "verifyCode"
+    static let kRegister            = "register"
+    static let kVerifyCode          = "verifyCode"
+    static let kLogin               = "login"
+    static let kUpdateUserProfile   = "updateUserDetails"
 }

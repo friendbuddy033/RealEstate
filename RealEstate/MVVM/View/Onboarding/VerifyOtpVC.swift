@@ -18,7 +18,9 @@ class VerifyOtpVC: UIViewController {
     @IBOutlet weak var lblOtpDesc: UILabel!
     
     public var mobileNumber : String = ""
-    public var objParamApiModel : ParamApiModel?
+    public var role : String = ""
+    public var verificationType : String = ""
+    public var objParamApiModel : AuthParamApiModel?
     private var isOtpValid : Bool = false
     
     override func viewDidLoad() {
@@ -119,17 +121,33 @@ extension VerifyOtpVC{
     
     func verifyotp(){
         let otp = "\(tfFirst.text ?? "")\(tfSecond.text ?? "")\(tfThird.text ?? "")\(tfForth.text ?? "")\(tfFiftth.text ?? "")\(tfSixth.text ?? "")"
-        let param = ParamApiModel(endPoint: APIConstant.kVerifyCode,
+        let param = AuthParamApiModel(endPoint: APIConstant.kVerifyCode,
                                   email: objParamApiModel?.email ?? "",
                                   full_name: objParamApiModel?.full_name ?? "",
                                   phone: objParamApiModel?.phone ?? "",
                                   password: objParamApiModel?.password ?? "",
-                                  type: APIConstant.kRegister,
+                                  type: self.verificationType,
                                   userType: objParamApiModel?.type ?? "",
         code: otp)
         
-        UserViewModel.shared().verifyOtpAPI(paramApi: param) { [weak self] (success,msg) in
+        UserViewModel.shared().verifyOtpAPI(paramApi: param) { [weak self] (success,msg,userId) in
             if success{
+                guard let self = self else { return }
+                if self.verificationType == APIConstant.kLogin{
+                    if self.role == "agent"{
+                        
+                    }else{
+                        
+                    }
+                }else{
+                    if self.objParamApiModel?.type == "property_agent"{
+                        let vc = AgentRegistStepOneVC.getVC(.Agent)
+                        vc.userId = userId
+                        self.push(vc)
+                    }else{
+                        
+                    }
+                }
                 
             }else{
                 UtilityMangr.shared.showAlert(title: AppConstant.kError, msg: msg, vwController: self ?? UIViewController())

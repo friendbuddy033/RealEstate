@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -558,6 +558,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZFB-PO-N2V"/>
+                    <connections>
+                        <outlet property="tfAddress" destination="7Rr-5X-pqH" id="qc6-LE-Xdz"/>
+                        <outlet property="tfAgencyName" destination="DOT-FC-Fav" id="Msn-7a-DKc"/>
+                        <outlet property="tfBusinessDecs" destination="AZc-Qt-MZd" id="nge-pM-Y7e"/>
+                        <outlet property="tfContactPersonName" destination="HjL-ob-QIv" id="E46-bo-9sz"/>
+                        <outlet property="tfLocality" destination="jWJ-Im-2ZV" id="XxZ-gb-cZX"/>
+                        <outlet property="tfOperatingYear" destination="Rn8-8K-XV2" id="VGg-0u-OJ7"/>
+                        <outlet property="tfPricePercentage" destination="5m2-VQ-RqJ" id="vJs-Su-q07"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1e-Po-HDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

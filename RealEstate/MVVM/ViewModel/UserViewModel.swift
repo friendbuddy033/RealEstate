@@ -27,7 +27,26 @@ class UserViewModel: NSObject {
 //MARK: API
 extension UserViewModel{
     
-    func registerAPI(paramApi:ParamApiModel,completion:@escaping completionHandler){
+    
+    func loginAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandler){
+        server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
+
+            let usersData = try? JSONDecoder().decode(CommonModel<LoginModel>.self, from: responseData ?? Data())
+            
+            print("login response: ",usersData?.data?.dictionary ?? [:])
+            
+//            UserDefaults.standard.
+            
+            if usersData?.statusCode == 200 {
+                completion(true,usersData?.message ?? "")
+            }else{
+                completion(false,usersData?.message ?? "")
+            }
+            
+        }
+    }
+    
+    func registerAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandler){
         server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
 
             let usersData = try? JSONDecoder().decode(RegisterModel.self, from: responseData ?? Data())
@@ -40,14 +59,14 @@ extension UserViewModel{
         }
     }
     
-    func verifyOtpAPI(paramApi:ParamApiModel,completion:@escaping completionHandler){
+    func verifyOtpAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandlerPage){
         server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
 
             let usersData = try? JSONDecoder().decode(RegisterModel.self, from: responseData ?? Data())
             if usersData?.statusCode == 200 {
-                completion(true,usersData?.message ?? "")
+                completion(true,usersData?.message ?? "",usersData?.userID ?? 0)
             }else{
-                completion(false,usersData?.message ?? "")
+                completion(false,usersData?.message ?? "",0)
             }
             
         }

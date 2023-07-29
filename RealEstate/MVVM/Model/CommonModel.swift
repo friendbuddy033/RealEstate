@@ -9,3 +9,11 @@ import Foundation
 
 import UIKit
 
+struct CommonModel<T: Codable> : Codable
+{
+    var data: T?
+    var message: String?
+    var statusCode: Int?
+}
+
+struct EmptyModel: Codable { }

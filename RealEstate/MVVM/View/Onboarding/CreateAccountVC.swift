@@ -28,11 +28,10 @@ class CreateAccountVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0){ [weak self] in
-//            let vc = RealEstateTabbarVC.getVC(.Tabbbar)
-//            self?.push(vc)
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0){ [weak self] in
 //            let vc = AgentRegistStepOneVC.getVC(.Agent)
-        }
+//            self?.push(vc)
+//        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -79,8 +78,9 @@ extension CreateAccountVC{
         self.present(vc, animated: true)
     }
     
-    func pushToVerifyOtp(objParm:ParamApiModel){
+    func pushToVerifyOtp(objParm:AuthParamApiModel){
         let vc = VerifyOtpVC.getVC(.Main)
+        vc.verificationType = APIConstant.kRegister
         vc.mobileNumber = "+91\(tfPhoneNo.text ?? "")"
         vc.objParamApiModel = objParm
         self.push(vc)
@@ -93,7 +93,7 @@ extension CreateAccountVC{
     
     func registerAPI(){
         
-        let param = ParamApiModel(endPoint: APIConstant.kRegister,
+        let param = AuthParamApiModel(endPoint: APIConstant.kRegister,
                                   email: tfEmail.text ?? "",
                                   full_name: tfName.text ?? "",
                                   phone: "+91\(tfPhoneNo.text ?? "")",

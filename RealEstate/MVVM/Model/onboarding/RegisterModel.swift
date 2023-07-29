@@ -11,12 +11,14 @@ struct RegisterModel : Codable {
     var oTP : Int?
     var statusCode : Int?
     var message : String?
+    var userID: Int?
 
     enum CodingKeys: String, CodingKey {
 
         case oTP = "OTP"
         case statusCode = "statusCode"
         case message = "message"
+        case userID
     }
 
     init(from decoder: Decoder) throws {
@@ -25,6 +27,7 @@ struct RegisterModel : Codable {
             oTP = try values.decodeIfPresent(Int.self, forKey: .oTP)
             statusCode = try values.decodeIfPresent(Int.self, forKey: .statusCode)
             message = try values.decodeIfPresent(String.self, forKey: .message)
+            userID = try values.decodeIfPresent(Int.self, forKey: .userID)
         }catch{
             Logger.log("misType error:- \(error)")
         }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cOs-Ch-V9a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cOs-Ch-V9a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -574,10 +574,10 @@
             </objects>
             <point key="canvasLocation" x="922" y="626"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="eOY-tZ-2gg">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kh6-E5-MHv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kh6-E5-MHv" customClass="LoginVC" customModule="RealEstate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qT-P8-GVU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -690,6 +690,10 @@
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </textField>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDc-h1-QZ7">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="50"/>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <constraints>
@@ -698,11 +702,15 @@
                                                                             <constraint firstAttribute="bottom" secondItem="VrN-I5-Tuu" secondAttribute="bottom" id="4Q0-YO-189"/>
                                                                             <constraint firstItem="VrN-I5-Tuu" firstAttribute="top" secondItem="bc8-J7-1hF" secondAttribute="top" id="8eB-kb-J8f"/>
                                                                             <constraint firstItem="hz2-un-sGO" firstAttribute="leading" secondItem="jTI-Lb-48S" secondAttribute="trailing" constant="4" id="DJb-L1-GSy"/>
+                                                                            <constraint firstItem="sDc-h1-QZ7" firstAttribute="trailing" secondItem="4Gw-Xx-E1H" secondAttribute="trailing" id="ERm-GK-Lik"/>
                                                                             <constraint firstItem="jTI-Lb-48S" firstAttribute="centerY" secondItem="bc8-J7-1hF" secondAttribute="centerY" id="N0c-1q-ZRc"/>
                                                                             <constraint firstAttribute="trailing" secondItem="VrN-I5-Tuu" secondAttribute="trailing" id="NBU-T4-PMD"/>
                                                                             <constraint firstItem="VrN-I5-Tuu" firstAttribute="leading" secondItem="4Gw-Xx-E1H" secondAttribute="trailing" constant="8" id="OO1-ZW-nlf"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="sDc-h1-QZ7" secondAttribute="bottom" id="UgK-Cn-kn0"/>
                                                                             <constraint firstItem="4Gw-Xx-E1H" firstAttribute="leading" secondItem="hz2-un-sGO" secondAttribute="trailing" constant="5" id="b9a-8c-wU8"/>
                                                                             <constraint firstItem="jTI-Lb-48S" firstAttribute="leading" secondItem="bc8-J7-1hF" secondAttribute="leading" constant="9" id="eCx-ch-O93"/>
+                                                                            <constraint firstItem="sDc-h1-QZ7" firstAttribute="leading" secondItem="bc8-J7-1hF" secondAttribute="leading" id="rtE-mc-SoQ"/>
+                                                                            <constraint firstItem="sDc-h1-QZ7" firstAttribute="top" secondItem="bc8-J7-1hF" secondAttribute="top" id="thC-e3-WZk"/>
                                                                             <constraint firstAttribute="height" constant="50" id="vuL-iE-Zih"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
@@ -739,6 +747,9 @@
                                                                         <state key="normal" title="Get OTP">
                                                                             <color key="titleColor" name="WhiteColor"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="btnGetOtpAction:" destination="Kh6-E5-MHv" eventType="touchUpInside" id="fPv-Yf-ofr"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="btnThemeColor"/>
@@ -823,6 +834,11 @@
                             <constraint firstItem="hMi-0r-Dkt" firstAttribute="leading" secondItem="7qT-P8-GVU" secondAttribute="leading" id="vf8-x0-ptJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qch-Ij-URs"/>
+                    <connections>
+                        <outlet property="tfPhoneNo" destination="VrN-I5-Tuu" id="phw-aZ-cWh"/>
+                        <outlet property="vwBg" destination="QCz-Cd-Mjq" id="N8w-lB-1nT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOl-2u-fng" sceneMemberID="firstResponder"/>
             </objects>
@@ -1265,7 +1281,7 @@ will apply auto to the fields</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kKz-aJ-9sl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RKu-wf-jG7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNY-Sl-BBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1274,8 +1290,14 @@ will apply auto to the fields</string>
         </scene>
     </scenes>
     <designables>
+        <designable name="2fI-pa-emi">
+            <size key="intrinsicContentSize" width="4" height="16"/>
+        </designable>
         <designable name="3NS-ng-4s4">
             <size key="intrinsicContentSize" width="142.5" height="17.5"/>
+        </designable>
+        <designable name="Cdp-2p-9mP">
+            <size key="intrinsicContentSize" width="4" height="16"/>
         </designable>
         <designable name="CqE-R0-T9e">
             <size key="intrinsicContentSize" width="120" height="17.5"/>
@@ -1283,14 +1305,26 @@ will apply auto to the fields</string>
         <designable name="VrN-I5-Tuu">
             <size key="intrinsicContentSize" width="87" height="17.5"/>
         </designable>
+        <designable name="Y9M-ue-gJM">
+            <size key="intrinsicContentSize" width="4" height="16"/>
+        </designable>
         <designable name="aMX-pL-o3B">
             <size key="intrinsicContentSize" width="45" height="17.5"/>
         </designable>
         <designable name="bAD-Gq-QCf">
             <size key="intrinsicContentSize" width="79" height="17.5"/>
         </designable>
+        <designable name="dIz-8I-dGg">
+            <size key="intrinsicContentSize" width="4" height="16"/>
+        </designable>
+        <designable name="g3q-Zn-dlG">
+            <size key="intrinsicContentSize" width="4" height="16"/>
+        </designable>
         <designable name="jTI-Lb-48S">
             <size key="intrinsicContentSize" width="42" height="27"/>
+        </designable>
+        <designable name="kri-Fb-6XT">
+            <size key="intrinsicContentSize" width="4" height="16"/>
         </designable>
         <designable name="p50-uA-xAt">
             <size key="intrinsicContentSize" width="110" height="16"/>

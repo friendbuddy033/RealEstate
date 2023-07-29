@@ -142,7 +142,11 @@ class UtilityMangr : NSObject{
     }
     */
     func getHeaderToken()->HTTPHeaders{
-        let header : HTTPHeaders = ["Accept":"application/json","Authorization":"Bearer \(appToken)"]
+        /*
+         "Accept":"application/json",
+         "Authorization":"Bearer \(appToken)",
+         */
+        let header : HTTPHeaders = ["5TcCsDKRIdji5-XC8NSZ6-hdj855-tSHghugR-gWCdgXcmvU" : "saReal_Lb[&yt{>`J.!YKVZ_;e+@Hn;f^qYZGA@J74593874"]
             //print(header.description)
         Logger.log(header.description)
         return header
