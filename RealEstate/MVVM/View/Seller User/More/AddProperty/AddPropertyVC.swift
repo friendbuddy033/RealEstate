@@ -46,6 +46,10 @@ class AddPropertyVC: UIViewController {
         self.pushToAddPropertyNext()
     }
     
+    @IBAction func btnBackAction(_ sender: Any) {
+        self.popVc()
+    }
+    
 }
 
 //MARK: SETUI

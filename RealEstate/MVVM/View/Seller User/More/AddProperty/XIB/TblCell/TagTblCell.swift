@@ -35,7 +35,10 @@ class TagTblCell: UITableViewCell {
 extension TagTblCell:  TagListViewDelegate{
     
     func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+        sender.tagViews.forEach {$0.isSelected = false}
+        tagView.isSelected = !tagView.isSelected
         self.delegate?.didSelectTag(section: self.section, tag: title)
+        
     }
     
 }

@@ -50,6 +50,11 @@ class AgentsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     
     @IBAction func btnPlusAction(_ sender: UIButton)
     {

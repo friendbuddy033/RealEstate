@@ -14,8 +14,11 @@ class UsersByRoleVC: UIViewController {
             collVw.delegate = self
             collVw.dataSource = self
             collVw.registerNib(cell: ProfessionalPhotoClcCell.self)
+            collVw.register(UINib(nibName: collectionViewHeaderFooterReuseIdentifier, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:collectionViewHeaderFooterReuseIdentifier)
         }
     }
+    
+    let collectionViewHeaderFooterReuseIdentifier = "UserSearchHeaderView"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,12 @@ class UsersByRoleVC: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
     @IBAction func btnBackAction(_ sender: UIButton)
     {
         self.popVc()
@@ -32,6 +41,7 @@ class UsersByRoleVC: UIViewController {
 //MARK: - COLLECTIONVIEW DELEGATE AND DATASOURCE
 extension UsersByRoleVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
@@ -45,8 +55,6 @@ extension UsersByRoleVC:UICollectionViewDelegate,UICollectionViewDataSource,UICo
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "UserSearchHeaderView", for: indexPath) as! UserSearchHeaderView
-        
-        
         return view
         
     }
@@ -58,4 +66,10 @@ extension UsersByRoleVC:UICollectionViewDelegate,UICollectionViewDataSource,UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ((collVw.frame.width - 10)/2), height: 175)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+            return CGSize(width: collectionView.frame.width, height: 250)
+    }
+
+    
 }
