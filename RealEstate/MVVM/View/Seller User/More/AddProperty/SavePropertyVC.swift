@@ -23,18 +23,29 @@ class SavePropertyVC: UIViewController {
         case AddPictureSelf = "Add Picture Self"
     }
     
+    var propertyParams: PropertyParamModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    
+    
     @IBAction func btnBackAction(_ sender: Any) {
         self.popVc()
     }
     
     @IBAction func btnSaveAction(_ sender: Any) {
-        self.pushToSuccess()
+//        self.pushToSuccess()
+        if propertyParams?.money == "" || propertyParams?.money == nil {
+            UtilityMangr.shared.showAlert(title: AppConstant.kOops, msg: "Please enter amount of property", vwController: self)
+        }else{
+            if let propertyParams{
+                self.saveProperty(params: propertyParams)
+            }
+        }
     }
     
     @IBAction func btnAddPictureProfessionalAction(_ sender: Any) {
@@ -59,6 +70,10 @@ extension SavePropertyVC:UITableViewDelegate,UITableViewDataSource{
         switch headerTiles.allCases[indexPath.section]{
         case .AddMoney:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextFieldTblCell", for: indexPath) as! TextFieldTblCell
+            cell.selectionStyle = .none
+            
+            cell.tfAmount.addTarget(self, action: #selector(handleMoneyField(_ :)), for: .editingChanged)
+            
             return cell
         case .AddPictureSelf:
             let cell = tableView.dequeueReusableCell(withIdentifier: "AddPictureTblCell", for: indexPath) as! AddPictureTblCell
@@ -86,6 +101,10 @@ extension SavePropertyVC:UITableViewDelegate,UITableViewDataSource{
 //MARK: NAVIGATION
 extension SavePropertyVC{
     
+    @objc private func handleMoneyField(_ txtfield: UITextField){
+        propertyParams?.money = txtfield.text
+    }
+    
     func pushToSuccess(){
         let vc = PropertyAddedSuccessVC.getVC(.More)
         self.push(vc)
@@ -94,6 +113,25 @@ extension SavePropertyVC{
     func pushToPictureProfessional(){
         let vc = ProfessionalPhotoVC.getVC(.More)
         self.push(vc)
+    }
+    
+}
+extension SavePropertyVC
+{
+    private func saveProperty(params : PropertyParamModel)
+    {
+        PropertyViewModel.shared().addNewProperty(paramApi: params) { [weak self] (success, msg) in
+            guard let self = self else { return }
+            if success{
+                DispatchQueue.main.async {
+                    self.pushToSuccess()
+                }
+            }else{
+                DispatchQueue.main.async {
+                    UtilityMangr.shared.showAlert(title: AppConstant.kOops, msg: msg, vwController: self)
+                }
+            }
+        }
     }
     
 }

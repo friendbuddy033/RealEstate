@@ -65,6 +65,7 @@ enum Storyboard : String {
 }
 
 extension UIViewController{
+    //MARK: Navigation Methods
     
     static func getVC(_ storyBoard:Storyboard) -> Self{
     

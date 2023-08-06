@@ -29,6 +29,15 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.getUserDetails()
+        self.getAllProperties()
+    }
+    
+    
+    //MARK: Button Action
+    
+    @IBAction func btnAddAction(_ sender: Any){
+        self.push(AddPropertyVC.getVC(.More))
     }
     
 }
@@ -85,6 +94,34 @@ extension HomeVC : realEstateDelegate{
     
     func didSelect(indexPath: IndexPath) {
 //        self.push()
+    }
+    
+}
+extension HomeVC {
+    
+    private func getAllProperties()
+    {
+        PropertyViewModel.shared().getAllProperties { [weak self] (success, msg) in
+            guard let self = self else { return }
+            if success{
+                self.tblVw.reloadData()
+            }else{
+                UtilityMangr.shared.showAlert(title: AppConstant.kOops, msg: msg, vwController: self)
+            }
+        }
+    }
+    
+    private func getUserDetails()
+    {
+        UserViewModel.shared().getUserDetails { [weak self] (success, msg) in
+            guard let self = self else { return }
+            if success{
+                
+
+            }else{
+                UtilityMangr.shared.showAlert(title: AppConstant.kOops, msg: msg, vwController: self)
+            }
+        }
     }
     
 }

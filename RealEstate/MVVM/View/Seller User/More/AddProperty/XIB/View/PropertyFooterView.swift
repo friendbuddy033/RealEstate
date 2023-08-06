@@ -9,6 +9,10 @@ import UIKit
 
 class PropertyFooterView: UIView {
 
+    @IBOutlet weak var tfLocation: TextFieldCustom!
+    @IBOutlet weak var tfTotalNumber: TextFieldCustom!
+    @IBOutlet weak var tfDirectionalface: TextFieldCustom!
+    
     static var share: PropertyFooterView? = nil
     
     static var instance: PropertyFooterView {

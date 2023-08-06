@@ -9,6 +9,7 @@ import UIKit
 
 class TextFieldTblCell: UITableViewCell {
 
+    @IBOutlet weak var tfAmount: TextFieldCustom!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

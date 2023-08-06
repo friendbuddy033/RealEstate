@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeVillaVC: UIViewController {
-
+    
     @IBOutlet weak var clcVw: UICollectionView!{
         didSet{
             clcVw.delegate = self

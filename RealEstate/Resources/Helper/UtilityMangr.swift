@@ -22,6 +22,8 @@ class UtilityMangr : NSObject{
     
     private override init() {}
     
+    var nav : UINavigationController!
+    
     var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
     }
@@ -127,20 +129,26 @@ class UtilityMangr : NSObject{
         
     }
     
-    /*
-    func getUserDetail()->UserInfoModel{
+    func saveUserDetails(details: LoginModel){
+        let encoder = JSONEncoder()
+        
+        guard let data = try? encoder.encode(details) else {return}
+        
+        UserDefaults.standard.set(data, forKey: "userDetail")
+    }
+    
+    func getUserDetail()->LoginModel?{
         let defaults = UserDefaults.standard
-        var storeDetail = UserInfoModel()
         if let savedPerson = defaults.object(forKey: "userDetail") as? Data {
             let decoder = JSONDecoder()
-            if let loadedPerson = try? decoder.decode(UserInfoModel.self, from: savedPerson) {
+            if let loadedPerson = try? decoder.decode(LoginModel.self, from: savedPerson) {
                 //print(loadedPerson.data.name)
-                storeDetail = loadedPerson
+                return loadedPerson
             }
         }
-        return storeDetail
+        return nil
     }
-    */
+    
     func getHeaderToken()->HTTPHeaders{
         /*
          "Accept":"application/json",
@@ -208,6 +216,37 @@ class UtilityMangr : NSObject{
         let datestr = dateFormatter.string(from: date)
         return datestr
     }
+    
+    func makeLoginRoot(){
+        nav = UINavigationController(rootViewController: LoginVC.getVC(.Main))
+        nav.isNavigationBarHidden = true
+        guard let window = UIApplication.shared.keyWindow else {
+            return
+        }
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+    }
+    
+    func makeUserTabRoot(){
+        nav = UINavigationController(rootViewController: RealEstateTabbarVC.getVC(.Tabbbar))
+        nav.isNavigationBarHidden = true
+        guard let window = UIApplication.shared.keyWindow else {
+            return
+        }
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+    }
+
+    func makeAgentTabRoot(){
+        nav = UINavigationController(rootViewController: AgentTabbarVC.getVC(.AgentTabbar))
+        nav.isNavigationBarHidden = true
+        guard let window = UIApplication.shared.keyWindow else {
+            return
+        }
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+    }
+
     
 }
 

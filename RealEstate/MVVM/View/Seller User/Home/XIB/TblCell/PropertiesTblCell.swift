@@ -9,6 +9,13 @@ import UIKit
 
 class PropertiesTblCell: UITableViewCell {
 
+    
+    @IBOutlet weak var imgProperty: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblLocation: UILabel!
+    @IBOutlet weak var lblStatus: UILabel!
+    @IBOutlet weak var lblAmount: UILabel!
+    
     public enum CellType: String
     {
         case normal
@@ -32,4 +39,7 @@ class PropertiesTblCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func btnEditAction(_ sender: Any) {
+        
+    }
 }

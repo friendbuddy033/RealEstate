@@ -3,7 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66R-5q-6T5">
-                                        <rect key="frame" x="21" y="16.666666666666664" width="70.333333333333329" height="32"/>
+                                        <rect key="frame" x="21" y="19.666666666666671" width="69" height="25.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Jost-Bold" family="Jost" pointSize="22"/>
                                         <color key="textColor" name="WhiteColor"/>
                                         <nil key="highlightedColor"/>
@@ -278,7 +278,7 @@
                                                                                     </constraints>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House/Villa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfg-bL-3cf">
-                                                                                    <rect key="frame" x="5" y="57.999999999999993" width="95.333333333333329" height="17.666666666666664"/>
+                                                                                    <rect key="frame" x="5" y="58" width="95.333333333333329" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="12"/>
                                                                                     <color key="textColor" name="btnThemeColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -364,7 +364,7 @@
                                                                                     </constraints>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9t-ge-oZt">
-                                                                                    <rect key="frame" x="5" y="57.999999999999993" width="95.333333333333329" height="17.666666666666664"/>
+                                                                                    <rect key="frame" x="5" y="58" width="95.333333333333329" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="12"/>
                                                                                     <color key="textColor" name="btnThemeColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -439,7 +439,7 @@
                                                                                     </constraints>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acF-wU-bje">
-                                                                                    <rect key="frame" x="5" y="57.999999999999993" width="95.333333333333329" height="17.666666666666664"/>
+                                                                                    <rect key="frame" x="5" y="58" width="95.333333333333329" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="12"/>
                                                                                     <color key="textColor" name="btnThemeColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -577,7 +577,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfG-Tr-SIp">
-                                        <rect key="frame" x="162.33333333333334" y="16.666666666666664" width="65.666666666666657" height="32"/>
+                                        <rect key="frame" x="163.33333333333334" y="19.666666666666671" width="63.666666666666657" height="25.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Jost-Bold" family="Jost" pointSize="22"/>
                                         <color key="textColor" name="WhiteColor"/>
                                         <nil key="highlightedColor"/>
@@ -1175,7 +1175,7 @@
                                                                             <fragment content="$1,800">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="0.050980392156862744" green="0.30588235294117649" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" size="30" name="Jost-Bold"/>
+                                                                                    <font key="NSFont" metaFont="system" size="30"/>
                                                                                 </attributes>
                                                                             </fragment>
                                                                             <fragment content="/month">
@@ -1403,13 +1403,13 @@
     </scenes>
     <designables>
         <designable name="9BR-yn-q91">
-            <size key="intrinsicContentSize" width="116.66666666666667" height="22"/>
+            <size key="intrinsicContentSize" width="121.33333333333333" height="18"/>
         </designable>
         <designable name="Btb-qV-31S">
-            <size key="intrinsicContentSize" width="42.333333333333336" height="22"/>
+            <size key="intrinsicContentSize" width="44" height="18"/>
         </designable>
         <designable name="yEM-px-15A">
-            <size key="intrinsicContentSize" width="116.66666666666667" height="22"/>
+            <size key="intrinsicContentSize" width="121.33333333333333" height="18"/>
         </designable>
     </designables>
     <resources>

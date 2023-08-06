@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -101,21 +101,32 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-ka-uHu" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                <rect key="frame" x="14" y="182" width="81.333333333333329" height="15.666666666666657"/>
+                                <rect key="frame" x="14" y="182" width="81.333333333333329" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Property Ad  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-x7-I7a">
-                                        <rect key="frame" x="9.0000000000000036" y="2" width="63.333333333333343" height="11.666666666666666"/>
+                                        <rect key="frame" x="9.0000000000000036" y="2" width="63.333333333333343" height="24"/>
                                         <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="8"/>
                                         <color key="textColor" name="#FF0000"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jir-YW-T1G">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="btnEditAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PEm-Q7-JUG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="eqz-x7-I7a" firstAttribute="leading" secondItem="8Qr-ka-uHu" secondAttribute="leading" constant="9" id="C5p-N9-qHv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jir-YW-T1G" secondAttribute="bottom" id="Cv7-gT-zFH"/>
                                     <constraint firstAttribute="bottom" secondItem="eqz-x7-I7a" secondAttribute="bottom" constant="2" id="Rq0-TE-DRi"/>
+                                    <constraint firstItem="Jir-YW-T1G" firstAttribute="top" secondItem="8Qr-ka-uHu" secondAttribute="top" id="UhS-zz-2tj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jir-YW-T1G" secondAttribute="trailing" id="YDp-Ka-BAj"/>
                                     <constraint firstItem="eqz-x7-I7a" firstAttribute="top" secondItem="8Qr-ka-uHu" secondAttribute="top" constant="2" id="gtX-Yg-14C"/>
                                     <constraint firstAttribute="trailing" secondItem="eqz-x7-I7a" secondAttribute="trailing" constant="9" id="iCl-dL-K32"/>
+                                    <constraint firstItem="Jir-YW-T1G" firstAttribute="leading" secondItem="8Qr-ka-uHu" secondAttribute="leading" id="s14-Zb-k3P"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -173,6 +184,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgProperty" destination="rHM-r8-Ame" id="PF3-3g-0ye"/>
+                <outlet property="lblAmount" destination="3Vi-2L-lTQ" id="DWC-lf-F4x"/>
+                <outlet property="lblLocation" destination="Ne2-iU-PNf" id="mmR-QS-Jr5"/>
+                <outlet property="lblName" destination="to0-qf-ZYa" id="kco-2C-T4G"/>
+                <outlet property="lblStatus" destination="I0U-jA-L1g" id="EAi-fp-fbd"/>
+            </connections>
             <point key="canvasLocation" x="28" y="-1"/>
         </tableViewCell>
     </objects>

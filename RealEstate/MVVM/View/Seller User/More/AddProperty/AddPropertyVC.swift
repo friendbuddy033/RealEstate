@@ -27,7 +27,9 @@ class AddPropertyVC: UIViewController {
     }
     
     var propertyArray : [AddPropertyModel]?
-    
+    var isFromUpdate: Bool = false
+    private var propertyParams: PropertyParamModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,6 +61,7 @@ extension AddPropertyVC{
         let AdditionalRoom = AddPropertyModel(headerTitle: headerTiles.AdditionalRoom.rawValue,features: ["Pooja Room","Study","Store","Servent Room"])
         
         propertyArray = [DoyouWant,propertType,bhk,Bathroom,Balcony,propertType1,AdditionalRoom]
+        self.propertyParams = PropertyParamModel(endPoint: APIConstant.kAddProperty)
     }
     
 }
@@ -77,7 +80,10 @@ extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TagTblCell", for: indexPath) as! TagTblCell
+        cell.vwTag.removeAllTags()
+        cell.section = indexPath.section
         cell.vwTag.addTags(propertyArray?[indexPath.section].features ?? [])
+        cell.delegate = self
         return cell
     }
     
@@ -95,12 +101,41 @@ extension AddPropertyVC:UITableViewDelegate,UITableViewDataSource{
     }
     
 }
+extension AddPropertyVC : TagTableDelegates{
+    func didSelectTag(section: Int, tag: String) {
+        
+        let features = propertyArray?[section].features ?? []
+        
+        if let selectedfeature = features.firstIndex(where: {$0 == tag})
+        {
+            switch section{
 
+            case 0 : self.propertyParams?.do_you_want_to = features[selectedfeature]
+            case 1 : self.propertyParams?.propert_type = features[selectedfeature]
+            case 2 : self.propertyParams?.bhk = features[selectedfeature]
+            case 3 : self.propertyParams?.bathrooms = features[selectedfeature]
+            case 4 : self.propertyParams?.balcony = features[selectedfeature]
+            case 5 : self.propertyParams?.property_furnished = features[selectedfeature]
+            case 6 : self.propertyParams?.additional_rooms = features[selectedfeature]
+
+            default : break
+            }
+        }
+        
+        Logger.log(self.propertyParams!)
+        
+        
+    }
+    
+    
+
+}
 //MARK: NAVIGATION
 extension AddPropertyVC{
     
     func pushToAddPropertyNext(){
         let vc = AddPropertyNextVC.getVC(.More)
+        vc.propertyParams = self.propertyParams
         self.push(vc)
     }
     

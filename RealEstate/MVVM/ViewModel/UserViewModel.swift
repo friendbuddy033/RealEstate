@@ -28,19 +28,18 @@ class UserViewModel: NSObject {
 extension UserViewModel{
     
     
-    func loginAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandler){
+    func loginAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandlerPage){
         server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
-
-            let usersData = try? JSONDecoder().decode(CommonModel<LoginModel>.self, from: responseData ?? Data())
             
-            print("login response: ",usersData?.data?.dictionary ?? [:])
+            let usersData = try? JSONDecoder().decode(RegisterModel.self, from: responseData ?? Data())
             
-//            UserDefaults.standard.
+            print("login response: ",usersData?.dictionary ?? [:])
+            
             
             if usersData?.statusCode == 200 {
-                completion(true,usersData?.message ?? "")
+                completion(true,usersData?.message ?? "",usersData?.userID ?? 0)
             }else{
-                completion(false,usersData?.message ?? "")
+                completion(false,usersData?.message ?? "",0)
             }
             
         }
@@ -62,14 +61,69 @@ extension UserViewModel{
     func verifyOtpAPI(paramApi:AuthParamApiModel,completion:@escaping completionHandlerPage){
         server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
 
-            let usersData = try? JSONDecoder().decode(RegisterModel.self, from: responseData ?? Data())
-            if usersData?.statusCode == 200 {
-                completion(true,usersData?.message ?? "",usersData?.userID ?? 0)
+            if paramApi.type == APIConstant.kLogin{
+                let usersData = try? JSONDecoder().decode(CommonModel<LoginModel>.self, from: responseData ?? Data())
+
+                if let userdetails = usersData?.data {
+                    UtilityMangr.shared.saveUserDetails(details: userdetails)
+                }
+                
+                if usersData?.statusCode == 200 {
+                    completion(true,usersData?.message ?? "",0)
+                }else{
+                    completion(false,usersData?.message ?? "",0)
+                }
+
             }else{
-                completion(false,usersData?.message ?? "",0)
+                let usersData = try? JSONDecoder().decode(RegisterModel.self, from: responseData ?? Data())
+                if usersData?.statusCode == 200 {
+                    completion(true,usersData?.message ?? "",usersData?.userID ?? 0)
+                }else{
+                    completion(false,usersData?.message ?? "",0)
+                }
             }
             
+            
         }
+    }
+    
+    func getUserDetails(completion:@escaping completionHandler) {
+        
+        let params = PropertyParamModel( user_id: UtilityMangr.shared.getUserDetail()?.userID,endPoint: APIConstant.kGetUserDetailsById)
+        
+        server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: params) { [weak self] (responseDict,responseData,success) in
+            Logger.log("responseDict : \(responseDict)")
+            let data = try? JSONDecoder().decode(CommonModel<EmptyModel>.self, from: responseData ?? Data())
+            Logger.log("decoded : \(data?.dictionary)")
+            if data?.statusCode == 200 {
+                completion(true,data?.message ?? "")
+            }else{
+                completion(false,data?.message ?? "")
+            }
+        }
+    }
+    
+    
+    func getUsersByRole(role: String,completion:@escaping ([LoginModel]?,String) -> Void) {
+        
+        let params = ProfileParamApiModel(endPoint: APIConstant.kGetUserDetailsById,role: role)
+
+        server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: params) { [weak self] (responseDict,responseData,success) in
+            Logger.log("responseDict : \(responseDict)")
+            let data = try? JSONDecoder().decode(CommonModel<[LoginModel]>.self, from: responseData ?? Data())
+            Logger.log("decoded : \(data?.dictionary)")
+            if data?.statusCode == 200 {
+                completion(data?.data,data?.message ?? "")
+            }else{
+                completion([],data?.message ?? "")
+            }
+        }
+    }
+    
+    
+    func logout(){
+        UtilityMangr.shared.removeDetailsLogout()
+        UtilityMangr.shared.makeLoginRoot()
     }
     
 }

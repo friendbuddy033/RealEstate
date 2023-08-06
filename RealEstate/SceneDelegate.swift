@@ -10,13 +10,15 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var nav: UINavigationController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+        setRootView(windowScene: scene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +49,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func setRootView(windowScene: UIWindowScene){
+        
+        let window = UIWindow(windowScene: windowScene)
+        
+        let userTabbar = RealEstateTabbarVC.getVC(.Tabbbar)
+        let agentTabbar = AgentTabbarVC.getVC(.AgentTabbar)
+        let onBoarding = LoginVC.getVC(.Main)
+        
+        if let user = UtilityMangr.shared.getUserDetail(){
+            if user.role == "property_agent"{
+                nav = UINavigationController(rootViewController: agentTabbar)
+            }else{
+                nav = UINavigationController(rootViewController: userTabbar)
+            }
+        }else{
+            nav = UINavigationController(rootViewController: onBoarding)
+        }
+        nav?.isNavigationBarHidden = true
+        
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+        
+        self.window = window
+    }
 
 }
 

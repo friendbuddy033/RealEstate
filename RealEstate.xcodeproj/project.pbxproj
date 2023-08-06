@@ -29,6 +29,7 @@
 		181B8C5E2A73E63B00D9EC4C /* AgentProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B8C5D2A73E63B00D9EC4C /* AgentProfileViewModel.swift */; };
 		183B32FC2A51B2AF0008F7C1 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */; };
 		183B32FE2A51BA600008F7C1 /* SJCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */; };
+		18492F542A7EA5EC0070E775 /* UsersByRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18492F532A7EA5EC0070E775 /* UsersByRoleVC.swift */; };
 		184D85672A70471C00C5BEEC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D85662A70471C00C5BEEC /* LoginModel.swift */; };
 		18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */; };
 		18779CB92A4DE39600180E4D /* AgentsOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */; };
@@ -54,6 +55,8 @@
 		188A59A42A5BF63300D57EB4 /* ReceiverChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A59A22A5BF63300D57EB4 /* ReceiverChatCell.swift */; };
 		188A59A52A5BF63300D57EB4 /* ReceiverChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A59A32A5BF63300D57EB4 /* ReceiverChatCell.xib */; };
 		188A59A72A5BF76500D57EB4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A59A62A5BF76500D57EB4 /* ChatVC.swift */; };
+		188EB7732A7F6DA500ABB812 /* UserSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EB7712A7F6DA500ABB812 /* UserSearchHeaderView.swift */; };
+		188EB7742A7F6DA500ABB812 /* UserSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188EB7722A7F6DA500ABB812 /* UserSearchHeaderView.xib */; };
 		18A2C1532A4DFD0D00DF5628 /* MyAgents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */; };
 		18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */; };
 		18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */; };
@@ -149,6 +152,7 @@
 		26CB64A32A4835E100A6C02F /* TagTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CB64A12A4835E100A6C02F /* TagTblCell.xib */; };
 		26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB64A42A483F8F00A6C02F /* HelperStruct.swift */; };
 		6352BB0EED08AAA96FF67A01 /* Pods_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC876DBB31962B362EED522 /* Pods_RealEstate.framework */; };
+		701A1ED42A7CE57900109875 /* PropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701A1ED32A7CE57900109875 /* PropertyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +178,7 @@
 		181B8C5D2A73E63B00D9EC4C /* AgentProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProfileViewModel.swift; sourceTree = "<group>"; };
 		183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
 		183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJCenterFlowLayout.swift; sourceTree = "<group>"; };
+		18492F532A7EA5EC0070E775 /* UsersByRoleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersByRoleVC.swift; sourceTree = "<group>"; };
 		184D85662A70471C00C5BEEC /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		18779CB52A4DE39600180E4D /* AgentsOptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentsOptionsCell.swift; sourceTree = "<group>"; };
 		18779CB62A4DE39600180E4D /* AgentsOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgentsOptionsCell.xib; sourceTree = "<group>"; };
@@ -199,6 +204,8 @@
 		188A59A22A5BF63300D57EB4 /* ReceiverChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverChatCell.swift; sourceTree = "<group>"; };
 		188A59A32A5BF63300D57EB4 /* ReceiverChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiverChatCell.xib; sourceTree = "<group>"; };
 		188A59A62A5BF76500D57EB4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		188EB7712A7F6DA500ABB812 /* UserSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchHeaderView.swift; sourceTree = "<group>"; };
+		188EB7722A7F6DA500ABB812 /* UserSearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSearchHeaderView.xib; sourceTree = "<group>"; };
 		18A2C1522A4DFD0D00DF5628 /* MyAgents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAgents.storyboard; sourceTree = "<group>"; };
 		18A2C1552A4E004200DF5628 /* AgentDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDashboardVC.swift; sourceTree = "<group>"; };
 		18A2C1582A4E00DB00DF5628 /* AgentRegistStepOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRegistStepOneVC.swift; sourceTree = "<group>"; };
@@ -297,6 +304,7 @@
 		26CB64A42A483F8F00A6C02F /* HelperStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperStruct.swift; sourceTree = "<group>"; };
 		34A84E649EC9DBF34ECC821D /* Pods-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-RealEstate/Pods-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
 		6FC876DBB31962B362EED522 /* Pods_RealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701A1ED32A7CE57900109875 /* PropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewModel.swift; sourceTree = "<group>"; };
 		A590C2339F6BB41E5C8EA518 /* Pods-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstate.debug.xcconfig"; path = "Target Support Files/Pods-RealEstate/Pods-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -383,11 +391,21 @@
 			path = TblCell;
 			sourceTree = "<group>";
 		};
+		18492F4E2A7EA1400070E775 /* ClcCell */ = {
+			isa = PBXGroup;
+			children = (
+				188EB7712A7F6DA500ABB812 /* UserSearchHeaderView.swift */,
+				188EB7722A7F6DA500ABB812 /* UserSearchHeaderView.xib */,
+			);
+			path = ClcCell;
+			sourceTree = "<group>";
+		};
 		18779CB22A4DE39600180E4D /* MyAgents */ = {
 			isa = PBXGroup;
 			children = (
 				18779CB32A4DE39600180E4D /* Xibs */,
 				18779CB72A4DE39600180E4D /* AgentsVC.swift */,
+				18492F532A7EA5EC0070E775 /* UsersByRoleVC.swift */,
 			);
 			path = MyAgents;
 			sourceTree = "<group>";
@@ -395,6 +413,7 @@
 		18779CB32A4DE39600180E4D /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				18492F4E2A7EA1400070E775 /* ClcCell */,
 				18779CB42A4DE39600180E4D /* TblCell */,
 			);
 			path = Xibs;
@@ -633,6 +652,7 @@
 			children = (
 				26C30E612A4DE86400BC0515 /* UserViewModel.swift */,
 				181B8C5D2A73E63B00D9EC4C /* AgentProfileViewModel.swift */,
+				701A1ED32A7CE57900109875 /* PropertyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -885,8 +905,8 @@
 			isa = PBXGroup;
 			children = (
 				26CB64932A48262600A6C02F /* MoreVC.swift */,
-				26183CBE2A5181A80038108B /* ProfessionalPhotographer */,
 				26CB649B2A48358300A6C02F /* AddProperty */,
+				26183CBE2A5181A80038108B /* ProfessionalPhotographer */,
 				26CB64952A48262E00A6C02F /* XIB */,
 			);
 			path = More;
@@ -1022,6 +1042,7 @@
 			files = (
 				26183CB72A514BAB0038108B /* TextFieldTblCell.xib in Resources */,
 				269AA92D2A45FFC60006CB17 /* Jost-Medium.ttf in Resources */,
+				188EB7742A7F6DA500ABB812 /* UserSearchHeaderView.xib in Resources */,
 				26CB64912A48251400A6C02F /* More.storyboard in Resources */,
 				188A599D2A5BF0DF00D57EB4 /* LastMessageCell.xib in Resources */,
 				18779CD62A4DE51600180E4D /* PropertyImagesCell.xib in Resources */,
@@ -1144,6 +1165,7 @@
 				2614561D2A6D127F00883DC7 /* APIHepler.swift in Sources */,
 				2610F9282A4228B200FE1738 /* DownloadCircularProgessView.swift in Sources */,
 				181B8C582A73DD3700D9EC4C /* CreateAccountVC.swift in Sources */,
+				18492F542A7EA5EC0070E775 /* UsersByRoleVC.swift in Sources */,
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
 				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
@@ -1173,6 +1195,7 @@
 				269AA94B2A460B430006CB17 /* PropertiesTblCell.swift in Sources */,
 				26560D0A2A5014B3005E91F4 /* PropertyFooterView.swift in Sources */,
 				26B99C8E2A4812E6004DF28F /* HomeVillaVC.swift in Sources */,
+				701A1ED42A7CE57900109875 /* PropertyViewModel.swift in Sources */,
 				18779CBA2A4DE39600180E4D /* AgentsVC.swift in Sources */,
 				2610F90A2A42284E00FE1738 /* AppDelegate.swift in Sources */,
 				2610F9252A4228B200FE1738 /* ImageCustom.swift in Sources */,
@@ -1184,6 +1207,7 @@
 				2614561B2A6D127F00883DC7 /* APIConstant.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */,
+				188EB7732A7F6DA500ABB812 /* UserSearchHeaderView.swift in Sources */,
 				2610F9272A4228B200FE1738 /* LabelCustom.swift in Sources */,
 				181204162A57EE1E000FC360 /* ScalingCarouselLayout.swift in Sources */,
 				188A59A02A5BF49E00D57EB4 /* SenderChatCell.swift in Sources */,

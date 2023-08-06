@@ -24,7 +24,8 @@ class AddPropertyNextVC: UIViewController {
     }
     
     var propertyArray : [AddPropertyModel]?
-    
+    var propertyParams: PropertyParamModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -68,6 +69,9 @@ extension AddPropertyNextVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TagTblCell", for: indexPath) as! TagTblCell
+        cell.vwTag.removeAllTags()
+        cell.section = indexPath.section
+        cell.delegate = self
         cell.vwTag.addTags(propertyArray?[indexPath.section].features ?? [])
         return cell
     }
@@ -85,6 +89,15 @@ extension AddPropertyNextVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         guard ((propertyArray?.count ?? 0) - 1) == section else {return nil}
         let vw = PropertyFooterView.instance
+        
+        DispatchQueue.main.async {
+            [
+                vw.tfLocation,
+                vw.tfTotalNumber,
+                vw.tfDirectionalface
+            ].forEach({$0?.addTarget(self, action: #selector(self.handleFooterTextfield(_ :)), for: .editingChanged)})
+        }
+        
         return vw
     }
     
@@ -98,12 +111,52 @@ extension AddPropertyNextVC:UITableViewDelegate,UITableViewDataSource{
     }
     
 }
+extension AddPropertyNextVC : TagTableDelegates{
+    func didSelectTag(section: Int, tag: String) {
+        
+        let features = propertyArray?[section].features ?? []
+        
+        if let selectedfeature = features.firstIndex(where: {$0 == tag})
+        {
+            switch section{
 
+            case 0 : self.propertyParams?.transaction_type = features[selectedfeature]
+            case 1 : self.propertyParams?.overlooking = features[selectedfeature]
+            case 2 : self.propertyParams?.availability_status = features[selectedfeature]
+
+            default : break
+            }
+        }
+        
+        Logger.log(self.propertyParams!)
+        
+        
+    }
+    
+    
+
+}
 //MARK: NAVIGATION
 extension AddPropertyNextVC{
     
-   private func pushToSaveProperty(){
+    @objc private func handleFooterTextfield(_ txtfield: UITextField){
+        let fieldIndex = txtfield.tag
+        switch fieldIndex
+        {
+            
+        case 0: self.propertyParams?.location = txtfield.text
+        case 1: self.propertyParams?.total_flats = txtfield.text
+        case 2: self.propertyParams?.directional_facing = txtfield.text
+            
+        default : break
+            
+        }
+        
+    }
+    
+    private func pushToSaveProperty(){
         let vc = SavePropertyVC.getVC(.More)
+        vc.propertyParams = self.propertyParams
         self.push(vc)
     }
     

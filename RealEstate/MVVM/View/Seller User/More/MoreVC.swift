@@ -58,8 +58,12 @@ extension MoreVC:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = AddPropertyVC.getVC(.More)
-        self.push(vc)
+//        let vc = AddPropertyVC.getVC(.More)
+//        self.push(vc)
+        
+        if moreTiles.allCases[indexPath.row] == .Logout{
+            UserViewModel.shared().logout()
+        }
     }
     
 }

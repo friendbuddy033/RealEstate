@@ -39,6 +39,9 @@ class CreateAccountVC: UIViewController {
         vwBg.roundCorners(with: [.layerMinXMinYCorner,.layerMaxXMinYCorner], radius: 45)
     }
     
+    @IBAction func btnSignInAction(_ sender: Any) {
+        self.popVc()
+    }
     @IBAction func btnSelectTypeAction(_ sender: Any) {
         presentToDropDown()
     }

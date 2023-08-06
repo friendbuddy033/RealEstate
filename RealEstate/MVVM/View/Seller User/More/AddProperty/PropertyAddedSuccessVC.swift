@@ -16,7 +16,8 @@ class PropertyAddedSuccessVC: UIViewController {
     }
     
     @IBAction func btnDashboardAction(_ sender: Any) {
-        self.popToViewController(ofClass: MoreVC.self)
+//        self.popToViewController(ofClass: RealEstateTabbarVC.self)
+        UtilityMangr.shared.makeUserTabRoot()
     }
     
   

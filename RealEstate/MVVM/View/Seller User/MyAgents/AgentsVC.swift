@@ -9,6 +9,26 @@ import UIKit
 
 class AgentsVC: UIViewController {
 
+    enum UserTypes: String, CaseIterable {
+        
+        case loanAdviser
+        case propertiAdviser
+        case professionalPhoto
+        case builder
+        
+        var findUserTitle: String {
+            get {
+                switch self
+                {
+                case .loanAdviser : return "Find Best Loan Adviser"
+                case .propertiAdviser : return "Find Best Property Agents"
+                case .professionalPhoto : return "Add Picture by Professional"
+                case .builder : return "Find Builder"
+                }
+            }
+        }
+    }
+    
     @IBOutlet weak var clcVwAgents: UICollectionView!{
         didSet{
             clcVwAgents.registerNib(cell: AgentClcCell.self)
@@ -23,6 +43,7 @@ class AgentsVC: UIViewController {
             tblVwOptions.dataSource = self
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,8 +51,11 @@ class AgentsVC: UIViewController {
     }
     
     
-    
-    
+    @IBAction func btnPlusAction(_ sender: UIButton)
+    {
+        let vc = AddPropertyVC.getVC(.More)
+        self.push(vc)
+    }
 }
 extension AgentsVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
 {
@@ -63,15 +87,21 @@ extension AgentsVC : UITableViewDelegate, UITableViewDataSource
 {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return UserTypes.allCases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AgentsOptionsCell.identifier, for: indexPath) as! AgentsOptionsCell
         
         cell.selectionStyle = .none
+        cell.lblTitle.text = UserTypes.allCases[indexPath.row].findUserTitle
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UsersByRoleVC.getVC(.MyAgents)
+        self.push(vc)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

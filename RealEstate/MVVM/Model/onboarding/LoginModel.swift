@@ -16,5 +16,5 @@ struct LoginModel : Codable{
     var name: String?
     var profilePic: String?
     var profileUrl: String?
-    
+   
 }

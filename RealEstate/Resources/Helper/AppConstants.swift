@@ -45,8 +45,9 @@ struct AppConstant{
     static let kInfo = "Info!"
     static let kRequired = "Are you sure you want to make this item unrequired?"
     static let kDeleteCamper = "Delete Camper?"
-    static let kDeleteCamperMsg = "Are you sure you want to delete this camper?"
     static let kEmptyPhoneNo = "Please enter the phone number"
+    static let kDeleteCamperMsg = "Are you sure you want to delete this camper?"
+    static let kEmptyCountryCode = "Please select your country code"
     static let kEmptyType = "Please select the type"
     static let kValidOtp = "Please enter the valid otp."
 }
