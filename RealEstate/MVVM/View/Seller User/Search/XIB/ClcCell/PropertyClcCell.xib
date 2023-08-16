@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -53,10 +53,10 @@
                                 <rect key="frame" x="0.0" y="169" width="236" height="92"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-24-zs7" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
-                                        <rect key="frame" x="11" y="9" width="85" height="25"/>
+                                        <rect key="frame" x="11" y="8.9999999999999982" width="85" height="21.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-WB-Z5y">
-                                                <rect key="frame" x="12" y="3" width="61" height="19"/>
+                                                <rect key="frame" x="12" y="3.0000000000000009" width="61" height="15.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="13"/>
                                                 <color key="textColor" name="btnThemeColor"/>
                                                 <nil key="highlightedColor"/>
@@ -82,38 +82,38 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semie Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyq-nU-W7u">
-                                        <rect key="frame" x="11" y="35" width="220" height="22"/>
+                                        <rect key="frame" x="11" y="31.333333333333343" width="220" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Jost-Bold" family="Jost" pointSize="15"/>
                                         <color key="textColor" name="blackColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-q4-QjP">
-                                        <rect key="frame" x="141" y="6.9999999999999982" width="90" height="23.333333333333329"/>
+                                        <rect key="frame" x="144.33333333333334" y="6.9999999999999982" width="86.666666666666657" height="19.333333333333329"/>
                                         <attributedString key="attributedText">
                                             <fragment content="$1,800">
                                                 <attributes>
                                                     <color key="NSColor" name="btnThemeColor"/>
-                                                    <font key="NSFont" size="16" name="Jost-Heavy"/>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="/month">
                                                 <attributes>
                                                     <color key="NSColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="11" name="Jost-Regular"/>
+                                                    <font key="NSFont" metaFont="smallSystem"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinLocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5HZ-eK-rFz">
-                                        <rect key="frame" x="11" y="60" width="18" height="18"/>
+                                        <rect key="frame" x="11" y="52" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="OnG-jR-LJ6"/>
                                             <constraint firstAttribute="width" constant="18" id="wR2-hO-9NH"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="126 Sector, Mohali, Punjab India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCM-E8-nj4">
-                                        <rect key="frame" x="31" y="64.666666666666657" width="162" height="8.6666666666666714"/>
+                                        <rect key="frame" x="31" y="56.666666666666657" width="162" height="8.6666666666666714"/>
                                         <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="10"/>
                                         <color key="textColor" name="#838383"/>
                                         <nil key="highlightedColor"/>

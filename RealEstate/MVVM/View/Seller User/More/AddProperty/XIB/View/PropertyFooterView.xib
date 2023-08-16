@@ -34,7 +34,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="350" height="82"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSU-Gq-mhL">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="21"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="26.5"/>
                                             <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="18"/>
                                             <color key="textColor" name="btnThemeColor"/>
                                             <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                                     <rect key="frame" x="0.0" y="105" width="350" height="82"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total no. Flat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-lg-Y6r">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="21"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="26.5"/>
                                             <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="18"/>
                                             <color key="textColor" name="btnThemeColor"/>
                                             <nil key="highlightedColor"/>
@@ -155,7 +155,7 @@
                                     <rect key="frame" x="0.0" y="210" width="350" height="82"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directional Facing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-ab-40f">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="21"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="26.5"/>
                                             <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="18"/>
                                             <color key="textColor" name="btnThemeColor"/>
                                             <nil key="highlightedColor"/>
@@ -238,13 +238,13 @@
     </objects>
     <designables>
         <designable name="dsQ-oU-qVM">
-            <size key="intrinsicContentSize" width="104.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="104" height="17.5"/>
         </designable>
         <designable name="hX5-lX-53e">
-            <size key="intrinsicContentSize" width="45" height="20.5"/>
+            <size key="intrinsicContentSize" width="45" height="17.5"/>
         </designable>
         <designable name="l04-DL-grC">
-            <size key="intrinsicContentSize" width="170.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="168.5" height="17.5"/>
         </designable>
     </designables>
     <resources>

@@ -8,9 +8,14 @@
 import UIKit
 
 class AddPictureTblCell: UITableViewCell {
-
+    @IBOutlet weak var imgCamera: UIImageView!
+    @IBOutlet weak var lblPlaceholder: UILabel!
+    
+    @IBOutlet weak var imgSelected: UIImageView!
     @IBOutlet weak var vwImg: ViewCustom!
     @IBOutlet weak var vwAddImg: ViewCustom!
+    @IBOutlet weak var imageCamera: UIImageView!
+    @IBOutlet weak var vwEdit: ViewCustom!
     
     override func awakeFromNib() {
         super.awakeFromNib()

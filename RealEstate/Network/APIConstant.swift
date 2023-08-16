@@ -23,6 +23,7 @@ struct APIConstant {
     static let kGetUsersByRole      = "getAllUsersByRole"
     static let kGetProperties       = "getAllPropertiesForUser"
     static let kAddProperty         = "addProperty"
+    static let kAddPropertyImages   = "addPropertyGallery"
     static let kUpdateProperty      = "updateProperty"
     static let kGetUserDetailsById  = "getUserFullDetailsByID"
     

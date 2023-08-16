@@ -26,28 +26,43 @@ class PropertyViewModel: NSObject{
 extension PropertyViewModel{
     
     
-    func addNewProperty(paramApi: PropertyParamModel,completion:@escaping completionHandler)
+    func addNewProperty(paramApi: PropertyParamModel,completion:@escaping completionHandlerPage)
     {
         server(url: APIConstant.kBaseUrl , apiMethod: .post, header: nil, isLoaderShow: true, paramApiModel: paramApi) { [weak self] (responseDict,responseData,success) in
 
             print("response: ",responseDict)
 
-            let usersData = try? JSONDecoder().decode(CommonModel<EmptyModel>.self, from: responseData ?? Data())
-            /*
-             {"statusCode": 200, "data": {
-                 "property_id" = 159;
-             }, "message": Property Successfully Added.}
-             */
+            let usersData = try? JSONDecoder().decode(CommonModel<PropertyParamModel>.self, from: responseData ?? Data())
+            
             print("decoded response: ",usersData?.data?.dictionary ?? [:])
                         
             if usersData?.statusCode == 200 {
-                completion(true,usersData?.message ?? "")
+                completion(true,usersData?.message ?? "",usersData?.data?.property_id ?? 0)
             }else{
-                completion(false,usersData?.message ?? "")
+                completion(false,usersData?.message ?? "",0)
             }
             
         }
         
+    }
+    
+    
+    func addPropertyImages(paramApi: PropertyParamModel,images: [Data]?,completion:@escaping completionHandlerPage)
+    {
+        uploadDataToServer(url: APIConstant.kBaseUrl, imageKey: "gallery", imagedata: images, paramApiModel: paramApi) { [weak self] (responseDict,responseData) in
+            
+            print("response: ",responseDict)
+
+            let usersData = try? JSONDecoder().decode(CommonModel<PropertyParamModel>.self, from: responseData ?? Data())
+            
+            print("decoded response: ",usersData?.data?.dictionary ?? [:])
+                        
+            if usersData?.statusCode == 200 {
+                completion(true,usersData?.message ?? "",usersData?.data?.property_id ?? 0)
+            }else{
+                completion(false,usersData?.message ?? "",0)
+            }
+        }
     }
     
     func getAllProperties(completion:@escaping completionHandler)

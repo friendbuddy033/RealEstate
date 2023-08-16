@@ -12,5 +12,5 @@ pod 'Alamofire'
 pod 'NVActivityIndicatorView' , '~> 4.7.0' #added LoadVwbg view behind the loader class NVActivityIndicatorPresenter.swift line 275
 pod 'Kingfisher'
 pod 'CountryPickerView'
-
+pod 'ImagePicker'
 end

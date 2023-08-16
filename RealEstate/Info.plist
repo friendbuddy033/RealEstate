@@ -21,6 +21,8 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>needs permission to upload images for properties</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 </dict>

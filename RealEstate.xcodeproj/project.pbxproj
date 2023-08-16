@@ -27,6 +27,15 @@
 		181B8C592A73DD3700D9EC4C /* DropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B8C532A73DD3700D9EC4C /* DropDownVC.swift */; };
 		181B8C5C2A73E5D000D9EC4C /* AgentProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B8C5B2A73E5D000D9EC4C /* AgentProfileModel.swift */; };
 		181B8C5E2A73E63B00D9EC4C /* AgentProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B8C5D2A73E63B00D9EC4C /* AgentProfileViewModel.swift */; };
+		181F0D342A8407C500A2C3D5 /* Bundle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D2B2A8407C300A2C3D5 /* Bundle+Helper.swift */; };
+		181F0D352A8407C500A2C3D5 /* TimeInterval+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D2C2A8407C300A2C3D5 /* TimeInterval+String.swift */; };
+		181F0D362A8407C500A2C3D5 /* ImagePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D2D2A8407C300A2C3D5 /* ImagePickerCollectionViewCell.swift */; };
+		181F0D372A8407C500A2C3D5 /* OpalImagePickerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D2E2A8407C300A2C3D5 /* OpalImagePickerRootViewController.swift */; };
+		181F0D382A8407C500A2C3D5 /* OpalImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D2F2A8407C400A2C3D5 /* OpalImagePickerController.swift */; };
+		181F0D392A8407C500A2C3D5 /* OpalImagePickerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D302A8407C400A2C3D5 /* OpalImagePickerCollectionViewLayout.swift */; };
+		181F0D3A2A8407C500A2C3D5 /* OpalImagePickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D312A8407C400A2C3D5 /* OpalImagePickerConfiguration.swift */; };
+		181F0D3B2A8407C500A2C3D5 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D322A8407C400A2C3D5 /* UIView+Helper.swift */; };
+		181F0D3C2A8407C500A2C3D5 /* UIViewController+OpalImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F0D332A8407C500A2C3D5 /* UIViewController+OpalImagePicker.swift */; };
 		183B32FC2A51B2AF0008F7C1 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */; };
 		183B32FE2A51BA600008F7C1 /* SJCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */; };
 		18492F542A7EA5EC0070E775 /* UsersByRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18492F532A7EA5EC0070E775 /* UsersByRoleVC.swift */; };
@@ -90,7 +99,6 @@
 		26183CC02A5181CB0038108B /* ProfessionalPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CBF2A5181CB0038108B /* ProfessionalPhotoVC.swift */; };
 		26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26183CC32A5182400038108B /* ProfessionalPhotoClcCell.swift */; };
 		26183CC62A5182400038108B /* ProfessionalPhotoClcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26183CC42A5182400038108B /* ProfessionalPhotoClcCell.xib */; };
-		261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF02A436AB100B8EB0C /* ImagePicker.swift */; };
 		261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF12A436AB100B8EB0C /* Extension.swift */; };
 		261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF22A436AB100B8EB0C /* AppConstants.swift */; };
 		261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */; };
@@ -176,6 +184,15 @@
 		181B8C532A73DD3700D9EC4C /* DropDownVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownVC.swift; sourceTree = "<group>"; };
 		181B8C5B2A73E5D000D9EC4C /* AgentProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProfileModel.swift; sourceTree = "<group>"; };
 		181B8C5D2A73E63B00D9EC4C /* AgentProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProfileViewModel.swift; sourceTree = "<group>"; };
+		181F0D2B2A8407C300A2C3D5 /* Bundle+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Helper.swift"; sourceTree = "<group>"; };
+		181F0D2C2A8407C300A2C3D5 /* TimeInterval+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+String.swift"; sourceTree = "<group>"; };
+		181F0D2D2A8407C300A2C3D5 /* ImagePickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		181F0D2E2A8407C300A2C3D5 /* OpalImagePickerRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpalImagePickerRootViewController.swift; sourceTree = "<group>"; };
+		181F0D2F2A8407C400A2C3D5 /* OpalImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpalImagePickerController.swift; sourceTree = "<group>"; };
+		181F0D302A8407C400A2C3D5 /* OpalImagePickerCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpalImagePickerCollectionViewLayout.swift; sourceTree = "<group>"; };
+		181F0D312A8407C400A2C3D5 /* OpalImagePickerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpalImagePickerConfiguration.swift; sourceTree = "<group>"; };
+		181F0D322A8407C400A2C3D5 /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		181F0D332A8407C500A2C3D5 /* UIViewController+OpalImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+OpalImagePicker.swift"; sourceTree = "<group>"; };
 		183B32FB2A51B2AF0008F7C1 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
 		183B32FD2A51BA600008F7C1 /* SJCenterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJCenterFlowLayout.swift; sourceTree = "<group>"; };
 		18492F532A7EA5EC0070E775 /* UsersByRoleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersByRoleVC.swift; sourceTree = "<group>"; };
@@ -241,7 +258,6 @@
 		26183CBF2A5181CB0038108B /* ProfessionalPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalPhotoVC.swift; sourceTree = "<group>"; };
 		26183CC32A5182400038108B /* ProfessionalPhotoClcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalPhotoClcCell.swift; sourceTree = "<group>"; };
 		26183CC42A5182400038108B /* ProfessionalPhotoClcCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfessionalPhotoClcCell.xib; sourceTree = "<group>"; };
-		261BCAF02A436AB100B8EB0C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		261BCAF12A436AB100B8EB0C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		261BCAF22A436AB100B8EB0C /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityMangr.swift; sourceTree = "<group>"; };
@@ -389,6 +405,22 @@
 				181B8C4F2A73DD3700D9EC4C /* DropDownTblCell.xib */,
 			);
 			path = TblCell;
+			sourceTree = "<group>";
+		};
+		181F0D2A2A8407A600A2C3D5 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				181F0D2B2A8407C300A2C3D5 /* Bundle+Helper.swift */,
+				181F0D2D2A8407C300A2C3D5 /* ImagePickerCollectionViewCell.swift */,
+				181F0D302A8407C400A2C3D5 /* OpalImagePickerCollectionViewLayout.swift */,
+				181F0D312A8407C400A2C3D5 /* OpalImagePickerConfiguration.swift */,
+				181F0D2F2A8407C400A2C3D5 /* OpalImagePickerController.swift */,
+				181F0D2E2A8407C300A2C3D5 /* OpalImagePickerRootViewController.swift */,
+				181F0D2C2A8407C300A2C3D5 /* TimeInterval+String.swift */,
+				181F0D322A8407C400A2C3D5 /* UIView+Helper.swift */,
+				181F0D332A8407C500A2C3D5 /* UIViewController+OpalImagePicker.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		18492F4E2A7EA1400070E775 /* ClcCell */ = {
@@ -681,8 +713,8 @@
 			isa = PBXGroup;
 			children = (
 				181204112A57EDEA000FC360 /* ScallingCarousal */,
-				261BCAF02A436AB100B8EB0C /* ImagePicker.swift */,
 				261BCAF12A436AB100B8EB0C /* Extension.swift */,
+				181F0D2A2A8407A600A2C3D5 /* ImagePicker */,
 				18A6B2E42A59C9F1006D942A /* UPCarouselFlowLayout.swift */,
 				261BCAF22A436AB100B8EB0C /* AppConstants.swift */,
 				261BCAF32A436AB100B8EB0C /* UtilityMangr.swift */,
@@ -1169,15 +1201,19 @@
 				26269B922A46E283004BC63A /* AgentTblCell.swift in Sources */,
 				26CB64A52A483F8F00A6C02F /* HelperStruct.swift in Sources */,
 				269AA9472A460A490006CB17 /* HeaderView.swift in Sources */,
+				181F0D392A8407C500A2C3D5 /* OpalImagePickerCollectionViewLayout.swift in Sources */,
+				181F0D352A8407C500A2C3D5 /* TimeInterval+String.swift in Sources */,
 				1813752D2A508C1800FA81DB /* AgentProfileVC.swift in Sources */,
 				26C30E602A4DE84600BC0515 /* CommonModel.swift in Sources */,
 				2610F90E2A42284E00FE1738 /* ViewController.swift in Sources */,
 				181B8C5E2A73E63B00D9EC4C /* AgentProfileViewModel.swift in Sources */,
 				269AA8C82A45FB9F0006CB17 /* RealEstateTabbarVC.swift in Sources */,
+				181F0D342A8407C500A2C3D5 /* Bundle+Helper.swift in Sources */,
 				26183CC52A5182400038108B /* ProfessionalPhotoClcCell.swift in Sources */,
 				18A2C1562A4E004200DF5628 /* AgentDashboardVC.swift in Sources */,
 				261BCAF72A436AB100B8EB0C /* UtilityMangr.swift in Sources */,
 				18779CCE2A4DE50100180E4D /* FilterTypeCell.swift in Sources */,
+				181F0D372A8407C500A2C3D5 /* OpalImagePickerRootViewController.swift in Sources */,
 				18779CC32A4DE4E400180E4D /* SearchDetailVC.swift in Sources */,
 				181B8C592A73DD3700D9EC4C /* DropDownVC.swift in Sources */,
 				188A59A42A5BF63300D57EB4 /* ReceiverChatCell.swift in Sources */,
@@ -1185,6 +1221,7 @@
 				269AA93E2A4609380006CB17 /* HomeVC.swift in Sources */,
 				26183CBA2A514C6B0038108B /* AddPictureTblCell.swift in Sources */,
 				26CB64942A48262600A6C02F /* MoreVC.swift in Sources */,
+				181F0D3C2A8407C500A2C3D5 /* UIViewController+OpalImagePicker.swift in Sources */,
 				26269B962A46E7CD004BC63A /* EnquryDetailTblCell.swift in Sources */,
 				1813752B2A50842100FA81DB /* HistoryVC.swift in Sources */,
 				26269B992A46EBDB004BC63A /* RealEstateProtocol.swift in Sources */,
@@ -1202,8 +1239,11 @@
 				18779CB82A4DE39600180E4D /* AgentsOptionsCell.swift in Sources */,
 				26183CBD2A517D080038108B /* PropertyAddedSuccessVC.swift in Sources */,
 				26269BA92A47057E004BC63A /* PropertyClcCell.swift in Sources */,
+				181F0D3B2A8407C500A2C3D5 /* UIView+Helper.swift in Sources */,
 				18A2C15B2A4E00F200DF5628 /* AgentRegistStepTwoVC.swift in Sources */,
+				181F0D362A8407C500A2C3D5 /* ImagePickerCollectionViewCell.swift in Sources */,
 				181B8C5C2A73E5D000D9EC4C /* AgentProfileModel.swift in Sources */,
+				181F0D382A8407C500A2C3D5 /* OpalImagePickerController.swift in Sources */,
 				2614561B2A6D127F00883DC7 /* APIConstant.swift in Sources */,
 				2610F9292A4228B200FE1738 /* TextFieldCustom.swift in Sources */,
 				18A2C1592A4E00DB00DF5628 /* AgentRegistStepOneVC.swift in Sources */,
@@ -1215,11 +1255,11 @@
 				18779CD02A4DE50100180E4D /* AdditionalDetailCell.swift in Sources */,
 				2610F92A2A4228B200FE1738 /* CustomPageControlView.swift in Sources */,
 				181204102A57ED24000FC360 /* SubscriptionVC.swift in Sources */,
+				181F0D3A2A8407C500A2C3D5 /* OpalImagePickerConfiguration.swift in Sources */,
 				181B8C562A73DD3700D9EC4C /* VerifyOtpVC.swift in Sources */,
 				26CB64992A48264F00A6C02F /* MoreTblCell.swift in Sources */,
 				261BCAF52A436AB100B8EB0C /* Extension.swift in Sources */,
 				181204172A57EE1E000FC360 /* ScalingCarouselCell.swift in Sources */,
-				261BCAF42A436AB100B8EB0C /* ImagePicker.swift in Sources */,
 				261BCAF62A436AB100B8EB0C /* AppConstants.swift in Sources */,
 				188A59982A5BEFD300D57EB4 /* ChatListVC.swift in Sources */,
 				18779CC42A4DE4E400180E4D /* FilterVC.swift in Sources */,

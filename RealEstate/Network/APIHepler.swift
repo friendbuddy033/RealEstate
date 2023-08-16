@@ -87,7 +87,7 @@ func server(url:String,apiMethod:HTTPMethod,header:HTTPHeaders?,isLoaderShow:Boo
 }
 
 
-func uploadDataToServer(url:String,imageKey:String,imagedata:Data?,param:[String:String],loaderColor:UIColor = .white,paramApiModel:AuthParamApiModel,completion:@escaping([String:Any],Data?)->()){
+func uploadDataToServer(url:String,imageKey:String,imagedata:[Data]?,loaderColor:UIColor = .white,paramApiModel:CommonAPIModel,completion:@escaping([String:Any],Data?)->()){
     if Connectivity.isConnectedToInternet(){
         Indicator.shared.start("", loaderColor: loaderColor)
        // Indicator.shared.showHud()
@@ -97,14 +97,13 @@ func uploadDataToServer(url:String,imageKey:String,imagedata:Data?,param:[String
             for (key, value) in params {
                 multipartFormData.append("\(value)".data(using: .utf8)!, withName: key)
             }
-            
             if let dataarray = imagedata{
-                
-                // for (index,value) in dataarray.enumerated(){
-                
+                 for (index,value) in dataarray.enumerated(){
                 // print(value)
-                multipartFormData.append(dataarray, withName: imageKey, fileName: "\(UUID().uuidString).png", mimeType: "\(UUID().uuidString)/png")
-                //}
+//                multipartFormData.append(dataarray, withName: imageKey, fileName: "\(UUID().uuidString).png", mimeType: "\(UUID().uuidString)/png")
+                     let key = "\(imageKey)[\(index)]"
+                     multipartFormData.append(value, withName: key, fileName: "\(UUID().uuidString).png", mimeType: "\(UUID().uuidString)/png")
+                }
             }
         },
                   to: url, method: .post , headers: UtilityMangr.shared.getHeaderToken())

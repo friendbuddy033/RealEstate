@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -126,7 +126,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highly  Recommended agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbH-yu-EqY">
-                            <rect key="frame" x="13.000000000000014" y="211.66666666666666" width="234.33333333333337" height="30.333333333333343"/>
+                            <rect key="frame" x="13" y="211.66666666666666" width="236" height="30.333333333333343"/>
                             <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="18"/>
                             <color key="textColor" name="blackColor"/>
                             <nil key="highlightedColor"/>
@@ -159,7 +159,7 @@
     </objects>
     <designables>
         <designable name="zwM-qs-fJa">
-            <size key="intrinsicContentSize" width="185.33333333333334" height="18"/>
+            <size key="intrinsicContentSize" width="184.33333333333334" height="22"/>
         </designable>
     </designables>
     <resources>

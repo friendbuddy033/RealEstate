@@ -69,4 +69,5 @@ struct PropertyParamModel: CommonAPIModel
     var total_flats: String?
     var directional_facing: String?
     var money: String?
+    var gallery: [Data]?
 }

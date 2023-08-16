@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,7 +30,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-Q4-DVB" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="341" height="160"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashlineBg" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-K3-EUp">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashlineBg" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-K3-EUp">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="160"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-qE-b0S">
@@ -45,6 +46,43 @@
                                         <color key="textColor" name="#C0C0C0"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJV-08-gkr" customClass="ViewCustom" customModule="RealEstate" customModuleProvider="target">
+                                        <rect key="frame" x="296" y="15" width="30" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNw-CP-4ap">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="clarity_edit-solid"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="jNw-CP-4ap" firstAttribute="top" secondItem="YJV-08-gkr" secondAttribute="top" id="CpB-rZ-hiL"/>
+                                            <constraint firstItem="jNw-CP-4ap" firstAttribute="leading" secondItem="YJV-08-gkr" secondAttribute="leading" id="GYF-Ay-q1D"/>
+                                            <constraint firstAttribute="width" constant="30" id="W0J-so-Sic"/>
+                                            <constraint firstAttribute="bottom" secondItem="jNw-CP-4ap" secondAttribute="bottom" id="a51-0g-bNg"/>
+                                            <constraint firstAttribute="height" constant="30" id="gsS-ir-4Fg"/>
+                                            <constraint firstAttribute="trailing" secondItem="jNw-CP-4ap" secondAttribute="trailing" id="l6e-gN-JWz"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" name="#F3F3F3"/>
                                 <constraints>
@@ -54,9 +92,11 @@
                                     <constraint firstItem="Mby-qE-b0S" firstAttribute="centerY" secondItem="XFs-Q4-DVB" secondAttribute="centerY" id="JLJ-yI-vvi"/>
                                     <constraint firstItem="UYQ-K3-EUp" firstAttribute="leading" secondItem="XFs-Q4-DVB" secondAttribute="leading" id="PZR-UW-PB7"/>
                                     <constraint firstItem="E8A-zv-y1f" firstAttribute="top" secondItem="Mby-qE-b0S" secondAttribute="bottom" id="QiQ-RP-5lG"/>
+                                    <constraint firstAttribute="trailing" secondItem="YJV-08-gkr" secondAttribute="trailing" constant="15" id="Soh-0x-sGQ"/>
                                     <constraint firstItem="E8A-zv-y1f" firstAttribute="leading" secondItem="XFs-Q4-DVB" secondAttribute="leading" constant="5" id="W7w-It-TX1"/>
                                     <constraint firstAttribute="trailing" secondItem="E8A-zv-y1f" secondAttribute="trailing" constant="5" id="ivn-gz-N5d"/>
                                     <constraint firstItem="Mby-qE-b0S" firstAttribute="centerX" secondItem="XFs-Q4-DVB" secondAttribute="centerX" id="qBY-2x-eHc"/>
+                                    <constraint firstItem="YJV-08-gkr" firstAttribute="top" secondItem="XFs-Q4-DVB" secondAttribute="top" constant="15" id="vWf-Rw-V75"/>
                                     <constraint firstAttribute="bottom" secondItem="UYQ-K3-EUp" secondAttribute="bottom" id="xaY-8g-pMY"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -107,7 +147,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imageCamera" destination="Mby-qE-b0S" id="I3e-ES-mHC"/>
+                <outlet property="imgCamera" destination="Mby-qE-b0S" id="ms3-dx-OfZ"/>
+                <outlet property="imgSelected" destination="UYQ-K3-EUp" id="afT-Jp-wga"/>
+                <outlet property="lblPlaceholder" destination="E8A-zv-y1f" id="g4z-Tp-WR5"/>
                 <outlet property="vwAddImg" destination="XFs-Q4-DVB" id="GnD-MK-H1i"/>
+                <outlet property="vwEdit" destination="YJV-08-gkr" id="TSn-dy-wmP"/>
                 <outlet property="vwImg" destination="zWQ-ue-UmT" id="vhW-ZL-C3M"/>
             </connections>
             <point key="canvasLocation" x="80" y="-1"/>
@@ -115,6 +160,7 @@
     </objects>
     <resources>
         <image name="cameraIcon" width="50" height="50"/>
+        <image name="clarity_edit-solid" width="14" height="14"/>
         <image name="dashlineBg" width="371" height="167"/>
         <namedColor name="#C0C0C0">
             <color red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,5 +171,8 @@
         <namedColor name="borderLineColor">
             <color red="0.55686274509803924" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
